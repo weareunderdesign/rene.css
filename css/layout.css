@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.box {
+  flex: 1;
+}
+
+.box-xs {
+  width: 25%;
+  display: flex;
+}
+
+.box-s {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.box-m {
+  width: 75%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.box-l {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.padding-xs {
+  padding: 4px;
+}
+
+.padding-s {
+  padding: 8px;
+}
+
+.padding-m {
+  padding: 12px;
+}
+
+.padding-l {
+  padding: 24px;
+}
+.padding-xl {
+  padding: 40px;
+}
+
+.gap-xs {
+  display: flex;
+  gap: 4px 4px;
+}
+
+.gap-s {
+  display: flex;
+  gap: 8px 8px;
+}
+
+.gap-m {
+  display: flex;
+  gap: 12px 12px;
+}
+.gap-l {
+  display: flex;
+  gap: 24px 24px;
+}
+.gap-xl {
+  display: flex;
+  gap: 40px 40px;
+}
+
+.direction-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.direction-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.align-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.align-stretch {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.align-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.justify-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.justify-stretch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.justify-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.radius-xs {
+  border-radius: 2px;
+}
+
+.border-bottom {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.opacity-m {
+  opacity: 0.5;
+}
+
+.shadow {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.shadow-hover:hover {
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .box-s {
+    width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Inter:400,900");
+
+h1 {
+  font-size: 136px;
+  line-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 136%;
+}
+
+h5 {
+  font-weight: 500;
+  margin-top: 16px;
+  line-height: 140%;
+}
+
+h6 {
+  font-weight: 500;
+}
+
+p {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  line-height: 28px;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  padding: 16px;
+  background-color: #f4f4f4;
+  margin-left: 0px;
+  border-radius: 2px;
+  line-height: 30px;
+}
+
+code {
+  display: block;
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  line-height: 18px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-s {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.text-m {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.text-l {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 96px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+}

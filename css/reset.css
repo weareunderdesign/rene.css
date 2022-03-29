@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    color: inherit;
+}
+
+h2 {
+    font-size: 64px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 48px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+h4 {
+    font-size: 36px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+h5 {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+h6 {
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 4px;
+}
+
+input {
+    margin-bottom: 8px;
+}
+
+textarea {
+    margin-bottom: 8px;
+}
+
+select {
+    margin-bottom: 8px;
+}
+
+button {
+    margin-top: 8px;
+}
+
+h1 {
+    font-size: 96px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+li {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    line-height: 160%;
+}
+
+figure {
+    margin: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    line-height: 160%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+iframe {
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    line-height: 160%;
+}

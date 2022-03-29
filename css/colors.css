@@ -1,0 +1,38 @@
+.background-primary {
+  background-color: #ffffff;
+  color: #333333;
+  border-color: #ffffff;
+}
+
+.background-secondary {
+  background-color: #f3f3f3;
+  color: #333333;
+}
+
+.background-secondary-onhover:hover {
+  background-color: #f3f3f3;
+}
+
+.background-tertiary {
+  background-color: #080808;
+  color: #ffffff;
+}
+
+.color-primary {
+  color: #ffffff;
+  border-color: #8080ff;
+  background-color: #8080ff;
+}
+
+.color-secondary {
+  background-color: #a640ff;
+}
+
+.color-warning {
+  background-color: #ff4040;
+}
+
+.color-warning-text {
+  color: #ff4040;
+  opacity: 1;
+}
