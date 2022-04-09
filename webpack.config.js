@@ -3,10 +3,10 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const config = {
-  entry: "./src/index.js",
+  entry: ["./src/index.js", "./src/index.css"],
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "index_bundle.js",
   },
   module: {
     rules: [
