@@ -1,0 +1,693 @@
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css ***!
+  \*****************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Inter:400,900);
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (2) ***!
+  \*********************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Inter:400,900);
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/base.css ***!
+  \***********************************************************************/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    color: inherit;
+}
+
+h2 {
+    font-size: 64px;
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 48px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+h4 {
+    font-size: 36px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+h5 {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+h6 {
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 4px;
+}
+
+input {
+    margin-bottom: 8px;
+}
+
+textarea {
+    margin-bottom: 8px;
+}
+
+select {
+    margin-bottom: 8px;
+}
+
+button {
+    margin-top: 8px;
+}
+
+h1 {
+    font-size: 96px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+li {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    line-height: 160%;
+}
+
+figure {
+    margin: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    line-height: 160%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+iframe {
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    line-height: 160%;
+}
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/colors.css ***!
+  \*************************************************************************/
+.background-primary {
+  background-color: #ffffff;
+  color: #333333;
+  border-color: #ffffff;
+}
+
+.background-secondary {
+  background-color: #f3f3f3;
+  color: #333333;
+}
+
+.background-secondary-onhover:hover {
+  background-color: #f3f3f3;
+}
+
+.background-tertiary {
+  background-color: #080808;
+  color: #ffffff;
+}
+
+.color-primary {
+  color: #ffffff;
+  border-color: #8080ff;
+  background-color: #8080ff;
+}
+
+.color-secondary {
+  background-color: #a640ff;
+}
+
+.color-warning {
+  background-color: #ff4040;
+}
+
+.color-warning-text {
+  color: #ff4040;
+  opacity: 1;
+}
+
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/componenets.css ***!
+  \******************************************************************************/
+.dropdown {
+  top: -22px;
+  max-width: 320px;
+  min-width: 124px;
+}
+
+.panel {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1440px;
+  padding: 40px;
+  row-gap: 40px;
+}
+
+.view {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.modal {
+  min-width: 360px;
+}
+
+.icon-xs {
+  width: 12px;
+  height: 12px;
+  background-size: cover;
+}
+
+.icon-s {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.icon-m {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.icon-l {
+  width: 56px;
+  height: 56px;
+  background-size: cover;
+}
+
+.thumbnail {
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
+.highlight {
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
+}
+
+.avatar-m {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(51, 51, 51, 0.15);
+}
+
+.avatar-l {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(51, 51, 51, 0.15);
+  border-radius: 56px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sticky {
+    position: relative;
+  }
+}
+
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/layout.css ***!
+  \*************************************************************************/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.box {
+  flex: 1;
+}
+
+.box-xs {
+  width: 25%;
+  display: flex;
+}
+
+.box-s {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.box-m {
+  width: 75%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.box-l {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.padding-xs {
+  padding: 4px;
+}
+
+.padding-s {
+  padding: 8px;
+}
+
+.padding-m {
+  padding: 12px;
+}
+
+.padding-l {
+  padding: 24px;
+}
+.padding-xl {
+  padding: 40px;
+}
+
+.gap-xs {
+  display: flex;
+  gap: 4px 4px;
+}
+
+.gap-s {
+  display: flex;
+  gap: 8px 8px;
+}
+
+.gap-m {
+  display: flex;
+  gap: 12px 12px;
+}
+.gap-l {
+  display: flex;
+  gap: 24px 24px;
+}
+.gap-xl {
+  display: flex;
+  gap: 40px 40px;
+}
+
+.direction-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.direction-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.align-center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.align-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.align-stretch {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.align-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.justify-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.justify-stretch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.justify-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.radius-xs {
+  border-radius: 2px;
+}
+
+.border-bottom {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.opacity-m {
+  opacity: 0.5;
+}
+
+.shadow {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.shadow-hover:hover {
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .box-s {
+    width: 100%;
+  }
+}
+
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (1) ***!
+  \*********************************************************************************/
+h1 {
+  font-size: 136px;
+  line-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 136%;
+}
+
+h5 {
+  font-weight: 500;
+  margin-top: 16px;
+  line-height: 140%;
+}
+
+h6 {
+  font-weight: 500;
+}
+
+p {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  line-height: 28px;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  padding: 16px;
+  background-color: #f4f4f4;
+  margin-left: 0px;
+  border-radius: 2px;
+  line-height: 30px;
+}
+
+code {
+  display: block;
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  line-height: 18px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-s {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.text-m {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.text-l {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 96px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+}
+
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/themes.css ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tokens.css ***!
+  \*************************************************************************/
+:root {
+  --primary: #8080ff;
+  --secondary: #a640ff;
+  --primaryBackground: #ffffff;
+  --secondaryBackground: #f3f3f3;
+  --primaryForeground: #080808;
+  --secondaryForeground: #000000;
+  --warning: hsl(0, 100%, 63%);
+  --size-base: 4px;
+}
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (3) ***!
+  \*********************************************************************************/
+h1 {
+  font-size: 136px;
+  line-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 64px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+
+h4 {
+  font-weight: 500;
+  line-height: 136%;
+}
+
+h5 {
+  font-weight: 500;
+  margin-top: 16px;
+  line-height: 140%;
+}
+
+h6 {
+  font-weight: 500;
+}
+
+p {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  line-height: 28px;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  padding: 16px;
+  background-color: #f4f4f4;
+  margin-left: 0px;
+  border-radius: 2px;
+  line-height: 30px;
+}
+
+code {
+  display: block;
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  line-height: 18px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-s {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.text-m {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.text-l {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 96px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+}
+
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*****************************************************************/
+/* @import "./styles/normalize.css"; */
+/* @import "./styles/rene.css"; */
+
