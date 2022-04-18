@@ -1,9 +1,8 @@
 @import "/node_modules/normalize.css/normalize.css";
+@import "./styles/tokens.css";
 @import "./styles/base.css";
 @import "./styles/colors.css";
 @import "./styles/components.css";
 @import "./styles/layout.css";
 @import "./styles/typography.css";
-@import "./styles/themes.css";
-@import "./styles/tokens.css";
 @import "./styles/typography.css";
