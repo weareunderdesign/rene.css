@@ -8,6 +8,28 @@ body {
   font-weight: 300;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px;
+}
+
 .box {
   flex: 1;
 }
