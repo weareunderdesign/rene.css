@@ -108,6 +108,10 @@
   display: none;
 }
 
+.article {
+  
+}
+
 @media (max-width: 768px) {
   .sticky {
     position: relative;
