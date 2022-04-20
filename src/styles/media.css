@@ -1,0 +1,12 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+iframe {
+    border-style: none;
+}
+
+figure {
+    margin: 0px;
+}

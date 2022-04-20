@@ -1,492 +1,214 @@
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css ***!
   \*****************************************************************************/
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Inter:400,900);
-/*!*********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (2) ***!
-  \*********************************************************************************/
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Inter:400,900);
-/*!********************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/normalize.css/normalize.css ***!
-  \********************************************************************************************/
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Inter:400,500,600,800);
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tokens.css ***!
+  \*************************************************************************/
+:root {
+  --primary: #8080ff;
+  --secondary: #a640ff;
+  --primaryBackground: #ffffff;
+  --secondaryBackground: #f3f3f3;
+  --primaryForeground: #080808;
+  --secondaryForeground: #000000;
+  --warning: hsl(0, 100%, 63%);
+  --size-base: 4px;
 }
 
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/reset.css ***!
+  \************************************************************************/
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
-  display: none;
-}
-
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/base.css ***!
-  \***********************************************************************/
-html {
-    box-sizing: border-box;
-}
-
+  1. Use a more-intuitive box-sizing model.
+*/
 *,
-*:before,
-*:after {
-    box-sizing: inherit;
+*::before,
+*::after {
+    box-sizing: border-box;
     color: inherit;
 }
 
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    min-height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+/*!*********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (1) ***!
+  \*********************************************************************************/
+h1 {
+  font-size: 96px;
+  line-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
 h2 {
-    font-size: 64px;
-    margin-top: 36px;
-    margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 64px;
 }
 
 h3 {
-    font-size: 48px;
-    margin-top: 32px;
-    margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 124%;
 }
 
 h4 {
-    font-size: 36px;
-    margin-top: 24px;
-    margin-bottom: 8px;
+  font-weight: 400;
+  margin-top: 16px;
+  font-size: 36px;
+  line-height: 136%;
 }
 
 h5 {
-    font-size: 24px;
-    margin-top: 24px;
-    margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 16px;
+  line-height: 140%;
 }
 
 h6 {
-    font-size: 18px;
-    margin-top: 18px;
-    margin-bottom: 4px;
-}
-
-input {
-    margin-bottom: 8px;
-}
-
-textarea {
-    margin-bottom: 8px;
-}
-
-select {
-    margin-bottom: 8px;
-}
-
-button {
-    margin-top: 8px;
-}
-
-h1 {
-    font-size: 96px;
-    margin-top: 40px;
-    margin-bottom: 24px;
-}
-
-body {
-    min-height: 100vh;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-}
-
-li {
-    padding-bottom: 2px;
-    padding-top: 2px;
-    line-height: 160%;
-}
-
-figure {
-    margin: 0px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-span {
-    line-height: 160%;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    column-gap: 24px;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 24px;
-}
-
-iframe {
-    border-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
+  font-weight: 500;
 }
 
 p {
-    line-height: 160%;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  line-height: 28px;
+}
+
+span {
+  line-height: 160%;
+}
+b,
+strong {
+  font-weight: 600;
+}
+
+blockquote {
+  padding: 16px;
+  background-color: #f4f4f4;
+  margin-left: 0px;
+  border-radius: 2px;
+  line-height: 30px;
+}
+
+code {
+  display: block;
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  padding-bottom: 2px;
+  padding-top: 2px;
+  line-height: 160%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-s {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.text-m {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.text-l {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 96px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
 }
 /*!*************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/colors.css ***!
@@ -502,11 +224,12 @@ p {
   color: #333333;
 }
 
-.background-secondary-onhover:hover {
-  background-color: #f3f3f3;
+.foreground-primary {
+  background-color: #080808;
+  color: #ffffff;
 }
 
-.background-tertiary {
+.foreground-secondary {
   background-color: #080808;
   color: #ffffff;
 }
@@ -521,134 +244,17 @@ p {
   background-color: #a640ff;
 }
 
-.color-warning {
+.background-warning {
   background-color: #ff4040;
 }
 
-.color-warning-text {
+.color-warning {
   color: #ff4040;
-  opacity: 1;
 }
 
-/*!*****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/components.css ***!
-  \*****************************************************************************/
-.dropdown {
-  top: -22px;
-  max-width: 320px;
-  min-width: 124px;
+.opacity-m {
+  opacity: 0.5;
 }
-
-.panel {
-  width: 240px;
-  display: flex;
-  flex-direction: column;
-}
-
-.page {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 1440px;
-  padding: 40px;
-  row-gap: 40px;
-}
-
-.view {
-  min-height: 100vh;
-  width: 100%;
-}
-
-.modal {
-  min-width: 360px;
-}
-
-.icon-xs {
-  width: 12px;
-  height: 12px;
-  background-size: cover;
-}
-
-.icon-s {
-  width: 24px;
-  height: 24px;
-  background-size: cover;
-}
-
-.icon-m {
-  width: 40px;
-  height: 40px;
-  background-size: cover;
-}
-
-.icon-l {
-  width: 56px;
-  height: 56px;
-  background-size: cover;
-}
-
-.thumbnail {
-  height: 180px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 320px;
-}
-
-.highlight {
-  border-radius: 4px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #000000;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
-}
-
-.avatar-m {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 24px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(51, 51, 51, 0.15);
-}
-
-.avatar-l {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(51, 51, 51, 0.15);
-  border-radius: 56px;
-}
-
-.sticky {
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-}
-
-.hidden {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .sticky {
-    position: relative;
-  }
-}
-
 /*!*************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/layout.css ***!
   \*************************************************************************/
@@ -660,6 +266,28 @@ body {
   color: #000000;
   font-family: "Inter", sans-serif;
   font-weight: 300;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px;
 }
 
 .box {
@@ -789,33 +417,7 @@ body {
   justify-content: flex-start;
 }
 
-.radius-xs {
-  border-radius: 2px;
-}
 
-.border-bottom {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(0, 0, 0, 0.05);
-}
-
-.border {
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.05);
-}
-
-.opacity-m {
-  opacity: 0.5;
-}
-
-.shadow {
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
-}
-
-.shadow-hover:hover {
-  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.1);
-}
 
 @media (max-width: 768px) {
   .box-s {
@@ -823,222 +425,194 @@ body {
   }
 }
 
-/*!*********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (1) ***!
-  \*********************************************************************************/
-h1 {
-  font-size: 136px;
-  line-height: 100%;
-  font-family: "Inter", sans-serif;
-  font-weight: 900;
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/media.css ***!
+  \************************************************************************/
+img {
+    max-width: 100%;
+    display: block;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 64px;
+iframe {
+    border-style: none;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+figure {
+    margin: 0px;
+}
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/forms.css ***!
+  \************************************************************************/
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-h4 {
-  font-weight: 500;
-  line-height: 136%;
+input {
+    margin-bottom: 8px;
 }
 
-h5 {
-  font-weight: 500;
-  margin-top: 16px;
-  line-height: 140%;
+textarea {
+    margin-bottom: 8px;
 }
 
-h6 {
-  font-weight: 500;
+select {
+    margin-bottom: 8px;
 }
 
-p {
-  margin-top: 8px;
-  margin-bottom: 4px;
-  line-height: 28px;
+button {
+    margin-top: 8px;
+}
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/shadows.css ***!
+  \**************************************************************************/
+.shadow {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-b,
-strong {
-  font-weight: 600;
+.shadow-hover:hover {
+  box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.1);
 }
-
-blockquote {
-  padding: 16px;
-  background-color: #f4f4f4;
-  margin-left: 0px;
-  border-radius: 2px;
-  line-height: 30px;
-}
-
-code {
-  display: block;
-  font-size: 14px;
-  font-family: "Source Code Pro", monospace;
-  line-height: 18px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-s {
-  font-size: 12px;
-  line-height: 12px;
-}
-
-.text-m {
-  font-size: 14px;
-  line-height: 14px;
-}
-
-.text-l {
-  font-size: 18px;
-  line-height: 18px;
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 96px;
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/borders.css ***!
+  \**************************************************************************/
+.radius-xs {
+    border-radius: 2px;
   }
-
-  h2 {
-    font-size: 48px;
+  
+  .border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.05);
   }
-
-  h3 {
-    font-size: 42px;
+  
+  .border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.05);
   }
-
-  h4 {
-    font-size: 32px;
-  }
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/components.css ***!
+  \*****************************************************************************/
+.dropdown {
+  top: -22px;
+  max-width: 320px;
+  min-width: 124px;
 }
 
-/*!*************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/themes.css ***!
-  \*************************************************************************/
-
-/*!*************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tokens.css ***!
-  \*************************************************************************/
-:root {
-  --primary: #8080ff;
-  --secondary: #a640ff;
-  --primaryBackground: #ffffff;
-  --secondaryBackground: #f3f3f3;
-  --primaryForeground: #080808;
-  --secondaryForeground: #000000;
-  --warning: hsl(0, 100%, 63%);
-  --size-base: 4px;
+.panel {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
-/*!*********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (3) ***!
-  \*********************************************************************************/
-h1 {
-  font-size: 136px;
-  line-height: 100%;
-  font-family: "Inter", sans-serif;
-  font-weight: 900;
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1280px;
+  padding: 40px;
+  row-gap: 40px;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 64px;
+.view {
+  min-height: 100vh;
+  width: 100%;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+.modal {
+  min-width: 360px;
 }
 
-h4 {
-  font-weight: 500;
-  line-height: 136%;
+.icon-xs {
+  width: 12px;
+  height: 12px;
+  background-size: cover;
 }
 
-h5 {
-  font-weight: 500;
-  margin-top: 16px;
-  line-height: 140%;
+.icon-s {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
 }
 
-h6 {
-  font-weight: 500;
+.icon-m {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
 }
 
-p {
-  margin-top: 8px;
-  margin-bottom: 4px;
-  line-height: 28px;
+.icon-l {
+  width: 56px;
+  height: 56px;
+  background-size: cover;
 }
 
-b,
-strong {
-  font-weight: 600;
+.thumbnail {
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 320px;
 }
 
-blockquote {
-  padding: 16px;
-  background-color: #f4f4f4;
-  margin-left: 0px;
-  border-radius: 2px;
-  line-height: 30px;
+.highlight {
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000000;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
 }
 
-code {
-  display: block;
-  font-size: 14px;
-  font-family: "Source Code Pro", monospace;
-  line-height: 18px;
+.avatar-m {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(51, 51, 51, 0.15);
 }
 
-.text-center {
-  text-align: center;
+.avatar-l {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(51, 51, 51, 0.15);
+  border-radius: 56px;
 }
 
-.text-s {
-  font-size: 12px;
-  line-height: 12px;
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
-.text-m {
-  font-size: 14px;
-  line-height: 14px;
+.hidden {
+  display: none;
 }
 
-.text-l {
-  font-size: 18px;
-  line-height: 18px;
+.article {
+  
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 96px;
-  }
-
-  h2 {
-    font-size: 48px;
-  }
-
-  h3 {
-    font-size: 42px;
-  }
-
-  h4 {
-    font-size: 32px;
+@media (max-width: 768px) {
+  .sticky {
+    position: relative;
   }
 }
-
 /*!*****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
   \*****************************************************************/

@@ -9,11 +9,12 @@
   color: #333333;
 }
 
-.background-secondary-onhover:hover {
-  background-color: #f3f3f3;
+.foreground-primary {
+  background-color: #080808;
+  color: #ffffff;
 }
 
-.background-tertiary {
+.foreground-secondary {
   background-color: #080808;
   color: #ffffff;
 }
@@ -28,11 +29,14 @@
   background-color: #a640ff;
 }
 
-.color-warning {
+.background-warning {
   background-color: #ff4040;
 }
 
-.color-warning-text {
+.color-warning {
   color: #ff4040;
-  opacity: 1;
+}
+
+.opacity-m {
+  opacity: 0.5;
 }
