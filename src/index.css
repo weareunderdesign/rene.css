@@ -1,9 +1,10 @@
-@import "/node_modules/normalize.css/normalize.css";
 @import "./styles/tokens.css";
 @import "./styles/reset.css";
 @import "./styles/typography.css";
-@import "./styles/forms.css";
 @import "./styles/colors.css";
 @import "./styles/layout.css";
 @import "./styles/media.css";
+@import "./styles/forms.css";
+@import "./styles/shadows.css";
+@import "./styles/borders.css";
 @import "./styles/components.css";
