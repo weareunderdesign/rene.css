@@ -82,6 +82,10 @@ footer {
   padding: 40px;
 }
 
+.padding-right-s {
+  padding-right: 8px;
+}
+
 .gap-xs {
   display: flex;
   gap: 4px 4px;
