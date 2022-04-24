@@ -3,7 +3,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  color: #000000;
+  background-color: var(--primaryBackground);
+  color: var(--primaryForeground);
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
