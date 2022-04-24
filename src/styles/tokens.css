@@ -8,3 +8,19 @@
   --warning: hsl(0, 100%, 63%);
   --size-base: 4px;
 }
+
+body[data-theme="dark"] {
+  --primaryBackground: #080808;
+  --secondaryBackground: #000000;
+  --primaryForeground: #ffffff;
+  --secondaryForeground: #f3f3f3;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --primaryBackground: #080808;
+    --secondaryBackground: #000000;
+    --primaryForeground: #ffffff;
+    --secondaryForeground: #f3f3f3;
+  }
+}
