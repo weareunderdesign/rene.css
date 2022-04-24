@@ -1,10 +1,27 @@
 :root {
-  --primary: #8080ff;
-  --secondary: #a640ff;
-  --primaryBackground: #ffffff;
-  --secondaryBackground: #f3f3f3;
-  --primaryForeground: #080808;
-  --secondaryForeground: #000000;
-  --warning: hsl(0, 100%, 63%);
   --size-base: 4px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: #8080ff;
+    --secondary: #a640ff;
+    --primaryBackground: #ffffff;
+    --secondaryBackground: #f3f3f3;
+    --primaryForeground: #080808;
+    --secondaryForeground: #000000;
+    --warning: hsl(0, 100%, 63%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #8080ff;
+    --secondary: #a640ff;
+    --primaryBackground: #ffffff;
+    --secondaryBackground: #f3f3f3;
+    --primaryForeground: #080808;
+    --secondaryForeground: #000000;
+    --warning: hsl(0, 100%, 63%);
+  }
 }
