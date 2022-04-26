@@ -1,5 +1,5 @@
 .DS_Store
 node_modules
-dist/index.html
+demo
 package-lock.json
 package.json

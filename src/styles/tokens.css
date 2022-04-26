@@ -1,26 +1,23 @@
 :root {
-  --primary: #8080ff;
-  --secondary: #a640ff;
-  --primaryBackground: #ffffff;
-  --secondaryBackground: #f3f3f3;
-  --primaryForeground: #080808;
-  --secondaryForeground: #000000;
-  --warning: hsl(0, 100%, 63%);
   --size-base: 4px;
 }
 
-body[data-theme="dark"] {
-  --primaryBackground: #080808;
-  --secondaryBackground: #000000;
-  --primaryForeground: #ffffff;
-  --secondaryForeground: #f3f3f3;
+html {
+  --primary: #0000ff;
+  --secondary: #8800ff;
+  --primaryBackground: #ffffff;
+  --secondaryBackground: #f3f3f3;
+  --primaryForeground: #000000;
+  --secondaryForeground: #0b0b0b;
+  --warning: hsl(0, 100%, 63%);
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --primaryBackground: #080808;
-    --secondaryBackground: #000000;
-    --primaryForeground: #ffffff;
-    --secondaryForeground: #f3f3f3;
-  }
+[data-theme="dark"] {
+  --primary: #8080ff;
+  --secondary: #a640ff;
+  --primaryBackground: #000000;
+  --secondaryBackground: #0b0b0b;
+  --primaryForeground: #ffffff;
+  --secondaryForeground: #f3f3f3;
+  --warning: hsl(0, 100%, 63%);
 }

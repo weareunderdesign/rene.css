@@ -6,79 +6,68 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tokens.css ***!
   \*************************************************************************/
 :root {
-  --primary: #8080ff;
-  --secondary: #a640ff;
-  --primaryBackground: #ffffff;
-  --secondaryBackground: #f3f3f3;
-  --primaryForeground: #080808;
-  --secondaryForeground: #000000;
-  --warning: hsl(0, 100%, 63%);
   --size-base: 4px;
 }
 
+html {
+  --primary: #0000ff;
+  --secondary: #8800ff;
+  --primaryBackground: #ffffff;
+  --secondaryBackground: #f3f3f3;
+  --primaryForeground: #000000;
+  --secondaryForeground: #0b0b0b;
+  --warning: hsl(0, 100%, 63%);
+}
+
+[data-theme="dark"] {
+  --primary: #8080ff;
+  --secondary: #a640ff;
+  --primaryBackground: #000000;
+  --secondaryBackground: #0b0b0b;
+  --primaryForeground: #ffffff;
+  --secondaryForeground: #f3f3f3;
+  --warning: hsl(0, 100%, 63%);
+}
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/reset.css ***!
   \************************************************************************/
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    color: inherit;
+  box-sizing: border-box;
+  color: inherit;
 }
 
-/*
-    2. Remove default margin
-  */
 * {
-    margin: 0;
+  margin: 0;
 }
 
-/*
-    3. Allow percentage-based heights in the application
-  */
 html,
 body {
-    min-height: 100%;
+  min-height: 100%;
 }
 
-/*
-    Typographic tweaks!
-    4. Add accessible line-height
-    5. Improve text rendering
-  */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-/*
-    6. Improve media defaults
-  */
 img,
 picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
-/*
-    7. Remove built-in form typography styles
-  */
 input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
-/*
-    8. Avoid text overflows
-  */
 p,
 h1,
 h2,
@@ -86,15 +75,12 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-/*
-    9. Create a root stacking context
-  */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
 /*!*********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (1) ***!
@@ -159,9 +145,9 @@ blockquote {
 
 code {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Source Code Pro", monospace;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 a {
@@ -214,42 +200,42 @@ li {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/colors.css ***!
   \*************************************************************************/
 .background-primary {
-  background-color: #ffffff;
-  color: #333333;
-  border-color: #ffffff;
+  background-color: var(--primaryBackground);
+  color: var(--primaryForeground);
+  border-color: var(--primaryBackground);
 }
 
 .background-secondary {
-  background-color: #f3f3f3;
-  color: #333333;
+  background-color: var(--secondaryBackground);
+  color: var(--secondaryForegroun);
 }
 
 .foreground-primary {
-  background-color: #080808;
-  color: #ffffff;
+  background-color: var(--primaryForeground);
+  color: var(--primaryBackground);
+  border-color: var(--primaryForeground);
 }
 
 .foreground-secondary {
-  background-color: #080808;
-  color: #ffffff;
+  background-color: var(--secondaryForeground);
+  color: var(--primaryBackground);
 }
 
 .color-primary {
-  color: #ffffff;
-  border-color: #8080ff;
-  background-color: #8080ff;
+  border-color: var(--primary);
+  background-color: var(--primary);
 }
 
 .color-secondary {
-  background-color: #a640ff;
+  background-color: var(--secondary);
 }
 
 .background-warning {
-  background-color: #ff4040;
+  background-color: var(--warning);
 }
 
 .color-warning {
-  color: #ff4040;
+  color: var(--warning);
 }
 
 .opacity-m {
@@ -263,7 +249,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  color: #000000;
+  background-color: var(--primaryBackground);
+  color: var(--primaryForeground);
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
@@ -337,6 +324,7 @@ footer {
 .padding-l {
   padding: 24px;
 }
+
 .padding-xl {
   padding: 40px;
 }
@@ -355,10 +343,12 @@ footer {
   display: flex;
   gap: 12px 12px;
 }
+
 .gap-l {
   display: flex;
   gap: 24px 24px;
 }
+
 .gap-xl {
   display: flex;
   gap: 40px 40px;
@@ -369,6 +359,7 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
 }
+
 .direction-row {
   display: flex;
   flex-direction: column;
@@ -416,8 +407,6 @@ footer {
   align-items: center;
   justify-content: flex-start;
 }
-
-
 
 @media (max-width: 768px) {
   .box-s {
@@ -477,20 +466,24 @@ button {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/borders.css ***!
   \**************************************************************************/
 .radius-xs {
-    border-radius: 2px;
-  }
-  
-  .border-bottom {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(0, 0, 0, 0.05);
-  }
-  
-  .border {
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.05);
-  }
+  border-radius: 2px;
+}
+
+.radius-m {
+  border-radius: 24px;
+}
+
+.border-bottom {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.05);
+}
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/components.css ***!
   \*****************************************************************************/
@@ -512,7 +505,7 @@ button {
   align-items: stretch;
   justify-content: flex-start;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1140px;
   padding: 40px;
   row-gap: 40px;
 }
