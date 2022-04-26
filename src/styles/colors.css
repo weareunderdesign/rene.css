@@ -1,40 +1,40 @@
 .background-primary {
-  background-color: #ffffff;
-  color: #333333;
-  border-color: #ffffff;
+  background-color: var(--primaryBackground);
+  color: var(--primaryForeground);
+  border-color: var(--primaryBackground);
 }
 
 .background-secondary {
-  background-color: #f3f3f3;
-  color: #333333;
+  background-color: var(--secondaryBackground);
+  color: var(--secondaryForegroun);
 }
 
 .foreground-primary {
-  background-color: #080808;
-  color: #ffffff;
+  background-color: var(--primaryForeground);
+  color: var(--primaryBackground);
+  border-color: var(--primaryForeground);
 }
 
 .foreground-secondary {
-  background-color: #080808;
-  color: #ffffff;
+  background-color: var(--secondaryForeground);
+  color: var(--primaryBackground);
 }
 
 .color-primary {
-  color: #ffffff;
-  border-color: #8080ff;
-  background-color: #8080ff;
+  border-color: var(--primary);
+  background-color: var(--primary);
 }
 
 .color-secondary {
-  background-color: #a640ff;
+  background-color: var(--secondary);
 }
 
 .background-warning {
-  background-color: #ff4040;
+  background-color: var(--warning);
 }
 
 .color-warning {
-  color: #ff4040;
+  color: var(--warning);
 }
 
 .opacity-m {
