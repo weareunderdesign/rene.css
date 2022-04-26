@@ -1,5 +1,6 @@
-const webpack = require("webpack");
 const path = require("path");
+const fs = require("fs");
+const WebpackShellPluginNext = require("webpack-shell-plugin-next");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
@@ -7,10 +8,6 @@ const isProduction =
   process.argv[process.argv.indexOf("--mode") + 1] === "production";
 const config = {
   entry: ["./src/index.css"],
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-  },
   module: {
     rules: [
       {
@@ -44,6 +41,15 @@ const config = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: `${isProduction ? "rene.min.css" : "rene.css"}`,
+    }),
+    new WebpackShellPluginNext({
+      onBuildEnd: {
+        scripts: [
+          () => {
+            fs.unlinkSync(path.resolve(__dirname, "dist/main.js"));
+          },
+        ],
+      },
     }),
   ],
 };
