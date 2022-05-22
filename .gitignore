@@ -3,3 +3,5 @@ node_modules
 demo
 package-lock.json
 package.json
+package-lock.json
+dist/index.html
