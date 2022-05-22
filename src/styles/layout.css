@@ -5,8 +5,7 @@ body {
   justify-content: flex-start;
   background-color: var(--primaryBackground);
   color: var(--primaryForeground);
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
 header {
