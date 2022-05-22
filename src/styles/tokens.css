@@ -2,7 +2,7 @@
   --size-base: 4px;
 }
 
-html {
+html, [data-theme="light"]  {
   --primary: #0000ff;
   --secondary: #8800ff;
   --primaryBackground: #ffffff;
