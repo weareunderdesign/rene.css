@@ -1,39 +1,30 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Inter:400,500,600,800");
-
 h1 {
   font-size: 96px;
   line-height: 100%;
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
 }
 
 h2 {
-  font-weight: 700;
   font-size: 64px;
 }
 
 h3 {
-  font-weight: 600;
   font-size: 48px;
   line-height: 124%;
 }
 
 h4 {
-  font-weight: 400;
   margin-top: 16px;
   font-size: 36px;
   line-height: 136%;
 }
 
 h5 {
-  font-weight: 500;
   font-size: 24px;
   margin-top: 16px;
   line-height: 140%;
 }
 
 h6 {
-  font-weight: 500;
 }
 
 p {
