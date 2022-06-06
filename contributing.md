@@ -23,14 +23,8 @@ npm run rene
     ```
     npm run rene.min
     ```
-### Releasing packages to NPM
-1. Create an npm account if you don’t have one yet.
-2. Login to your npm account through command line using `npm login` command.
-3. Create a package.
-4. Use the command `npm publish` to publish.
-2. Open a PR in our repository and follow the PR template so that we can efficiently review the changes.
 
-### Versioning the packages
+### Releasing and Versioning a new package
 1. Select any versioning convention. Ex: [Semver](https://zellwk.com/blog/semantic-versioning/) (used by React)
 2. Update version in `package.json` according to your preferred versioning convention.
 3. Create a git tag according to that version.
