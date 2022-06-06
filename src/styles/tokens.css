@@ -1,23 +1,25 @@
 :root {
   --size-base: 4px;
+  --font-primary:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 }
 
 html, [data-theme="light"]  {
-  --primary: #0000ff;
-  --secondary: #8800ff;
-  --primaryBackground: #ffffff;
-  --secondaryBackground: #f3f3f3;
-  --primaryForeground: #000000;
-  --secondaryForeground: #0b0b0b;
-  --warning: hsl(0, 100%, 63%);
+  --color-primary: #0000ff;
+  --color-secondary: #8800ff;
+  --color-primary-background: #ffffff;
+  --color-secondary-background: #f3f3f3;
+  --color-primary-foreground: #000000;
+  --color-secondary-foreground: #0b0b0b;
+  --color-warning: hsl(0, 100%, 63%);
 }
 
 [data-theme="dark"] {
-  --primary: #8080ff;
-  --secondary: #a640ff;
-  --primaryBackground: #000000;
-  --secondaryBackground: #0b0b0b;
-  --primaryForeground: #ffffff;
-  --secondaryForeground: #f3f3f3;
-  --warning: hsl(0, 100%, 63%);
+  --color-primary: #8080ff;
+  --color-secondary: #a640ff;
+  --color-primary-background: #000000;
+  --color-secondary-background: #0b0b0b;
+  --color-primary-foreground: #ffffff;
+  --color-secondary-foreground: #f3f3f3;
+  --color-warning: hsl(0, 100%, 63%);
 }
