@@ -1,3 +1,28 @@
+html {
+	/* initial document font size of 16px */
+	/* all later rem values are based on this */
+	/* 1rem = 16px */
+    font-size: 100%;
+}
+
+	/* target narrow screens and windows */
+	@media (max-width: 480px) {
+		html {
+			/* reduce base font size to 14px */
+			/* which reduces 1rem to 14px */
+			font-size: 87.5%;
+		}
+	}
+
+	/* target very narrow screens and windows */
+	@media (max-width: 320px) {
+		html {
+			/* reduce base font size to 12px */
+			/* which reduces 1rem to 12px */
+			font-size: 75%;
+		}
+	}
+  
 h1 {
   font-size: 96px;
   line-height: 100%;
@@ -5,6 +30,7 @@ h1 {
 
 h2 {
   font-size: 64px;
+  line-height: 120%;
 }
 
 h3 {

@@ -1,40 +1,40 @@
 .background-primary {
-  background-color: var(--primaryBackground);
-  color: var(--primaryForeground);
-  border-color: var(--primaryBackground);
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-foreground);
+  border-color: var(--color-primary-background);
 }
 
 .background-secondary {
-  background-color: var(--secondaryBackground);
-  color: var(--secondaryForegroun);
+  background-color: var(--color-secondary-background);
+  color: var(--color-secondary-foreground);
 }
 
 .foreground-primary {
-  background-color: var(--primaryForeground);
-  color: var(--primaryBackground);
-  border-color: var(--primaryForeground);
+  background-color: var(--color-primary-foreground);
+  color: var(--color-primary-background);
+  border-color: var(--color-primary-foreground);
 }
 
 .foreground-secondary {
-  background-color: var(--secondaryForeground);
-  color: var(--primaryBackground);
+  background-color: var(--color-secondary-foreground);
+  color: var(--color-primary-background);
 }
 
 .color-primary {
-  border-color: var(--primary);
-  background-color: var(--primary);
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .color-secondary {
-  background-color: var(--secondary);
+  background-color: var(--color-secondary);
 }
 
 .background-warning {
-  background-color: var(--warning);
+  background-color: var(--color-warning);
 }
 
 .color-warning {
-  color: var(--warning);
+  color: var(--color-warning);
 }
 
 .opacity-m {
