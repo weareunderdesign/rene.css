@@ -1,32 +1,30 @@
-/*!*****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css ***!
-  \*****************************************************************************/
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro|Inter:400,500,600,800);
 /*!*************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tokens.css ***!
   \*************************************************************************/
 :root {
   --size-base: 4px;
+  --font-primary:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
 }
 
-html {
-  --primary: #0000ff;
-  --secondary: #8800ff;
-  --primaryBackground: #ffffff;
-  --secondaryBackground: #f3f3f3;
-  --primaryForeground: #000000;
-  --secondaryForeground: #0b0b0b;
-  --warning: hsl(0, 100%, 63%);
+html, [data-theme="light"]  {
+  --color-primary: #0000ff;
+  --color-secondary: #8800ff;
+  --color-primary-background: #ffffff;
+  --color-secondary-background: #f3f3f3;
+  --color-primary-foreground: #000000;
+  --color-secondary-foreground: #0b0b0b;
+  --color-warning: hsl(0, 100%, 63%);
 }
 
 [data-theme="dark"] {
-  --primary: #8080ff;
-  --secondary: #a640ff;
-  --primaryBackground: #000000;
-  --secondaryBackground: #0b0b0b;
-  --primaryForeground: #ffffff;
-  --secondaryForeground: #f3f3f3;
-  --warning: hsl(0, 100%, 63%);
+  --color-primary: #8080ff;
+  --color-secondary: #a640ff;
+  --color-primary-background: #000000;
+  --color-secondary-background: #0b0b0b;
+  --color-primary-foreground: #ffffff;
+  --color-secondary-foreground: #f3f3f3;
+  --color-warning: hsl(0, 100%, 63%);
 }
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/reset.css ***!
@@ -50,6 +48,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
 }
 
 img,
@@ -76,49 +75,69 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font: inherit;
 }
 
 #root,
 #__next {
   isolation: isolate;
 }
-/*!*********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css (1) ***!
-  \*********************************************************************************/
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css ***!
+  \*****************************************************************************/
+html {
+	/* initial document font size of 16px */
+	/* all later rem values are based on this */
+	/* 1rem = 16px */
+    font-size: 100%;
+}
+
+	/* target narrow screens and windows */
+	@media (max-width: 480px) {
+		html {
+			/* reduce base font size to 14px */
+			/* which reduces 1rem to 14px */
+			font-size: 87.5%;
+		}
+	}
+
+	/* target very narrow screens and windows */
+	@media (max-width: 320px) {
+		html {
+			/* reduce base font size to 12px */
+			/* which reduces 1rem to 12px */
+			font-size: 75%;
+		}
+	}
+  
 h1 {
   font-size: 96px;
   line-height: 100%;
-  font-family: "Inter", sans-serif;
-  font-weight: 800;
 }
 
 h2 {
-  font-weight: 700;
   font-size: 64px;
+  line-height: 120%;
 }
 
 h3 {
-  font-weight: 600;
   font-size: 48px;
   line-height: 124%;
 }
 
 h4 {
-  font-weight: 400;
   margin-top: 16px;
   font-size: 36px;
   line-height: 136%;
 }
 
 h5 {
-  font-weight: 500;
   font-size: 24px;
   margin-top: 16px;
   line-height: 140%;
 }
 
 h6 {
-  font-weight: 500;
 }
 
 p {
@@ -200,42 +219,42 @@ li {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/colors.css ***!
   \*************************************************************************/
 .background-primary {
-  background-color: var(--primaryBackground);
-  color: var(--primaryForeground);
-  border-color: var(--primaryBackground);
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-foreground);
+  border-color: var(--color-primary-background);
 }
 
 .background-secondary {
-  background-color: var(--secondaryBackground);
-  color: var(--secondaryForegroun);
+  background-color: var(--color-secondary-background);
+  color: var(--color-secondary-foreground);
 }
 
 .foreground-primary {
-  background-color: var(--primaryForeground);
-  color: var(--primaryBackground);
-  border-color: var(--primaryForeground);
+  background-color: var(--color-primary-foreground);
+  color: var(--color-primary-background);
+  border-color: var(--color-primary-foreground);
 }
 
 .foreground-secondary {
-  background-color: var(--secondaryForeground);
-  color: var(--primaryBackground);
+  background-color: var(--color-secondary-foreground);
+  color: var(--color-primary-background);
 }
 
 .color-primary {
-  border-color: var(--primary);
-  background-color: var(--primary);
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .color-secondary {
-  background-color: var(--secondary);
+  background-color: var(--color-secondary);
 }
 
 .background-warning {
-  background-color: var(--warning);
+  background-color: var(--color-warning);
 }
 
 .color-warning {
-  color: var(--warning);
+  color: var(--color-warning);
 }
 
 .opacity-m {
@@ -245,14 +264,12 @@ li {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/layout.css ***!
   \*************************************************************************/
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: var(--primaryBackground);
-  color: var(--primaryForeground);
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
+  background-color: var(--color-primary-background);
+  color: var(--color-primary-foreground);
+  font-family: var(--font-primary);
+  width: 100%;
+	max-width: 100%;
+  font-size: 1.25rem;
 }
 
 header {
@@ -412,6 +429,9 @@ footer {
   .box-s {
     width: 100%;
   }
+  .box {
+    width: 100%;
+  }
 }
 
 /*!************************************************************************!*\
@@ -482,7 +502,6 @@ button {
 .border {
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.05);
 }
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/components.css ***!
