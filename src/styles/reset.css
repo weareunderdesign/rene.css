@@ -18,6 +18,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 img,
