@@ -27,25 +27,4 @@ Unpkg CDN:
 <link rel="stylesheet" href="https://unpkg.com/renecss/dist/rene.min.css
 " />
 ```
-
-### Manual installation
-
-First, let's clone this repository:
-
-```console
-git clone https://github.com/relateapp/rene.css.git
-```
-
-Then, go to `rene.css` directory:
-
-```console
-cd rene.css
-```
-
-And now, you can minify by running:
-
-```console
-npm run rene.min
-```
-
 That's it! 🎉
