@@ -1,10 +1,8 @@
 body {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
-  font-family: var(--font-primary);
   width: 100%;
-	max-width: 100%;
-  font-size: 1.25rem;
+  max-width: 100%;
 }
 
 header {
@@ -161,10 +159,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .box-s {
-    width: 100%;
-  }
-  .box {
+  .box,
+  .box-xs,
+  .box-s,
+  .box-m,
+  .box-l {
+    align-items: flex-start;
     width: 100%;
   }
 }
