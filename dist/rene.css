@@ -1,31 +1,3 @@
-/*!*************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tokens.css ***!
-  \*************************************************************************/
-:root {
-  --size-base: 4px;
-  --font-primary:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
-}
-
-html, [data-theme="light"]  {
-  --color-primary: #0000ff;
-  --color-secondary: #8800ff;
-  --color-primary-background: #ffffff;
-  --color-secondary-background: #f3f3f3;
-  --color-primary-foreground: #000000;
-  --color-secondary-foreground: #0b0b0b;
-  --color-warning: hsl(0, 100%, 63%);
-}
-
-[data-theme="dark"] {
-  --color-primary: #8080ff;
-  --color-secondary: #a640ff;
-  --color-primary-background: #000000;
-  --color-secondary-background: #0b0b0b;
-  --color-primary-foreground: #ffffff;
-  --color-secondary-foreground: #f3f3f3;
-  --color-warning: hsl(0, 100%, 63%);
-}
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/reset.css ***!
   \************************************************************************/
@@ -82,6 +54,34 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/tokens.css ***!
+  \*************************************************************************/
+:root {
+  --size-base: 4px;
+  --font-primary:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+}
+
+html, [data-theme="light"]  {
+  --color-primary: #0000ff;
+  --color-secondary: #8800ff;
+  --color-primary-background: #ffffff;
+  --color-secondary-background: #f3f3f3;
+  --color-primary-foreground: #000000;
+  --color-secondary-foreground: #0b0b0b;
+  --color-warning: hsl(0, 100%, 63%);
+}
+
+[data-theme="dark"] {
+  --color-primary: #8080ff;
+  --color-secondary: #a640ff;
+  --color-primary-background: #000000;
+  --color-secondary-background: #0b0b0b;
+  --color-primary-foreground: #ffffff;
+  --color-secondary-foreground: #f3f3f3;
+  --color-warning: hsl(0, 100%, 63%);
 }
 /*!*****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css ***!
@@ -312,23 +312,23 @@ footer {
 }
 
 .padding-xs {
-  padding: 4px;
+  padding: var(--size-base);
 }
 
 .padding-s {
-  padding: 8px;
+  padding: calc(var(--size-base) * 2);
 }
 
 .padding-m {
-  padding: 12px;
+  padding: calc(var(--size-base) * 3);
 }
 
 .padding-l {
-  padding: 24px;
+  padding: calc(var(--size-base) * 6);
 }
 
 .padding-xl {
-  padding: 40px;
+  padding: calc(var(--size-base) * 10);
 }
 
 .gap-xs {
@@ -487,6 +487,22 @@ button {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgba(0, 0, 0, 0.05);
+}
+
+.border-left {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgba(0, 0, 0, 0.05);
+}
+.border-right {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(0, 0, 0, 0.05);
+}
+.border-top {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.05);
 }
 
 .border {
