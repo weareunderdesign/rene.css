@@ -1,5 +1,5 @@
-@import "./styles/tokens.css";
 @import "./styles/reset.css";
+@import "./styles/tokens.css";
 @import "./styles/typography.css";
 @import "./styles/colors.css";
 @import "./styles/layout.css";
