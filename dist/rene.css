@@ -49,6 +49,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 img,
@@ -86,30 +87,10 @@ h6 {
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/typography.css ***!
   \*****************************************************************************/
 html {
-	/* initial document font size of 16px */
-	/* all later rem values are based on this */
-	/* 1rem = 16px */
-    font-size: 100%;
+  font-size: 1.25rem;
+  font-family: var(--font-primary);
 }
 
-	/* target narrow screens and windows */
-	@media (max-width: 480px) {
-		html {
-			/* reduce base font size to 14px */
-			/* which reduces 1rem to 14px */
-			font-size: 87.5%;
-		}
-	}
-
-	/* target very narrow screens and windows */
-	@media (max-width: 320px) {
-		html {
-			/* reduce base font size to 12px */
-			/* which reduces 1rem to 12px */
-			font-size: 75%;
-		}
-	}
-  
 h1 {
   font-size: 96px;
   line-height: 100%;
@@ -138,6 +119,10 @@ h5 {
 }
 
 h6 {
+  font-size: 18px;
+  margin-top: 16px;
+  line-height: 144%;
+
 }
 
 p {
@@ -146,9 +131,6 @@ p {
   line-height: 28px;
 }
 
-span {
-  line-height: 160%;
-}
 b,
 strong {
   font-weight: 600;
@@ -156,10 +138,7 @@ strong {
 
 blockquote {
   padding: 16px;
-  background-color: #f4f4f4;
-  margin-left: 0px;
-  border-radius: 2px;
-  line-height: 30px;
+  border: 1px solid var(--color-primary-foreground);
 }
 
 code {
@@ -198,22 +177,30 @@ li {
   line-height: 18px;
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 96px;
+@media (max-width: 768px) {
+  html {
+    font-size: 1.125rem;
   }
 
+  h1 {
+    font-size: 64px;
+  }
   h2 {
     font-size: 48px;
   }
-
   h3 {
-    font-size: 42px;
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 14px;
   }
 
-  h4 {
-    font-size: 32px;
-  }
 }
 /*!*************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/colors.css ***!
@@ -266,10 +253,8 @@ li {
 body {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
-  font-family: var(--font-primary);
   width: 100%;
-	max-width: 100%;
-  font-size: 1.25rem;
+  max-width: 100%;
 }
 
 header {
@@ -426,14 +411,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .box-s {
-    width: 100%;
-  }
-  .box {
+  .box,
+  .box-xs,
+  .box-s,
+  .box-m,
+  .box-l {
+    align-items: flex-start;
     width: 100%;
   }
 }
-
 /*!************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/media.css ***!
   \************************************************************************/
@@ -491,6 +477,10 @@ button {
 
 .radius-m {
   border-radius: 24px;
+}
+
+.radius-l {
+  border-radius: 40px;
 }
 
 .border-bottom {
@@ -562,6 +552,12 @@ button {
   background-size: cover;
 }
 
+.icon-xl {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+
 .thumbnail {
   height: 180px;
   display: flex;
@@ -573,11 +569,9 @@ button {
 }
 
 .highlight {
-  border-radius: 4px;
   border-width: 2px;
   border-style: solid;
   border-color: #000000;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
 }
 
 .avatar-m {
