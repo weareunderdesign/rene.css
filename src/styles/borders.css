@@ -6,6 +6,10 @@
   border-radius: 24px;
 }
 
+.radius-l {
+  border-radius: 40px;
+}
+
 .border-bottom {
   border-bottom-width: 1px;
   border-bottom-style: solid;
