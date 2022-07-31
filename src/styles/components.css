@@ -54,6 +54,12 @@
   background-size: cover;
 }
 
+.icon-xl {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+
 .thumbnail {
   height: 180px;
   display: flex;
@@ -65,11 +71,9 @@
 }
 
 .highlight {
-  border-radius: 4px;
   border-width: 2px;
   border-style: solid;
   border-color: #000000;
-  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.11);
 }
 
 .avatar-m {
