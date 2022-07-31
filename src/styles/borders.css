@@ -16,6 +16,22 @@
   border-bottom-color: rgba(0, 0, 0, 0.05);
 }
 
+.border-left {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgba(0, 0, 0, 0.05);
+}
+.border-right {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(0, 0, 0, 0.05);
+}
+.border-top {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.05);
+}
+
 .border {
   border-width: 1px;
   border-style: solid;
