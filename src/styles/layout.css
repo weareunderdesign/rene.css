@@ -60,23 +60,23 @@ footer {
 }
 
 .padding-xs {
-  padding: 4px;
+  padding: var(--size-base);
 }
 
 .padding-s {
-  padding: 8px;
+  padding: calc(var(--size-base) * 2);
 }
 
 .padding-m {
-  padding: 12px;
+  padding: calc(var(--size-base) * 3);
 }
 
 .padding-l {
-  padding: 24px;
+  padding: calc(var(--size-base) * 6);
 }
 
 .padding-xl {
-  padding: 40px;
+  padding: calc(var(--size-base) * 10);
 }
 
 .gap-xs {
