@@ -25,6 +25,10 @@
   background-color: var(--color-primary);
 }
 
+.font-color-primary {
+  color: var(--color-primary);
+}
+
 .color-secondary {
   background-color: var(--color-secondary);
 }
