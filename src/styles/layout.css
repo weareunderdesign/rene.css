@@ -80,27 +80,22 @@ footer {
 }
 
 .gap-xs {
-  display: flex;
   gap: 4px 4px;
 }
 
 .gap-s {
-  display: flex;
   gap: 8px 8px;
 }
 
 .gap-m {
-  display: flex;
   gap: 12px 12px;
 }
 
 .gap-l {
-  display: flex;
   gap: 24px 24px;
 }
 
 .gap-xl {
-  display: flex;
   gap: 40px 40px;
 }
 
