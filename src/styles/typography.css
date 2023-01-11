@@ -64,6 +64,10 @@ a {
   text-decoration: none;
 }
 
+a:hover span {
+  text-decoration: underline;
+}
+
 li {
   padding-bottom: 2px;
   padding-top: 2px;
@@ -72,6 +76,11 @@ li {
 
 .text-center {
   text-align: center;
+}
+
+.text-xs {
+  font-size: 8px;
+  line-height: 8px;
 }
 
 .text-s {
@@ -89,7 +98,7 @@ li {
   line-height: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
   html {
     font-size: 1.125rem;
   }
@@ -97,18 +106,23 @@ li {
   h1 {
     font-size: 64px;
   }
+
   h2 {
     font-size: 48px;
   }
+
   h3 {
     font-size: 36px;
   }
+
   h4 {
     font-size: 24px;
   }
+
   h5 {
     font-size: 18px;
   }
+
   h6 {
     font-size: 14px;
   }
