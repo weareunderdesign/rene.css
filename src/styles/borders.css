@@ -1,5 +1,5 @@
 .radius-xs {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .radius-s {
@@ -17,26 +17,29 @@
 .border-bottom {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: rgba(0, 0, 0, 0.05);
+  border-color: var(--color-secondary-background);
 }
 
 .border-left {
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: rgba(0, 0, 0, 0.05);
+  border-color: var(--color-secondary-background);
 }
+
 .border-right {
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: rgba(0, 0, 0, 0.05);
+  border-color: var(--color-secondary-background);
 }
+
 .border-top {
   border-top-width: 1px;
   border-top-style: solid;
-  border-top-color: rgba(0, 0, 0, 0.05);
+  border-color: var(--color-secondary-background);
 }
 
 .border {
   border-width: 1px;
   border-style: solid;
+  border-color: var(--color-secondary-background);
 }
