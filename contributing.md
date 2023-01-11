@@ -46,21 +46,15 @@ Considering you already have an NPM account, with NPM and Node.js installed on y
 
    > You might also be asked for a one-time-password if there is 2FA applied on your account.
 
-2. We use `np` to simplify the process of publishing. Install the `np` package globally by entering the command below. (Skip this step if np is already installed)
+2. Now, update the version in your `package.json` file. You can use the [SemVer](https://semver.org/) format for versioning.
 
-   ```
-   npm install --global np
-   ```
-
-3. Now, update the version in your `package.json` file. You can use the [SemVer](https://semver.org/) format for versioning.
-
-4. Ensure there is nothing left to commit and commit any pending work. Then run the below command.
+3. Ensure there is nothing left to commit and commit any pending work. Then run the below command.
 
    ```
    npm publish --access public
    ```
 
-5. Once publishing is completed, `np` will prompt a browser window for adding the release notes to GitHub. Fill in the details.
+4. Once publishing is completed, `np` will prompt a browser window for adding the release notes to GitHub. Fill in the details.
 
 That’s all! Your package is published!
 
