@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm dist/bundle.js",
     "rene": "webpack --mode development",
-    "rene.min": "webpack --mode production"
+    "rene.min": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
