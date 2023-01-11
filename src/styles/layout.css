@@ -79,6 +79,9 @@ footer {
   padding: calc(var(--size-base) * 10);
 }
 
+.gap-xs, .gap-s, .gap-m, .gap-l, .gap-xl {
+  display: flex;
+}
 .gap-xs {
   gap: 4px 4px;
 }
@@ -154,11 +157,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .direction-column {
+flex-direction: column;
+  }
+
   .box,
   .box-xs,
   .box-s,
   .box-m,
   .box-l {
+    flex-wrap: wrap;
     align-items: flex-start;
     width: 100%;
   }
