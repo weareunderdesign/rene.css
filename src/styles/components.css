@@ -26,38 +26,41 @@
   width: 100%;
 }
 
+.view-m {
+  min-height: 75vh;
+  width: 100%;
+}
+
 .modal {
   min-width: 360px;
 }
-
+.icon-xs, .icon-s, .icon-m, .icon-l, .icon-xl {
+  background-size: cover;
+  display: flex;
+}
 .icon-xs {
   width: 12px;
   height: 12px;
-  background-size: cover;
 }
 
 .icon-s {
   width: 24px;
   height: 24px;
-  background-size: cover;
 }
 
 .icon-m {
   width: 40px;
   height: 40px;
-  background-size: cover;
 }
 
 .icon-l {
   width: 56px;
   height: 56px;
-  background-size: cover;
 }
 
 .icon-xl {
   width: 80px;
   height: 80px;
-  background-size: cover;
 }
 
 .thumbnail {
@@ -71,9 +74,9 @@
 }
 
 .highlight {
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #000000;
+  border-color: var(--color-primary-foreground);
 }
 
 .avatar-m {
@@ -112,11 +115,11 @@
   display: none;
 }
 
-.article {
-  
-}
-
 @media (max-width: 768px) {
+  .hidden-on-mobile {
+    display: none;
+  }
+
   .sticky {
     position: relative;
   }
