@@ -33,14 +33,34 @@
   background-color: var(--color-secondary);
 }
 
-.background-warning {
-  background-color: var(--color-warning);
+.background-negative {
+  background-color: var(--color-negative);
 }
 
-.color-warning {
-  color: var(--color-warning);
+.background-critical {
+  background-color: var(--color-critical);
+}
+
+.background-positive {
+  background-color: var(--color-positive);
+}
+
+.opacity-xl {
+  opacity: 0.1;
+}
+
+.opacity-l {
+  opacity: 0.25;
 }
 
 .opacity-m {
   opacity: 0.5;
+}
+
+.opacity-s {
+  opacity: 0.75;
+}
+
+.opacity-xs {
+  opacity: 0.9;
 }
