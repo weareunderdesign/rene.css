@@ -20,13 +20,19 @@
   color: var(--color-primary-background);
 }
 
+.background-tertiary {
+  background-color: var(--color-tertiary-background);
+  color: var(--color-tertiary-foreground)
+}
+
+.foreground-tertiary {
+  background-color: var(--color-tertiary-foreground);
+  color: var(--color-tertiary-background)
+}
+
 .color-primary {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
-}
-
-.font-color-primary {
-  color: var(--color-primary);
 }
 
 .color-secondary {
