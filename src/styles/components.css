@@ -115,6 +115,16 @@
   display: none;
 }
 
+.transition-linear {
+  transition: background-color .25s linear;
+}
+
+.scrollable {
+  max-height: 100vh;
+  height: 100%;
+  overflow: auto;
+}
+
 @media (max-width: 768px) {
   .hidden-on-mobile {
     display: none;
