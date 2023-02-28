@@ -10,8 +10,10 @@ html,
   --color-secondary: #8800ff;
   --color-primary-background: #ffffff;
   --color-secondary-background: #eeeeee;
+  --color-tertiary-background: #dddddd;
   --color-primary-foreground: #111111;
   --color-secondary-foreground: #222222;
+  --color-tertiary-foreground: #333333;
   --color-positive: green;
   --color-critical: orange;
   --color-negative: red;
@@ -22,8 +24,10 @@ html,
   --color-secondary: #a640ff;
   --color-primary-background: #111111;
   --color-secondary-background: #222222;
+  --color-tertiary-background: #333333;
   --color-primary-foreground: #ffffff;
   --color-secondary-foreground: #eeeeee;
+  --color-tertiary-foreground: #dddddd;
   --color-positive: green;
   --color-critical: orange;
   --color-negative: red;
