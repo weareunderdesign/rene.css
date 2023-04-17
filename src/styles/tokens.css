@@ -1,7 +1,6 @@
 :root {
   --size-base: 4px;
-  --font-primary: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
+  font-family: "HelveticaNeue-light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 html,
@@ -22,7 +21,7 @@ html,
 [data-theme="dark"] {
   --color-primary: #8080ff;
   --color-secondary: #a640ff;
-  --color-primary-background: #111111;
+  --color-primary-background: #1a1a1a;
   --color-secondary-background: #222222;
   --color-tertiary-background: #333333;
   --color-primary-foreground: #ffffff;
