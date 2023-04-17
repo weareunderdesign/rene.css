@@ -21,7 +21,7 @@ html,
 [data-theme="dark"] {
   --color-primary: #8080ff;
   --color-secondary: #a640ff;
-  --color-primary-background: #1a1a1a;
+  --color-primary-background: #111111;
   --color-secondary-background: #222222;
   --color-tertiary-background: #333333;
   --color-primary-foreground: #ffffff;
