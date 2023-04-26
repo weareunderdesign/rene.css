@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url("https://use.typekit.net/kxo4uot.css");
 @import "./styles/reset.css";
 @import "./styles/tokens.css";
 @import "./styles/typography.css";
@@ -8,4 +10,3 @@
 @import "./styles/shadows.css";
 @import "./styles/borders.css";
 @import "./styles/components.css";
-@import "https://use.typekit.net/kxo4uot.css";

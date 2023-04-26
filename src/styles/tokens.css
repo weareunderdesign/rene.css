@@ -1,6 +1,7 @@
 :root {
   --size-base: 4px;
-  font-family: "neue-haas-grotesk-display", "HelveticaNeue-light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  --font-primary:"neue-haas-grotesk-display";
+  --font-secondary: "HelveticaNeue-light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "inter", Arial, "Lucida Grande", sans-serif;
 }
 
 html,
