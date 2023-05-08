@@ -1,0 +1,45 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+iframe {
+    border-style: none;
+}
+
+figure {
+    margin: 0px;
+}
+
+.icon-xs,
+.icon-s,
+.icon-m,
+.icon-l,
+.icon-xl {
+    background-size: cover;
+    display: flex;
+}
+.icon-xs {
+    width: 12px;
+    height: 12px;
+}
+
+.icon-s {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-m {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-l {
+    width: 56px;
+    height: 56px;
+}
+
+.icon-xl {
+    width: 80px;
+    height: 80px;
+}

@@ -1,0 +1,45 @@
+.radius-xs {
+    border-radius: var(--size-base);
+}
+
+.radius-s {
+    border-radius: calc(var(--size-base) * 2);
+}
+
+.radius-m {
+    border-radius: calc(var(--size-base) * 6);
+}
+
+.radius-l {
+    border-radius: calc(var(--size-base) * 10);
+}
+
+.border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: var(--color-secondary-background);
+}
+
+.border-left {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: var(--color-secondary-background);
+}
+
+.border-right {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: var(--color-secondary-background);
+}
+
+.border-top {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--color-secondary-background);
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-secondary-background);
+}

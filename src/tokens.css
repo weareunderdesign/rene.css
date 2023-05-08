@@ -1,0 +1,36 @@
+:root {
+    --size-base: 4px;
+    --font-primary: "neue-haas-grotesk-display";
+    --font-secondary: "HelveticaNeue-light", "Helvetica Neue Light",
+        "Helvetica Neue", Helvetica, "inter", Arial, "Lucida Grande", sans-serif;
+    --base-font-size: 1.25rem;
+}
+
+html,
+[data-theme="light"] {
+    --color-primary: #0000cd;
+    --color-secondary: #800080;
+    --color-primary-background: #ffffff;
+    --color-secondary-background: #eeeeee;
+    --color-tertiary-background: #dddddd;
+    --color-primary-foreground: #111111;
+    --color-secondary-foreground: #222222;
+    --color-tertiary-foreground: #333333;
+    --color-positive: darkgreen;
+    --color-critical: gold;
+    --color-negative: orangered;
+}
+
+[data-theme="dark"] {
+    --color-primary: #0000cd;
+    --color-secondary: #800080;
+    --color-primary-background: #111111;
+    --color-secondary-background: #222222;
+    --color-tertiary-background: #333333;
+    --color-primary-foreground: #ffffff;
+    --color-secondary-foreground: #eeeeee;
+    --color-tertiary-foreground: #dddddd;
+    --color-positive: darkgreen;
+    --color-critical: gold;
+    --color-negative: orangered;
+}
