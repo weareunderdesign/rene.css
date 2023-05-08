@@ -1,0 +1,2421 @@
+<html lang="en" data-theme="light">
+
+<head>
+	<meta charset="utf-8">
+	<title>Reasonable.html – A single HTML document that contains a reasonably complete set of example HTML elements.
+	</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body>
+	<main>
+		<h1>Reasonable.html</h1>
+		<p>Reasonable.html is a single HTML document that contains a reasonably complete set of example HTML elements.
+			It includes most commonly used HTML elements and attempts to use them in common and expected ways.</p>
+
+		<article>
+			<h2>Why does this exist?</h2>
+			<p>Reasonable.html was purpose-built to test the classless CSS rules defined in <a
+					href="https://github.com/matthewhowell/reasonable.css">reasonable.css</a>.</p>
+
+			<h3>Can I use this?</h3>
+			<p>Reasonable.html is free software. The full source code is available and released here under the <a
+					href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
+
+			<h3>How might I use this?</h3>
+			<p>Reasonable.html has two obvious uses:</p>
+			<ol>
+				<li>Testing browser default rendering of HTML elements</li>
+				<li>Testing classless CSS rules for styling those HTML elements</li>
+			</ol>
+
+			<p>Additionally, it might be useful when:</p>
+			<ul>
+				<li>Poking around the source to learn HTML</li>
+				<li>Testing more complex CSS frameworks or design systems (likely, with the addition of classes)</li>
+				<li>Testing an HTML renderer or parser</li>
+				<li>Testing screen readers or other accessibility tools</li>
+			</ul>
+
+			<h3>Who made this?</h3>
+			<p>Reasonable.html was created by <a href="https://www.matthewhowell.net">Matthew Howell</a>, a human,
+				trying his best.</p>
+			<p>Like everything in life, it couldn't exist without the help and generosity of others, find a <a
+					href="#acknowledgements">full list of acknowledgements here.</a></p>
+		</article>
+	</main>
+	<hr />
+
+	<!-- elements -->
+	<section>
+		<a name="example-html-elements"></a>
+		<h2>Example HTML Elements</h2>
+		<p>Reasonable.html includes examples of most HTML elments listed in <a title="Mozilla HTML Element Reference"
+				href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla's HTML Element Reference</a>,
+			which mirrors the <a title="W3C HTML 5.2 specification" href="https://www.w3.org/TR/html52/">W3C HTML 5.2
+				specification</a>. Each is presented below, ordered alphabetically.</p>
+
+		<p>There are also a handful of ommitted HTML elements, which are <a href="#omitted-elements">detailed here</a>.
+		</p>
+
+		<hr />
+		<form id="go-to-element" onsubmit="elementNavigationHandler(event);">
+			<label for="element-navigation">Jump to Element</label>
+			<br />
+			<select name="element-navigation" id="element-navigation">
+				<option value="example-html-elements"></option>
+				<option value="a">a</option>
+				<option value="abbr">abbr</option>
+				<option value="address">address</option>
+				<option value="area">area</option>
+				<option value="article">article</option>
+				<option value="aside">aside</option>
+				<option value="audio">audio</option>
+				<option value="b">b</option>
+				<option value="bdi">bdi</option>
+				<option value="bdo">bdo</option>
+				<option value="blockquote">blockquote</option>
+				<option value="button">button</option>
+				<option value="caption">caption</option>
+				<option value="cite">cite</option>
+				<option value="code">code</option>
+				<option value="col">col</option>
+				<option value="colgroup">colgroup</option>
+				<option value="data">data</option>
+				<option value="datalist">datalist</option>
+				<option value="dd">dd</option>
+				<option value="del">del</option>
+				<option value="details">details</option>
+				<option value="dfn">dfn</option>
+				<option value="div">div</option>
+				<option value="dl">dl</option>
+				<option value="dt">dt</option>
+				<option value="em">em</option>
+				<option value="fieldset">fieldset</option>
+				<option value="figcaption">figcaption</option>
+				<option value="figure">figure</option>
+				<option value="footer">footer</option>
+				<option value="form">form</option>
+				<option value="h1">h1</option>
+				<option value="h2">h2</option>
+				<option value="h3">h3</option>
+				<option value="h4">h4</option>
+				<option value="h5">h5</option>
+				<option value="h6">h6</option>
+				<option value="header">header</option>
+				<option value="hgroup">hgroup</option>
+				<option value="hr">hr</option>
+				<option value="i">i</option>
+				<option value="img">img</option>
+				<option value="ins">ins</option>
+				<option value="kbd">kbd</option>
+				<option value="label">label</option>
+				<option value="legend">legend</option>
+				<option value="li">li</option>
+				<option value="main">main</option>
+				<option value="map">map</option>
+				<option value="mark">mark</option>
+				<option value="meter">meter</option>
+				<option value="nav">nav</option>
+				<option value="ol">ol</option>
+				<option value="optgroup">optgroup</option>
+				<option value="option">option</option>
+				<option value="output">output</option>
+				<option value="p">p</option>
+				<option value="picture">picture</option>
+				<option value="pre">pre</option>
+				<option value="progress">progress</option>
+				<option value="q">q</option>
+				<option value="rp">rp</option>
+				<option value="rt">rt</option>
+				<option value="ruby">ruby</option>
+				<option value="s">s</option>
+				<option value="samp">samp</option>
+				<option value="section">section</option>
+				<option value="select">select</option>
+				<option value="small">small</option>
+				<option value="source">source</option>
+				<option value="span">span</option>
+				<option value="strong">strong</option>
+				<option value="sub">sub</option>
+				<option value="summary">summary</option>
+				<option value="sup">sup</option>
+				<option value="table">table</option>
+				<option value="tbody">tbody</option>
+				<option value="td">td</option>
+				<option value="textarea">textarea</option>
+				<option value="tfoot">tfoot</option>
+				<option value="th">th</option>
+				<option value="thead">thead</option>
+				<option value="time">time</option>
+				<option value="tr">tr</option>
+				<option value="track">track</option>
+				<option value="u">u</option>
+				<option value="ul">ul</option>
+				<option value="video">video</option>
+				<option value="var">var</option>
+				<option value="wbr">wbr</option>
+			</select>
+			<button id="go-to-element-submit" type="submit">Go →</button>
+		</form>
+
+		<hr />
+
+		<!-- a -->
+		<a name="a"></a>
+		<h4><a href="#a"><code>&lt;a&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;a&gt;</code> element (or anchor element), with its href attribute, creates a hyperlink to
+			web pages, files, email addresses, locations in the same page, or anything else a URL can address.
+			<br /><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A paragraph of text which contains <a href="">an anchor element</a>.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- abbr -->
+		<a name="abbr"></a>
+		<h4><a href="#abbr"><code>&lt;abbr&gt;</code></a></h4>
+		<p>
+			The HTML Abbreviation element <code>&lt;abbr&gt;</code> represents an abbreviation or acronym; the optional
+			title attribute can provide an expansion or description for the abbreviation.
+			</br><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A paragraph of text which contains an abbreviation element for the acronym <abbr
+						title="light amplification by stimulated emission of radiation">laser</abbr>.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- address -->
+		<a name="address"></a>
+		<h4><a href="#address"><code>&lt;address&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;address&gt;</code> element indicates that the enclosed HTML provides contact information
+			for a person or people, or for an organization.
+			<br /><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<address>
+					123 Address St<br />
+					Example Town, CA 12345<br />
+					USA
+				</address>
+			</section>
+		</details>
+		<hr />
+
+		<!-- article -->
+		<a name="article"></a>
+		<h4><a href="#article"><code>&lt;article&gt;</code></a></h4>
+		<p>The HTML <code>&lt;article&gt;</code> element represents a self-contained composition in a document, page,
+			application, or site, which is intended to be independently distributable or reusable (e.g., in
+			syndication).</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<article>
+					<header>
+						<h5>A Reasonable Article</h5>
+					</header>
+					<section>
+						<p>A Reasonable Article is a tiny example <code>&lt;article&gt;</code> element that contains a
+							reasonable set of other example elements. It was purpose-built for appearing within the
+							example <code>&lt;article&gt;</code> element (hello!) in <a
+								href="https://github.com/matthewhowell/reasonable.html">reasonable.html</a>, which was
+							purpose-built to test a set of classless CSS rules (<a
+								href="https://github.com/matthewhowell/reasonable.css">reasonable.css</a>).</p>
+					</section>
+				</article>
+			</section>
+		</details>
+		<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">More at MDN →</a></aside>
+		<hr />
+
+		<!-- aside -->
+		<a name="aside"></a>
+		<h4><a href="#aside"><code>&lt;aside&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;aside&gt;</code> element represents a portion of a document whose content is only
+			indirectly related to the document's main content.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>Here is a paragraph that is primarily about dogs. There are more than 400 breeds of dogs.</p>
+				<aside>Here is an aside about cats, which, one might say, is indirectly related to a paragraph about
+					dogs. There are about 60 breeds of cats.</aside>
+				<p>Returning to the topic of dogs: to be considered a pack, three or more adult dogs are required.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- audio -->
+		<a name="audio"></a>
+		<h4><a href="#audio"><code>&lt;audio&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;audio&gt;</code> element is used to embed sound content in documents. It may contain one
+			or more audio sources, represented using the src attribute or the
+			<source> element: the browser will choose the most suitable one. It can also be the destination for streamed
+			media, using a MediaStream.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<figure>
+					<audio controls preload="none"
+						src="./media/kimiko-ishizaka-open-goldberg-variations-20-variatio-19-a-1-clav.mp3">
+						Your browser does not support the <code>&lt;audio&gt;</code> element.
+					</audio>
+					<figcaption>Kimiko Ishizaka playing J.S. Bach's BWV 988 (Piano) - 20 Variatio 19 a 1 Clav
+					</figcaption>
+				</figure>
+			</section>
+		</details>
+		<hr />
+
+		<!-- b -->
+		<a name="b"></a>
+		<h4><a href="#b"><code>&lt;b&gt;</code></a></h4>
+		<p>
+			The HTML Bring Attention To element <code>&lt;b&gt;</code> is used to draw the reader's attention to the
+			element's contents, which are not otherwise granted special importance.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A paragraph of text which contains <b>a bring attention to element</b>.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- bdi -->
+		<a name="bdi"></a>
+		<h4><a href="#bdi"><code>&lt;bdi&gt;</code></a></h4>
+		<p>
+			The HTML Bidirectional Isolate element <code>&lt;bdi&gt;</code> tells the browser's bidirectional algorithm
+			to treat the text it contains in isolation from its surrounding text.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A paragraph of text which contains <bdi>a bidirectional isolate element</bdi></p>
+				<p>The Arabic word for Internet is <bdi>الإنترنت</bdi>.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- bdo -->
+		<a name="bdo"></a>
+		<h4><a href="#bdo"><code>&lt;bdo&gt;</code></a></h4>
+		<p>
+			The HTML Bidirectional Text Override element <code>&lt;bdo&gt;</code> overrides the current directionality
+			of text, so that the text within is rendered in a different direction.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A paragraph of text which contains a left-to-right <bdo dir="ltr">bidirectional text override
+						element</bdo>.</p>
+				<p>A paragraph of text which contains a right-to-left <bdo dir="rtl">bidirectional text override
+						element</bdo>.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- blockquote -->
+		<a name="blockquote"></a>
+		<h4><a href="#blockquote"><code>&lt;blockquote&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;blockquote&gt;</code> Element (or HTML Block Quotation Element) indicates that the
+			enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how
+			to change it). A URL for the source of the quotation may be given using the cite attribute, while a text
+			representation of the source can be given using the <code>&lt;cite&gt;</code> element.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<blockquote
+					cite="https://www.theguardian.com/books/2014/nov/20/ursula-k-le-guin-national-book-awards-speech">
+					<p>Books aren’t just commodities; the profit motive is often in conflict with the aims of art. We
+						live in capitalism, its power seems inescapable – but then, so did the divine right of kings.
+						Any human power can be resisted and changed by human beings. Resistance and change often begin
+						in art. Very often in our art, the art of words.</p>
+					<footer>— Ursula K. Le Guin,
+						<cite><a title="Guardian article about Le Guin's acceptance speech at the 2014 National Book Awards"
+								href="https://www.theguardian.com/books/2014/nov/20/ursula-k-le-guin-national-book-awards-speech">2014
+								National Book Awards Speech</a></cite>
+					</footer>
+				</blockquote>
+			</section>
+		</details>
+		<hr />
+
+		<!-- button -->
+		<a name="button"></a>
+		<h4><a href="#button"><code>&lt;button&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;button&gt;</code> element represents a clickable button, used to submit forms or anywhere
+			in a document for accessible, standard button functionality.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<button>A button element</button>
+			</section>
+		</details>
+		<hr />
+
+		<!-- cite -->
+		<a name="cite"></a>
+		<h4><a href="#cite"><code>&lt;cite&gt;</code></a></h4>
+		<p>
+			The HTML Citation element <code>&lt;cite&gt;</code> is used to describe a reference to a cited creative
+			work, and must include the title of that work.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<blockquote cite="https://lettersofnote.com/2013/10/28/make-your-soul-grow/">
+					<p>What I had to say to you, moreover, would not take long, to wit: Practice any art, music,
+						singing, dancing, acting, drawing, painting, sculpting, poetry, fiction, essays, reportage, no
+						matter how well or badly, not to get money and fame, but to experience becoming, to find out
+						what’s inside you, to make your soul grow.</p>
+					<p>Seriously! I mean starting right now, do art and do it for the rest of your lives. Draw a funny
+						or nice picture of Ms. Lockwood, and give it to her. Dance home after school, and sing in the
+						shower and on and on. Make a face in your mashed potatoes. Pretend you’re Count Dracula.</p>
+					<footer>— Kurt Vonnegut,
+						<cite><a title="A Man Without a Country available for purchase on bookshop.org"
+								href="https://lettersofnote.com/2013/10/28/make-your-soul-grow//">A letter to the
+								students of Xavier High School, 2006</a></cite>
+					</footer>
+				</blockquote>
+			</section>
+		</details>
+		<hr />
+
+		<!-- code -->
+		<a name="code"></a>
+		<h4><a href="#code"><code>&lt;code&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;code&gt;</code> element displays its contents styled in a fashion intended to indicate
+			that the text is a short fragment of computer code. By default, the content text is displayed using the user
+			agent's default monospace font.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A paragraph of text which contains <code>a code element</code>.</p>
+
+			</section>
+		</details>
+		<hr />
+
+		<!-- data -->
+		<a name="data"></a>
+		<h4><a href="#data"><code>&lt;data&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;data&gt;</code> element links a given content with a machine-readable translation. If the
+			content is time- or date-related, the <time> element must be used.
+				<br />
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<h5>WNBA Career Assist Leaders</h5>
+				<ol>
+					<li><data value="2831">Sue Bird</data> (2831)</li>
+					<li><data value="2599">Ticha Penicheiro</data> (2599)</li>
+					<li><data value="2345">Lindsay Whalen</data> (2345)</li>
+					<li><data value="1867">Diana Taurasi</data> (1867)</li>
+					<li><data value="1708">Becky Hammon</data> (1708)</li>
+				</ol>
+			</section>
+		</details>
+		<hr />
+
+		<!-- datalist -->
+		<a name="datalist"></a>
+		<h4><a href="#datalist"><code>&lt;datalist&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;datalist&gt;</code> element contains a set of <code>&lt;option&gt;</code> elements that
+			represent the permissible or recommended options available to choose from within other controls.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<label for="beverage-choice">Favorite hot beverage:</label>
+				<input list="beverage-choice" id="beverage-choice-input" name="beverage-choice" />
+				<datalist id="beverage-choice">
+					<option value="Aleberry">
+					<option value="Anijsmelk">
+					<option value="Apple cider">
+					<option value="Asiático">
+					<option value="Atole">
+					<option value="Bajigur">
+					<option value="Bandrek">
+					<option value="Blue Blazer">
+					<option value="Bouillon">
+					<option value="Butter tea">
+					<option value="Caudle">
+					<option value="Espresso">
+					<option value="Greyana rakiya">
+					<option value="Grog">
+					<option value="Herbal tea">
+					<option value="Hot buttered rum">
+					<option value="Hot toddy">
+					<option value="Irish coffee">
+					<option value="Job's tears">
+					<option value="Malted milk">
+					<option value="Mate cocido">
+					<option value="Mulled wine">
+					<option value="Posset">
+					<option value="Postum">
+					<option value="Rüdesheimer Kaffee">
+					<option value="Sake">
+					<option value="Salep">
+					<option value="Sassafras tea">
+					<option value="Smoking Bishop">
+					<option value="Tea">
+					<option value="Wedang Jahe">
+				</datalist>
+			</section>
+		</details>
+		<hr />
+
+		<!-- del -->
+		<a name="del"></a>
+		<h4><a href="#del"><code>&lt;del&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;del&gt;</code> element represents a range of text that has been deleted from a document.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A paragraph of text preceeding an <code>&lt;del&gt;</code> element.</p>
+				<del>
+					<p>A paragraph of text within a <code>&lt;del&gt;</code> element.</p>
+				</del>
+				<p>A paragraph of text following an <code>&lt;del&gt;</code> element.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- details -->
+		<a name="details"></a>
+		<a name="summary"></a>
+		<h4><a href="#details"><code>&lt;details&gt;</code></a></h4>
+		<p>Also: <a href="#summary"><code>&lt;summary&gt;</code></a>
+		<p>
+			The HTML Details Element <code>&lt;details&gt;</code> creates a disclosure widget in which information is
+			visible only when the widget is toggled into an "open" state.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<details>
+					<summary>A summary element contained within a details element.</summary>
+					<section>The contents of the details element.</section>
+				</details>
+			</section>
+		</details>
+		<hr />
+
+		<!-- dfn -->
+		<a name="dfn"></a>
+		<h4><a href="#dfn"><code>&lt;dfn&gt;</code></a></h4>
+		<p>
+			The HTML Definition element (<code>&lt;dfn&gt;</code>) is used to indicate the term being defined within the
+			context of a definition phrase or sentence. The <code>&lt;p&gt;</code> element, the
+			<code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pairing, or the <code>&lt;section&gt;</code> element which
+			is the nearest ancestor of the <code>&lt;dfn&gt;</code> is considered to be the definition of the term.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A <dfn id="def-validator">human</dfn> is a person; a human being, distinct from animals, aliens, and
+					especially charming, life-like, humanoid robots.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- div -->
+		<a name="div"></a>
+		<h4><a href="#div"><code>&lt;div&gt;</code></a></h4>
+		<p>
+			The HTML Content Division element (<code>&lt;div&gt;</code>) is the generic container for flow content. It
+			has no effect on the content or layout until styled using CSS.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A paragraph of text preceeding a div element.</p>
+				<div>
+					<p>A paragraph of text within a div element.</p>
+				</div>
+				<p>A paragraph of text following a div element.</p>
+			</section>
+		</details>
+		<hr />
+
+		<!-- dl -->
+		<a name="dl"></a>
+		<a name="dd"></a>
+		<a name="dt"></a>
+		<h4><a href="#dl"><code>&lt;dl&gt;</code></a></h4>
+		<p>Also: <a href="#dd"><code>&lt;dd&gt;</code></a>,
+			<a href="#dt"><code>&lt;dt&gt;</code></a>
+		</p>
+		<p>
+			The HTML <code>&lt;dl&gt;</code> element represents a description list. The element encloses a list of
+			groups of terms (specified using the <code>&lt;dt&gt;</code> element) and descriptions (provided by
+			<code>&lt;dd&gt;</code> elements). Common uses for this element are to implement a glossary or to display
+			metadata (a list of key-value pairs).
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<h5>Count to 10 in <a href="https://en.wikipedia.org/wiki/Esperanto"
+						title="Read more about Esperanto on Wikipedia">Esperanto</a></h5>
+				<dl>
+					<dt>zero</dt>
+					<dd>nul</dd>
+
+					<dt>one</dt>
+					<dd>unu</dd>
+
+					<dt>two</dt>
+					<dd>du</dd>
+
+					<dt>three</dt>
+					<dd>tri</dd>
+
+					<dt>four</dt>
+					<dd>kvar</dd>
+
+					<dt>five</dt>
+					<dd>kvin</dd>
+
+					<dt>six</dt>
+					<dd>ses</dd>
+
+					<dt>seven</dt>
+					<dd>sep</dd>
+
+					<dt>eight</dt>
+					<dd>ok</dd>
+
+					<dt>nine</dt>
+					<dd>naŭ</dd>
+
+					<dt>ten</dt>
+					<dd>dek</dd>
+				</dl>
+			</section>
+		</details>
+		<hr />
+
+		<!-- em -->
+		<a name="em"></a>
+		<h4><a href="#em"><code>&lt;em&gt;</code></a></h4>
+		<p>
+			The HTML <code>&lt;em&gt;</code> element marks text that has stress emphasis. The <code>&lt;em&gt;</code>
+			element can be nested, with each level of nesting indicating a greater degree of emphasis.
+			<br />
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">More at MDN →</a>
+		</p>
+		<details open>
+			<summary>Example</summary>
+			<section>
+				<p>A stressful paragraph of text which contains <em>a stress emphasis element, <em>which contains a
+							nested stress emphasis element</em></em>.</p>
+			</section>
+		</details>
+		<aside></aside>
+		<hr />
+
+		<!-- fieldset -->
+		<!-- label -->
+		<!-- legend -->
+		<a name="fieldset"></a>
+		<a name="label"></a>
+		<a name="legend"></a>
+		<h4><a href="#fieldset"><code>&lt;fieldset&gt;</code></a></h4>
+		<p>Also: <a href="#label"><code>&lt;label&gt;</code>, <a href="#legend"><code>&lt;legend&gt;</code></a>
+				<p>
+					The HTML <code>&lt;fieldset&gt;</code> element is used to group several controls as well as labels
+					(<code>&lt;label&gt;</code>) within a web form.
+					<br />
+					<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">More at MDN →</a>
+				</p>
+				<details open>
+					<summary>Example</summary>
+					<form>
+						<fieldset>
+							<legend>Favorite moon phase</legend>
+							<label for="new-moon"><input type="radio" id="new-moon" name="moon-phase">🌑 New
+								Moon</label>
+							<br />
+
+							<label for="waxing-crescent"><input type="radio" id="waxing-crescent" name="moon-phase">🌒
+								Waxing Crescent</label>
+							<br />
+
+							<label for="first-quarter"><input type="radio" id="first-quarter" name="moon-phase">🌓 First
+								Quarter</label>
+							<br />
+
+							<label for="waxing-gibbous"><input type="radio" id="waxing-gibbous" name="moon-phase">🌔
+								Waxing Gibbous</label>
+							<br />
+
+							<label for="full-moon"><input type="radio" id="full-moon" name="moon-phase">🌕 Full
+								Moon</label>
+							<br />
+
+							<label for="waning-gibbous"><input type="radio" id="waning-gibbous" name="moon-phase">🌖
+								Waning Gibbous</label>
+							<br />
+
+							<label for="last-quarter"><input type="radio" id="last-quarter" name="moon-phase">🌗 Last
+								Quarter</label>
+							<br />
+
+							<label for="waning-crescent"><input type="radio" id="waning-crescent" name="moon-phase">🌘
+								Waning Crescent</label>
+						</fieldset>
+
+						<fieldset>
+							<legend>Favorite nocturnal animal</legend>
+							<label for="bat"><input type="radio" id="bat" name="animal">🦇 Bat</label>
+							<label for="mouse"><input type="radio" id="mouse" name="animal">🐁 Mouse</label>
+							<label for="owl"><input type="radio" id="owl" name="animal">🦉 Owl</label>
+							<label for="raccoon"><input type="radio" id="raccoon" name="animal">🦝 Raccoon</label>
+							<label for="skunk"><input type="radio" id="skunk" name="animal">🦨 Skunk</label>
+						</fieldset>
+					</form>
+				</details>
+				<hr />
+
+				<!-- figure -->
+				<a name="figure"></a>
+				<a name="figcaption"></a>
+				<a name="img"></a>
+				<h4><a href="#figure"><code>&lt;figure&gt;</code></a></h4>
+				<p>Also: <a href="#figcaption"><code>&lt;figcaption&gt;</code>, <a
+							href="#img"><code>&lt;img&gt;</code></a>
+						<p>
+							The HTML <code>&lt;figure&gt;</code> (Figure With Optional Caption) element represents
+							self-contained content, potentially with an optional caption, which is specified using the
+							(<code>&lt;figcaption&gt;</code>) element.
+							<br />
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">More at MDN →</a>
+						</p>
+						<details open>
+							<summary>Example</summary>
+							<section>
+								<figure>
+									<img src="./images/matthew-howell-qGHYgcnVHbM-unsplash.jpg"
+										title="A bench overlooking the Hudson River in Croton Point Park, NY"
+										alt="A wooden bench, sitting on green grass, overlooking the Hudson River in Croton Point Park, NY under a bright, pale, blue sky.">
+									<figcaption>A figcaption element as the last child of its containing figure element.
+									</figcaption>
+								</figure>
+							</section>
+						</details>
+						<hr />
+
+						<!-- footer -->
+						<a name="footer"></a>
+						<h4><a href="#footer"><code>&lt;footer&gt;</code></a></h4>
+						<p>
+							The HTML <code>&lt;footer&gt;</code> element represents a footer for its nearest sectioning
+							content or sectioning root element. A footer typically contains information about the author
+							of the section, copyright data or links to related documents.
+							<br />
+							<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer">More at MDN →</a>
+						</p>
+						<details open>
+							<summary>Example</summary>
+							<section>
+								<footer>A footer element within its containing section element.</footer>
+							</section>
+						</details>
+						<hr />
+
+						<!-- form -->
+						<a name="form"></a>
+						<a name="textarea"></a>
+						<h4><a href="#form"><code>&lt;form&gt;</code></a></h4>
+						<p>Also: <a href="#textarea"><code>&lt;textarea&gt;</code></a>
+							<p>
+								The HTML <code>&lt;form&gt;</code> element represents a document section containing
+								interactive controls for submitting information.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<form id="send-message-form" onsubmit="formElementHandler(event);">
+									<fieldset>
+										<legend>Send a message to a mythical water creature</legend>
+										<ol>
+											<li>
+												<label for="name">Your Name</label><br />
+												<input id="name" required />
+											</li>
+											<li>
+												<label for="message">Message</label><br />
+												<textarea id="message" required placeholder="Ahoy!" /></textarea>
+											</li>
+
+											<li>
+												<fieldset>
+													<legend>Mythical water creature</legend>
+
+													<label><input type="radio" name="mythical-sea-creature"
+															required />🇳🇴 Kraken (<a
+															href="https://en.wikipedia.org/wiki/Kraken">more
+															info</a>)</label><br />
+
+													<label><input type="radio"
+															name="mythical-sea-creature" />🏴󠁧󠁢󠁳󠁣󠁴󠁿 Loch Ness
+														Monster (<a
+															href="https://en.wikipedia.org/wiki/Loch_Ness_Monster">more
+															info</a>)</label><br />
+
+													<label><input type="radio" name="mythical-sea-creature" />🇨🇦
+														Ogopogo (<a href="https://en.wikipedia.org/wiki/Ogopogo">more
+															info</a>)</label><br />
+
+													<label><input type="radio" name="mythical-sea-creature" />🇺🇸 Champ
+														(<a href="https://en.wikipedia.org/wiki/Champ_(folklore)">more
+															info</a>)</label><br />
+												</fieldset>
+											</li>
+										</ol>
+									</fieldset>
+									<button id="send-message-submit" type="submit">Send Message →</button>
+								</form>
+							</details>
+							<hr />
+
+							<!-- h1 -->
+							<a name="h1"></a>
+							<h4><a href="#h1"><code>&lt;h1&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;h1&gt;</code> elements represent six levels of section headings.
+								<code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the
+								lowest.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h1>An H1 Element</h1>
+									<p>A paragraph of text following the h1 section heading.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- h2 -->
+							<a name="h2"></a>
+							<h4><a href="#h2"><code>&lt;h2&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;h2&gt;</code> elements represent six levels of section headings.
+								<code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the
+								lowest.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h2">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h2>An H2 Element</h2>
+									<p>A paragraph of text following the h2 section heading.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- h3 -->
+							<a name="h3"></a>
+							<h4><a href="#h3"><code>&lt;h3&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;h3&gt;</code> elements represent six levels of section headings.
+								<code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the
+								lowest.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h3">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h3>An H3 Element</h3>
+									<p>A paragraph of text following the h3 section heading.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- h4 -->
+							<a name="h4"></a>
+							<h4><a href="#h4"><code>&lt;h4&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;h4&gt;</code> elements represent six levels of section headings.
+								<code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the
+								lowest.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h4">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h4>An H4 Element</h4>
+									<p>A paragraph of text following the h4 section heading.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- h5 -->
+							<a name="h5"></a>
+							<h4><a href="#h5"><code>&lt;h5&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;h5&gt;</code> elements represent six levels of section headings.
+								<code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the
+								lowest.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h5">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h5>An H5 Element</h5>
+									<p>A paragraph of text following the h5 section heading.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- h6 -->
+							<a name="h6"></a>
+							<h4><a href="#h6"><code>&lt;h6&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;h6&gt;</code> elements represent six levels of section headings.
+								<code>&lt;h1&gt;</code> is the highest section level and <code>&lt;h6&gt;</code> is the
+								lowest.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h6">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h6>An H6 Element</h6>
+									<p>A paragraph of text following the h6 section heading.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- header -->
+							<a name="header"></a>
+							<h4><a href="#header"><code>&lt;header&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;header&gt;</code> element represents introductory content, typically
+								a group of introductory or navigational aids. It may contain some heading elements but
+								also a logo, a search form, an author name, and other elements.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<footer>A header element within its containing section element.</footer>
+								</section>
+							</details>
+							<hr />
+
+							<!-- hgroup -->
+							<a name="hgroup"></a>
+							<h4><a href="#hgroup"><code>&lt;hgroup&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;hgroup&gt;</code> element represents a multi-level heading for a
+								section of a document. It groups a set of <code>&lt;h1&gt; - &lt;h6&gt;</code> elements.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<hgroup>
+										<h1>An h1 element</h1>
+										<h2>An h2 element</h2>
+										<h3>An h3 element</h3>
+									</hgroup>
+									<p>A paragraph of text following an hgroup element.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- hr -->
+							<a name="hr"></a>
+							<h4><a href="#hr"><code>&lt;hr&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;hr&gt;</code> element represents a thematic break between
+								paragraph-level elements: for example, a change of scene in a story, or a shift of topic
+								within a section.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A paragraph of text preceeding an <code>&lt;hr&gt;</code> element.</p>
+									<hr />
+									<p>A paragraph of text following an <code>&lt;hr&gt;</code> element.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- i -->
+							<a name="i"></a>
+							<h4><a href="#i"><code>&lt;i&gt;</code></a></h4>
+							<p>
+								The HTML Interesting Text element <code>&lt;i&gt;</code> represents a range of text that
+								is set off from the normal text for some reason.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A paragraph of text which contains <i>an interesting text element</i>.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- iframe -->
+							<a name="iframe"></a>
+							<h4><a href="#iframe"><code>&lt;iframe&gt;</code></a></h4>
+							<p>
+								The HTML Inline Frame element (<code>&lt;iframe&gt;</code>) represents a nested browsing
+								context, embedding another HTML page into the current one.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A paragraph of text preceeding an <code>&lt;iframe&gt;</code> element.</p>
+									<iframe id="inlineFrameExample" title="Inline Frame Example" width="320"
+										height="240" src="./example-iframe-src.html">
+									</iframe>
+									<p>A paragraph of text following an <code>&lt;iframe&gt;</code> element.</p>
+								</section>
+							</details>
+							<hr />
+
+							<h3>HTML Input Element Types</h3>
+							<p>The HTML <code>&lt;input&gt;</code> element is used to create interactive controls for
+								web-based forms in order to accept data from the user; a wide variety of types of input
+								data and control widgets are available, depending on the device and user agent.</p>
+
+							<!-- input-button -->
+							<a name="input-button"></a>
+							<h4><a href="#input-button"><code>&lt;input[type=button]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=button]&gt;</code> is a push button with no default behavior
+								displaying the value of the value attribute, empty by default.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button">More at
+									MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-button">Input Type=Button</label><br />
+									<input type="button" id="input-type-button" name="input-type-button"
+										value="BUTTON" />
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-checkbox -->
+							<a name="input-checkbox"></a>
+							<h4><a href="#input-checkbox"><code>&lt;input[type=checkbox]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=checkbox]&gt;</code> is a check box allowing single values to be
+								selected/deselected.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox">More
+									at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<input type="checkbox" id="input-type-checkbox" name="input-type-checkbox"
+										value="Checkbox" />
+									<label for="input-type-checkbox">Input Type=Checkbox</label>
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-color -->
+							<a name="input-color"></a>
+							<h4><a href="#input-color"><code>&lt;input[type=color]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=color]&gt;</code> is a control for specifying a color; opening a
+								color picker when active in supporting browsers.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color">More at
+									MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<input type="color" id="input-type-color" name="input-type-color" value="color" />
+									<label for="input-type-color">Input Type=color</label>
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-date -->
+							<a name="input-date"></a>
+							<h4><a href="#input-date"><code>&lt;input[type=date]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=date]&gt;</code> is a control for entering a date (year, month, and
+								day, with no time). Opens a date picker or numeric wheels for year, month, day when
+								active in supporting browsers.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date">More at
+									MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-date">Input Type=date</label>
+									<input type="date" id="input-type-date" name="input-type-date" min="2001-01-01"
+										max="2020-01-01" placeholder="2001-01-01">
+								</section>
+							</details>
+							<aside></aside>
+							<hr />
+
+							<!-- input-datetime-local -->
+							<a name="input-datetime-local"></a>
+							<h4><a href="#input-datetime-local"><code>&lt;input[type=datetime-local]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=datetime-local]&gt;</code> is a control for entering a date and
+								time, with no time zone. Opens a date picker or numeric wheels for date- and
+								time-components when active in supporting browsers.
+								<br />
+								<a
+									href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local">More
+									at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-datetime-local">Input Type=datetime-local</label>
+									<input type="datetime-local" id="input-type-datetime-local"
+										name="input-type-datetime-local" min="2001-01-01" max="2020-01-01"
+										placeholder="2001-01-01T16:00:00">
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-email -->
+							<a name="input-email"></a>
+							<h4><a href="#input-email"><code>&lt;input[type=email]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=email]&gt;</code> is a field for editing an email address. Looks
+								like a text input, but has validation parameters and relevant keyboard in supporting
+								browsers and devices with dynamic keyboards.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email">More at
+									MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-email">Input Type=email</label>
+									<input type="email" id="input-type-email" name="input-type-email" required>
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-file -->
+							<a name="input-file"></a>
+							<h4><a href="#input-file"><code>&lt;input[type=file]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=file]&gt;</code> is a control that lets the user select a file. Use
+								the accept attribute to define the types of files that the control can select.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file">More at
+									MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-file">Input Type=file</label>
+									<input type="file" id="input-type-file" name="input-type-file"
+										accept="image/png, image/jpeg">
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-image -->
+							<a name="input-image"></a>
+							<h4><a href="#input-image"><code>&lt;input[type=image]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=image]&gt;</code> is a graphical submit button. Displays an image
+								defined by the src attribute. The alt attribute displays if the image src is missing.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image">More at
+									MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-image">Input Type=image</label>
+									<input type="input-type-image" id="input-type-image" alt="Image Button"
+										src="/media/examples/login-button.png">
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-month -->
+							<a name="input-month"></a>
+							<h4><a href="#input-month"><code>&lt;input[type=month]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=month]&gt;</code> is a control for entering a month and year, with
+								no time zone.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month">More at
+									MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-month">Input Type=month</label>
+									<input type="month" id="input-type-month" name="input-type-month">
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-number -->
+							<a name="input-number"></a>
+							<h4><a href="#input-number"><code>&lt;input[type=number]&gt;</code></a></h4>
+							<p>
+								<code>&lt;input[type=number]&gt;</code> is a control for entering a number. Displays a
+								spinner and adds default validation when supported. Displays a numeric keypad in some
+								devices with dynamic keypads.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number">More at
+									MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-number">Input Type=number</label>
+									<input type="number" id="input-type-number" name="input-type-number" min="1"
+										max="100">
+								</section>
+							</details>
+							<hr />
+
+							<!-- input-password -->
+							<a name="input-password"></a>
+							<h4><a href="#input-password"><code>&lt;input[type=password]&gt;</code></a></h4>
+							<p><code>&lt;input[type=password]&gt;</code> is a control for entering a password. Displays
+								a spinner and adds default validation when supported. Displays a numeric keypad in some
+								devices with dynamic keypads.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-password">Input Type=password</label>
+									<input type="password" id="input-type-password" name="input-type-password" required>
+								</section>
+							</details>
+							<aside><a
+									href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password">More
+									at MDN →</a></aside>
+							<hr />
+
+							<!-- input-radio -->
+							<a name="input-radio"></a>
+							<h4><a href="#input-radio"><code>&lt;input[type=radio]&gt;</code></a></h4>
+							<p><code>&lt;input[type=radio]&gt;</code> is a radio button, allowing a single value to be
+								selected out of multiple choices with the same name value.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-radio-1"><input type="radio" id="input-type-radio-1"
+											name="input-type-radio"> Input Type=radio</label>
+									<br />
+
+									<label for="input-type-radio-2"><input type="radio" id="input-type-radio-2"
+											name="input-type-radio" required> Input Type=radio</label>
+									<br />
+
+									<label for="input-type-radio-3"><input type="radio" id="input-type-radio-3"
+											name="input-type-radio" required> Input Type=radio</label>
+									<br />
+
+									<label for="input-type-radio-4"><input type="radio" id="input-type-radio-4"
+											name="input-type-radio" required> Input Type=radio</label>
+
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">More
+									at MDN →</a></aside>
+							<hr />
+
+							<!-- input-range -->
+							<a name="input-range"></a>
+							<h4><a href="#input-range"><code>&lt;input[type=range]&gt;</code></a></h4>
+							<p><code>&lt;input[type=range]&gt;</code> is a control for entering a range. Displays a
+								spinner and adds default validation when supported. Displays a numeric keypad in some
+								devices with dynamic keypads.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-range">Input Type=range</label>
+									<input type="range" id="input-type-range" name="input-type-range" min="0" max="10">
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">More
+									at MDN →</a></aside>
+							<hr />
+
+							<!-- input-search -->
+							<a name="input-search"></a>
+							<h4><a href="#input-search"><code>&lt;input[type=search]&gt;</code></a></h4>
+							<p><code>&lt;input[type=search]&gt;</code> is a single-line text field for entering search
+								strings. Line-breaks are automatically removed from the input value. May include a
+								delete icon in supporting browsers that can be used to clear the field. Displays a
+								search icon instead of enter key on some devices with dynamic keypads.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<form role="search">
+										<label for="input-type-search">Input Type=search</label><br />
+										<input type="search" id="input-type-search" name="input-type-search"
+											aria-label="Search input">
+									</form>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search">More
+									at MDN →</a></aside>
+							<hr />
+
+							<!-- input-submit -->
+							<a name="input-submit"></a>
+							<h4><a href="#input-submit"><code>&lt;input[type=submit]&gt;</code></a></h4>
+							<p><code>&lt;input[type=submit]&gt;</code> is a button that submits the form.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<input type="submit" id="input-type-submit" name="input-type-submit">
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit">More
+									at MDN →</a></aside>
+							<hr />
+
+							<!-- input-tel -->
+							<a name="input-tel"></a>
+							<h4><a href="#input-tel"><code>&lt;input[type=tel]&gt;</code></a></h4>
+							<p><code>&lt;input[type=tel]&gt;</code> is acontrol for entering a telephone number.
+								Displays a telephone keypad in some devices with dynamic keypads.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-tel">Input[type=tel]</label>
+									<input type="tel" id="input-type-tel" name="input-type-tel">
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel">More at
+									MDN →</a></aside>
+							<hr />
+
+							<!-- input-text -->
+							<a name="input-text"></a>
+							<h4><a href="#input-text"><code>&lt;input[type=text]&gt;</code></a></h4>
+							<p><code>&lt;input[type=text]&gt;</code> is the default value. A single-line text field.
+								Line-breaks are automatically removed from the input value.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-text">Input[type=text]</label>
+									<input type="text" id="input-type-text" name="input-type-text">
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit">More
+									at MDN →</a></aside>
+							<hr />
+
+							<!-- input-time -->
+							<a name="input-time"></a>
+							<h4><a href="#input-time"><code>&lt;input[type=time]&gt;</code></a></h4>
+							<p><code>&lt;input[type=time]&gt;</code> is a control for entering a time value with no time
+								zone.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-time">Input[type=time]</label>
+									<input type="time" id="input-type-time" name="input-type-time">
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time">More
+									at MDN →</a></aside>
+							<hr />
+
+							<!-- input-url -->
+							<a name="input-url"></a>
+							<h4><a href="#input-url"><code>&lt;input[type=url]&gt;</code></a></h4>
+							<p><code>&lt;input[type=url]&gt;</code> is a field for entering a URL. Looks like a text
+								input, but has validation parameters and relevant keyboard in supporting browsers and
+								devices with dynamic keyboards.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-url">Input[type=url]</label>
+									<input type="url" id="input-type-url" name="input-type-url">
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/url">More at
+									MDN →</a></aside>
+							<hr />
+
+							<!-- input-week -->
+							<a name="input-week"></a>
+							<h4><a href="#input-week"><code>&lt;input[type=week]&gt;</code></a></h4>
+							<p><code>&lt;input[type=week]&gt;</code> is a control for entering a date consisting of a
+								week-year number and a week number with no time zone.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="input-type-week">Input[type=week]</label>
+									<input type="week" id="input-type-week" name="input-type-week">
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week">More
+									at MDN →</a></aside>
+							<hr />
+
+							<!-- ins -->
+							<a name="ins"></a>
+							<h4><a href="#ins"><code>&lt;ins&gt;</code></a></h4>
+							<p>The HTML <code>&lt;ins&gt;</code> element represents a range of text that has been added
+								to a document.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A paragraph of text preceeding an <code>&lt;ins&gt;</code> element.</p>
+									<ins cite="TODO" datetime="2018-05">
+										<p>A paragraph of text within an <code>&lt;ins&gt;</code> element.</p>
+									</ins>
+									<p>A paragraph of text following an <code>&lt;ins&gt;</code> element.</p>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- kbd -->
+							<a name="kbd"></a>
+							<h4><a href="#kbd"><code>&lt;kbd&gt;</code></a></h4>
+							<p>The HTML Keyboard Input element <code>&lt;kbd&gt;</code> represents a span of inline text
+								denoting textual user input from a keyboard, voice input, or any other text entry
+								device. By convention, the user agent defaults to rendering the contents of a
+								<code>&lt;kbd&gt;</code> element using its default monospace font, although this is not
+								mandated by the HTML standard.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>Please press <kbd>Cmd</kbd> + <kbd>R</kbd> to re-render this page.</p>
+									<p>The previous paragraph contains two kbd elements, one representing the Command
+										key and one representing the R key.</p>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- li -->
+							<a name="li"></a>
+							<h4><a href="#li"><code>&lt;li&gt;</code></a></h4>
+							<p>The HTML <code>&lt;li&gt;</code> element is used to represent an item in a list.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<ol>
+									<li>Ordered</li>
+									<li>List</li>
+									<li>Items</li>
+									<li>Including
+										<ol>
+											<li>A Nested</li>
+											<li>Ordered</li>
+											<li>List</li>
+										</ol>
+									</li>
+									<li>And
+										<ul>
+											<li>A Nested</li>
+											<li>Unordered</li>
+											<li>List</li>
+										</ul>
+									</li>
+								</ol>
+
+								<ul>
+									<li>Unordered</li>
+									<li>List</li>
+									<li>Items</li>
+									<li>Including
+										<ul>
+											<li>A Nested</li>
+											<li>Unordered</li>
+											<li>List</li>
+										</ul>
+									</li>
+									<li>And
+										<ol>
+											<li>A Nested</li>
+											<li>Ordered</li>
+											<li>List</li>
+										</ol>
+									</li>
+								</ul>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- main -->
+							<a name="main"></a>
+							<h4><a href="#main"><code>&lt;main&gt;</code></a></h4>
+							<p>The HTML <code>&lt;main&gt;</code> element represents the dominant content of the
+								<code>&lt;body&gt;</code> of a document. The main content area consists of content that
+								is directly related to or expands upon the central topic of a document, or the central
+								functionality of an application.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">More at MDN
+									→</a></p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<main>
+										<p>A main element</p>
+									</main>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- map -->
+							<a name="map"></a>
+							<a name="area"></a>
+							<a name="area-bird-1"></a>
+							<a name="area-bird-2"></a>
+							<a name="area-bird-3"></a>
+							<a name="area-bench"></a>
+							<h4><a href="#map"><code>&lt;map&gt;</code></a></h4>
+							<p>Also: <a href="#area"><code>&lt;area&gt;</code></a>
+							<p>The HTML <code>&lt;map&gt;</code> element is used with <code>&lt;area&gt;</code> elements
+								to define an image map (a clickable link area).</p>
+							<details open>
+								<summary>Example</summary>
+								<figure>
+									<map name="areamap">
+										<area shape="rect" coords="124,78,132,86" alt="Bird 1" href="#area-bird-1">
+										<area shape="rect" coords="140,36,148,44" alt="Bird 2" href="#area-bird-2">
+										<area shape="rect" coords="184,56,192,64" alt="Bird 3" href="#area-bird-3">
+										<area shape="rect" coords="140,116,178,138" alt="Bench" href="#area-bench">
+									</map>
+									<img width="320px" usemap="#areamap" src="./images/undraw-through-the-park.svg"
+										alt="Through the Park" />
+									<figcaption>Illustration by <a href="https://twitter.com/undraw_co">Katerina
+											Limpitsouni</a> on <a href="https://undraw.co">unDraw</a>.
+									</figcaption>
+								</figure>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- mark -->
+							<a name="mark"></a>
+							<h4><a href="#mark"><code>&lt;mark&gt;</code></a></h4>
+							<p>The HTML Mark Text element <code>&lt;mark&gt;</code> represents text which is marked or
+								highlighted for reference or notation purposes, due to the marked passage's relevance or
+								importance in the enclosing context.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>Some paragraph of text that includes <mark>a mark element to highlight some of
+											the text</mark>.</p>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- meter -->
+							<a name="meter"></a>
+							<h4><a href="#meter"><code>&lt;meter&gt;</code></a></h4>
+							<p>The HTML <code>&lt;meter&gt;</code> element represents either a scalar value within a
+								known range or a fractional value.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter">More at MDN
+									→</a></p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h5>Orion III</h5>
+									<label for="engine-one-fuel-level">Engine 1 fuel level</label><meter
+										id="engine-one-fuel-level" min="0" max="100" low="33" high="66" optimum="80"
+										value="87">at 87/100
+									</meter>
+									<br />
+									<label for="engine-two-fuel-level">Engine 2 fuel level</label><meter
+										id="engine-two-fuel-level" min="0" max="100" low="33" high="66" optimum="80"
+										value="64">at 64/100
+									</meter>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- nav -->
+							<a name="nav"></a>
+							<h4><a href="#nav"><code>&lt;nav&gt;</code></a></h4>
+							<p>The HTML <code>&lt;nav&gt;</code> element represents a section of a page whose purpose is
+								to provide navigation links, either within the current document or to other documents.
+								Common examples of navigation sections are menus, tables of contents, and indexes.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<header>
+										<nav>
+											<ul>
+												<li><a href="#">Home</a></li>
+												<li><a href="#">About</a></li>
+												<li><a href="#">Contact</a></li>
+											</ul>
+										</nav>
+									</header>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- ol -->
+							<a name="ol"></a>
+							<h4><a href="#ol"><code>&lt;ol&gt;</code></a></h4>
+							<p>The HTML <code>&lt;ol&gt;</code> element represents an ordered list of items — typically
+								rendered as a numbered list.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h5>All-Time Best Chess Elo Ratings</h5>
+								</section>
+								<ol>
+									<li><data value="2831">Magnus Carlsen</data> (2882)</li>
+									<li><data value="2831">Garry Kasparov</data> (2851)</li>
+									<li><data value="2831">Fabiano Caruana</data> (2844)</li>
+									<li><data value="2831">Levon Aronian</data> (2830)</li>
+									<li><data value="2831">Wesley So</data> (2822)</li>
+									<li><data value="2831">Shakhriyar Mamedyarov</data> (2820)</li>
+									<li><data value="2831">Maxime Vachier-Lagrave</data> (2819)</li>
+									<li><data value="2831">Viswanathan Anand</data> (2817)</li>
+									<li><data value="2831">Vladimir Kramnik</data> (2817)</li>
+									<li><data value="2831">Veselin Topalov</data> (2816)</li>
+									<li><data value="2831">Hikaru Nakamura</data> (2816)</li>
+									<li><data value="2831">Ding Liren</data> (2816)</li>
+								</ol>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- optgroup -->
+							<a name="optgroup"></a>
+							<h4><a href="#optgroup"><code>&lt;optgroup&gt;</code></a></h4>
+							<p>The HTML <code>&lt;optgroup&gt;</code> element creates a grouping of options within a
+								<code>&lt;select&gt;</code> element.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup">More at MDN
+									→</a></p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="dino-select">Choose a dinosaur:</label>
+									<select id="dino-select">
+										<optgroup label="Theropods">
+											<option>Tyrannosaurus</option>
+											<option>Velociraptor</option>
+											<option>Deinonychus</option>
+										</optgroup>
+										<optgroup label="Sauropods">
+											<option>Diplodocus</option>
+											<option>Saltasaurus</option>
+											<option>Apatosaurus</option>
+										</optgroup>
+									</select>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup">More at
+									MDN →</a></aside>
+							<hr />
+
+							<!-- option -->
+							<a name="option"></a>
+							<h4><a href="#option"><code>&lt;option&gt;</code></a></h4>
+							<p>The HTML <code>&lt;option&gt;</code> element is used to define an item contained in a
+								<code>&lt;select&gt;</code>, an <code>&lt;optgroup&gt;</code>, or a
+								<code>&lt;datalist&gt;</code> element. As such, <code>&lt;option&gt;</code> can
+								represent menu items in popups and other lists of items in an HTML document.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option">More at MDN
+									→</a></p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="pet-select">Choose a pet:</label>
+									<select id="pet-select">
+										<option value="">--Please choose an option--</option>
+										<option value="dog">Dog</option>
+										<option value="cat">Cat</option>
+										<option value="hamster">Hamster</option>
+										<option value="parrot">Parrot</option>
+										<option value="spider">Spider</option>
+										<option value="goldfish">Goldfish</option>
+									</select>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option">More at
+									MDN →</a></aside>
+							<hr />
+
+							<!-- output -->
+							<a name="output"></a>
+							<h4><a href="#output"><code>&lt;output&gt;</code></a></h4>
+							<p>The HTML Output element <code>&lt;output&gt;</code> is a container element into which a
+								site or app can inject the results of a calculation or the outcome of a user action.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output">More at MDN
+									→</a></p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<form oninput="result.value=(formexamplename.value.trim().split(' ').length)"
+										id="form-example">
+										<fieldset>
+											<legend>Word counter</legend>
+											<label for="formexamplename">Your words:</label><br />
+											<textarea name="formexamplename" id="formexamplename" required></textarea>
+											<br />
+											You have typed <output name="result" for="formexamplename">0</output> words.
+										</fieldset>
+									</form>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output">More at
+									MDN →</a></aside>
+							<hr />
+
+							<!-- p -->
+							<a name="p"></a>
+							<h4><a href="#p"><code>&lt;p&gt;</code></a></h4>
+							<p>The HTML <code>&lt;p&gt;</code> element represents a paragraph.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p><code>&lt;p&gt;</code> element within <code>&lt;section&gt;</code> element.</p>
+									<p>Followed by a second <code>&lt;p&gt;</code> element.</p>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- picture -->
+							<a name="picture"></a>
+							<a name="source"></a>
+							<h4><a href="#picture"><code>&lt;picture&gt;</code></a></h4>
+							<p>Also: <a href="#source"><code>&lt;source&gt;</code></a>
+							<p>The HTML <code>&lt;picture&gt;</code> element contains zero or more
+								<code>&lt;source&gt;</code> elements and one <code>&lt;img&gt;</code> element to offer
+								alternative versions of an image for different display/device scenarios.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<figure>
+										<picture>
+											<source srcset="./images/matthew-howell-uYoClFUGvkk-unsplash.jpg"
+												media="(min-width: 600px)"
+												title="A wave crashing on the shore in Cape Henlopen State Park, DE"
+												alt="A wave crashing on the shore in Cape Henlopen State Park, DE.">
+											<img src="./images/matthew-howell-uYoClFUGvkk-unsplash-small.jpg"
+												title="A wave crashing on the shore in Cape Henlopen State Park, DE"
+												alt="A wave crashing on the shore in Cape Henlopen State Park, DE.">
+										</picture>
+										<figcaption>This example uses the picture element to display a higher resolution
+											image to wider viewports (> 600 pixels).</figcaption>
+									</figure>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">More at
+									MDN →</a></aside>
+							<hr />
+
+							<!-- pre -->
+							<a name="pre"></a>
+							<h4><a href="#pre"><code>&lt;pre&gt;</code></a></h4>
+							<p>The HTML <code>&lt;pre&gt;</code> element represents preformatted text which is to be
+								presented exactly as written in the HTML file.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<pre>A pre element for preformatted text
+	With an indented second line</pre>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- progress -->
+							<a name="progress"></a>
+							<h4><a href="#progress"><code>&lt;progress&gt;</code></a></h4>
+							<p>The HTML <code>&lt;progress&gt;</code> element displays an indicator showing the
+								completion progress of a task, typically displayed as a progress bar.</p>
+							<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">More at MDN
+									→</a></p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="file">File progress:</label>
+									<progress id="file" max="100" value="70"> 70% </progress>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">More at
+									MDN →</a></aside>
+							<hr />
+
+							<!-- q -->
+							<a name="q"></a>
+							<h4><a href="#q"><code>&lt;q&gt;</code></a></h4>
+							<p>The HTML <code>&lt;q&gt;</code> element indicates that the enclosed text is a short
+								inline quotation. Most modern browsers implement this by surrounding the text in
+								quotation marks.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>Eugene Debs, on September 18, 1918, was sentenced to 10 years in prison and
+										disenfranchised. Speaking to the federal judge at his trial: <q
+											cite="https://en.wikipedia.org/wiki/Eugene_V._Debs">Your Honor, years ago I
+											recognized my kinship with all living beings, and I made up my mind then
+											that I was not one bit better than the meanest on earth. I said then, and I
+											say now, that while there is a lower class, I am in it; and while there is a
+											criminal element, I am of it; and while there is a soul in prison, I am not
+											free.</q></p>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- ruby -->
+							<a name="ruby"></a>
+							<h4><a href="#ruby"><code>&lt;ruby&gt;</code></a></h4>
+							<p>Also: <a href="#rp"><code>&lt;rp&gt;</code></a>,
+								<a href="#rt"><code>&lt;rt&gt;</code></a>,
+							<p>The HTML <code>&lt;ruby&gt;</code> element represents a ruby annotation. Ruby annotations
+								are for showing pronunciation of East Asian characters.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<ruby>
+										花より団子 <rp>(</rp>
+										<rt>Dumplings rather than flowers</rt>
+										<rp>)</rp>
+									</ruby>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- s -->
+							<a name="s"></a>
+							<h4><a href="#s"><code>&lt;s&gt;</code></a></h4>
+							<p>The HTML <code>&lt;s&gt;</code> element renders text with a strikethrough, or a line
+								through it. Use the <code>&lt;s&gt;</code> element to represent things that are no
+								longer relevant or no longer accurate. However, <code>&lt;s&gt;</code> is not
+								appropriate when indicating document edits; for that, use the <code>&lt;del&gt;</code>
+								and <code>&lt;ins&gt;</code> elements, as appropriate.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>Here is <s>strikethrough element</s> rendered within an enclosing paragraph</p>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- samp -->
+							<a name="samp"></a>
+							<h4><a href="#samp"><code>&lt;samp&gt;</code></a></h4>
+							<p>The HTML Sample Element <code>&lt;samp&gt;</code> is used to enclose inline text which
+								represents sample (or quoted) output from a computer program.</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A preceeding paragraph of text:</p>
+									<p><samp>Some text within the samp element</samp></p>
+								</section>
+							</details>
+							<aside><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp">More at MDN
+									→</a></aside>
+							<hr />
+
+							<!-- section -->
+							<a name="section"></a>
+							<h4><a href="#section"><code>&lt;section&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;section&gt;</code> element represents a standalone section — which
+								doesn't have a more specific semantic element to represent it — contained within an HTML
+								document.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A section element</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- select -->
+							<a name="select"></a>
+							<h4><a href="#select"><code>&lt;select&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;select&gt;</code> element represents a control that provides a menu
+								of options.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<label for="pet-select">Choose a pet:</label>
+									<select name="pets" id="pet-select">
+										<option value="">--Please choose an option--</option>
+										<option value="dog">Dog</option>
+										<option value="cat">Cat</option>
+										<option value="hamster">Hamster</option>
+										<option value="parrot">Parrot</option>
+										<option value="spider">Spider</option>
+										<option value="goldfish">Goldfish</option>
+									</select>
+								</section>
+							</details>
+							<hr />
+
+							<!-- small -->
+							<a name="small"></a>
+							<h4><a href="#small"><code>&lt;small&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;small&gt;</code> element represents side-comments and small print,
+								like copyright and legal text, independent of its styled presentation. By default, it
+								renders text within it one font-size smaller, such as from small to x-small.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A preceeding paragraph of text and then <small>some text within the small
+											element</small> followed by some additional text.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- span -->
+							<a name="span"></a>
+							<h4><a href="#span"><code>&lt;span&gt;</code></a></h4>
+							<p>
+								The HTML <span> element is a generic inline container for phrasing content, which does
+									not inherently represent anything. It can be used to group elements for styling
+									purposes (using the class or id attributes), or because they share attribute values,
+									such as lang.
+									<br />
+									<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">More at MDN
+										→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A preceeding paragraph of text and then <span>some text within the span
+											element</span> followed by some additional text.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- strong -->
+							<a name="strong"></a>
+							<h4><a href="#strong"><code>&lt;strong&gt;</code></a></h4>
+							<p>
+								The HTML Strong Importance Element <code>&lt;strong&gt;</code> indicates that its
+								contents have strong importance, seriousness, or urgency. Browsers typically render the
+								contents in bold type.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>Some paragraph of text that includes <strong>a strong importance
+											element</strong>.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- sub -->
+							<a name="sub"></a>
+							<h4><a href="#sub"><code>&lt;sub&gt;</code></a></h4>
+							<p>
+								The HTML Subscript element (<sub>) specifies inline text which should be displayed as
+									subscript for solely typographical reasons.
+									<br />
+									<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub">More at MDN
+										→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A preceeding paragraph of text and then <sub>some text within the sub
+											element</sub> followed by some additional text.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- sup -->
+							<a name="sup"></a>
+							<h4><a href="#sup"><code>&lt;sup&gt;</code></a></h4>
+							<p>
+								The HTML Superscript element (<code>&lt;sup&gt;</code>) specifies inline text which is
+								to be displayed as superscript for solely typographical reasons.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A preceeding paragraph of text and then <sup>some text within the sup
+											element</sup> followed by some additional text.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- table -->
+							<!-- tdbody -->
+							<!-- td -->
+							<!-- tfoot -->
+							<!-- th -->
+							<!-- thead -->
+							<!-- tr -->
+							<a name="table"></a>
+							<a name="caption"></a>
+							<a name="col"></a>
+							<a name="colgroup"></a>
+							<a name="tbody"></a>
+							<a name="td"></a>
+							<a name="tfoot"></a>
+							<a name="th"></a>
+							<a name="thead"></a>
+							<a name="tr"></a>
+							<h4><a href="#table"><code>&lt;table&gt;</code></a></h4>
+							<p>Also: <a href="#caption"><code>&lt;caption&gt;</code></a>,
+								<a href="#col"><code>&lt;col&gt;</code></a>,
+								<a href="#colgroup"><code>&lt;colgroup&gt;</code></a>,
+								<a href="#tbody"><code>&lt;tbody&gt;</code></a>,
+								<a href="#td"><code>&lt;td&gt;</code></a>,
+								<a href="#tfoot"><code>&lt;tfoot&gt;</code></a>,
+								<a href="#th"><code>&lt;th&gt;</code></a>,
+								<a href="#thead"><code>&lt;thead&gt;</code></a>,
+								<a href="#tr"><code>&lt;tr&gt;</code></a>
+							</p>
+							<p>
+								The HTML <code>&lt;table&gt;</code> element represents tabular data — that is,
+								information presented in a two-dimensional table comprised of rows and columns of cells
+								containing data.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<table>
+										<caption>A table caption element</caption>
+										<thead>
+											<tr>
+												<th>th 1</th>
+												<th>th2</th>
+												<th>th3</th>
+												<th>th2</th>
+												<th>th2</th>
+											</tr>
+										</thead>
+										<colgroup>
+											<col>
+											<col span="2" class="batman">
+											<col span="2" class="flash">
+										</colgroup>
+										<tr>
+											<td> </td>
+											<th scope="col">Batman</th>
+											<th scope="col">Robin</th>
+											<th scope="col">The Flash</th>
+											<th scope="col">Kid Flash</th>
+										</tr>
+										<tbody>
+											<tr>
+												<th scope="row">Skill</th>
+												<td>Smarts</td>
+												<td>Dex, acrobat</td>
+												<td>Super speed</td>
+												<td>Super speed</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td>Footer content 1</td>
+												<td>Footer content 2</td>
+											</tr>
+										</tfoot>
+									</table>
+								</section>
+							</details>
+							<hr />
+
+							<!-- time -->
+							<a name="time"></a>
+							<h4><a href="#time"><code>&lt;time&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;time&gt;</code> element represents a specific period in time.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>At <time datetime="15:30:08">around 3:30PM UTC</time> on <time
+											datetime="292277026596-12-04">Sunday, 4 December in the year
+											292277026596</time> 64-bit Unix timestamps will no longer work. We have a
+										little more than thirteen billion years to solve the problem.</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- u -->
+							<a name="u"></a>
+							<h4><a href="#u"><code>&lt;u&gt;</code></a></h4>
+							<p>
+								The HTML Unarticulated Annotation Element (<code>&lt;u&gt;</code>) represents a span of
+								inline text which should be rendered in a way that indicates that it has a non-textual
+								annotation.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A paragraph of text which contains <u>an unarticulated annotation element</u>.
+									</p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- ul -->
+							<a name="ul"></a>
+							<h4><a href="#ul"><code>&lt;ul&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;ul&gt;</code> element represents an unordered list of items,
+								typically rendered as a bulleted list.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">More at MDN →</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<h5>Crewed Spacecraft</h5>
+									<ul>
+										<li>Vostok (1961–1963)</li>
+										<li>Mercury (1961–1963)</li>
+										<li>X-15 (1962–1968)</li>
+										<li>Voskhod (1964–1965)</li>
+										<li>Gemini (1965–1966)</li>
+										<li>Soyuz (1967)</li>
+										<li>Apollo (1968–1975)</li>
+										<li>Space Shuttle (1981–2011)</li>
+										<li>Shenzhou (2003)</li>
+										<li>SpaceShipOne (2004)</li>
+										<li>SpaceShipTwo (2018)</li>
+										<li>Crew Dragon (2020)</li>
+									</ul>
+								</section>
+							</details>
+							<hr />
+
+							<!-- var -->
+							<a name="var"></a>
+							<h4><a href="#var"><code>&lt;var&gt;</code></a></h4>
+							<p>
+								The HTML Variable element (<code>&lt;var&gt;</code>) represents the name of a variable
+								in a mathematical expression or a programming context.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>Euler's identity: <code><var>e</var><sup><var>i</var>π</sup> + 1 = 0</code></p>
+								</section>
+							</details>
+							<hr />
+
+							<!-- video -->
+							<a name="video"></a>
+							<h4><a href="#video"><code>&lt;video&gt;</code></a></h4>
+							<p>
+								The HTML Video element <code>&lt;video&gt;</code> embeds a media player which supports
+								video playback into the document. You can use <code>&lt;video&gt;</code> for audio
+								content as well, but the <code>&lt;audio&gt;</code> element may provide a more
+								appropriate user experience.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<figure>
+										<video controls preload="none" poster="./media/muybridge-horse-in-motion.jpg">
+											<source src="./media/muybridge-horse-in-motion.webm" type="video/webm">
+											<source src="./media/muybridge-horse-in-motion.mp4" type="video/mp4">
+											Sorry, your browser doesn't support embedded videos.
+										</video>
+										<figcaption>An video element with controls</figcaption>
+									</figure>
+								</section>
+							</details>
+							<hr />
+
+							<!-- wbr -->
+							<a name="wbr"></a>
+							<h4><a href="#wbr"><code>&lt;wbr&gt;</code></a></h4>
+							<p>
+								The HTML <code>&lt;wbr&gt;</code> element represents a word break opportunity—a position
+								within text where the browser may optionally break a line, though its line-breaking
+								rules would not otherwise create a break at that location.
+								<br />
+								<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr">More at MDN
+									→</a>
+							</p>
+							<details open>
+								<summary>Example</summary>
+								<section>
+									<p>A paragraph of text which contains a very, very long word:
+										Lopadotemachoselachogaleokranioleipsanodrimhypotrimmatosilphioparaomelitokatakechymenokichlepikossyphophattoperisteralektryonoptekephalliokigklopeleiolagoiosiraiobaphetraganopterygon
+									</p>
+									<p>A paragraph of text which contains the same very, very long word, with word break
+										opportunity elements after each <em>p</em>:
+										Lop<wbr>adotemachoselachogaleokranioleip<wbr>sanodrimhyp<wbr>otrimmatosilp<wbr>hiop<wbr>araomelitokatakechymenokichlep<wbr>ikossy<wbr>phop<wbr>hattop<wbr>eristeralektryonop<wbr>tekep<wbr>halliokigklop<wbr>eleiolagoiosiraiobap<wbr>hetraganop<wbr>terygon
+									</p>
+
+								</section>
+							</details>
+							<hr />
+
+							<a name="omitted-elements"></a>
+							<h3>Omitted Elements</h3>
+							<p>Reasonable.html omits a handful of HTML elements, the reason for each omission is stated
+								here. Mostly though, since it was built to test CSS rules, elements which need no
+								styling were not included.</p>
+							<p>If you disagree with any of the omissions, please file an issue and make your case.</p>
+							<ul>
+								<li>br - Not an element that should be styled.</li>
+								<li>canvas - No default style necessary.</li>
+								<li>dialog - Experimental element with limited browser support.</li>
+								<li>embed - No default style necessary.</li>
+								<li>input[type=hidden] - No default style necessary.</li>
+								<li>input[type=reset] - No longer a recommended form element.</li>
+								<li>menu - Experimental element with limited browser support.</li>
+								<li>noscript - No default style necessary.</li>
+								<li>object - No default style necessary.</li>
+								<li>param - No default style necessary.</li>
+								<li>rb - Experimental element with limited browser support.</li>
+								<li>rtc - Experimental element with limited browser support.</li>
+								<li>script - No default style necessary.</li>
+								<li>slot - No default style necessary.</li>
+								<li>track - No default style necessary.</li>
+								<li>template - No default style necessary.</li>
+							</ul>
+	</section>
+
+	<hr />
+	<section>
+
+		<a name="acknowledgements"></a>
+		<h2>👏 Acknowledgements, Credits, and Thanks</h2>
+
+		<h3>MDN Web Docs</h3>
+		<p>The HTML element descriptions and a few of the examples on this page are all from the essential <a
+				href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">MDN HTML Elements Reference</a>. They
+			are licensed here under <a href="https://creativecommons.org/licenses/by-sa/2.5/">Attribution-ShareAlike 2.5
+				Generic (CC BY-SA 2.5)</a>. The original work by Mozilla Contributors is licensed under the same <a
+				href="https://creativecommons.org/licenses/by-sa/2.5/">CC-BY-SA 2.5</a>.</p>
+		<p>Anyone can <a href="https://donate.mozilla.org">donate to Mozilla here.</a></p>
+
+		<h3>Katerina Limpitsouni and Undraw</h3>
+		<p>The SVG illustration used in the <code>&lt;map&gt;</code> element is from the contagiously generous <a
+				href="https://twitter.com/ninaLimpi">Katerina Limpitsouni</a>, available for use, for free at <a
+				href="https://undraw.co">unDraw</a>.</p>
+
+		<h3>Kimiko Ishizaka and Open Goldberg Variations</h3>
+		<p>The music file used in the <code>&lt;audio&gt;</code> element example is a performance by Kimiko Ishizaka for
+			the <a href="https://opengoldbergvariations.org">Open Goldberg Variations</a>. The project's stated and
+			accomplished goal was <q cite="https://opengoldbergvariations.org">to create a public domain recording and
+				score of J.S. Bach's masterpiece, Die Goldberg Variationen.</q></p>
+		<p>Anyone can <a
+				href="https://kimikoishizaka.bandcamp.com/album/j-s-bach-open-goldberg-variations-bwv-988-piano">download
+				or purchase the album here</a>.</p>
+
+		<h3>Eadweard Muybridge and Wikipedia</h3>
+		<p>The moving image used in the <code>&lt;video&gt;</code> element was created in June of 1877 by Eadweard
+			Muybridge using 12 cameras, the shutters tripped by wire, in Palo Alto, California. You can read more about
+			it on <a href="https://en.wikipedia.org/wiki/The_Horse_in_Motion">on Wikipedia</a> or <a
+				href="https://en.wikipedia.org/wiki/Eadweard_Muybridge#/media/File:Muybridge_race_horse_animated.gif">download
+				the video file here</a>.</p>
+		<p>Anyone can <a href="https://wikimediafoundation.org/support/">donate to Wikipedia here.</a></p>
+
+		<h3>Other works</h3>
+		<p>All photographs are from <a href="https://www.matthewhowell.net">Matthew Howell</a>, available for use, for
+			free at <a href="https://unsplash.com/@matthewhowell">Unsplash</a>.</p>
+
+	</section>
+
+	<script>
+		// a handler for the example <form> element submit
+		const formElementHandler = function (event) {
+
+			// the submit button element for this form has an ID
+			// use it to find the element in the document
+			const submit_element = document.querySelector("#send-message-form #send-message-submit");
+
+			// update the submit button text to indicate success
+			submit_element.innerHTML = 'Pretend Sent ✓';
+
+			// disable the submit button
+			submit_element.disabled = true;
+
+			// prevent the form from actually submitting and changing the URL
+			event.preventDefault();
+			return false;
+		}
+
+		// a handler for the element navigation form submit
+		const elementNavigationHandler = function (event) {
+
+			// use that parent element to gather all its option elements
+			const option_elements = document.querySelectorAll("#element-navigation option");
+
+			const element_select = document.querySelector("#element-navigation");
+
+			// ensure that we have some selected option
+			if (option_elements[element_select.selectedIndex]) {
+
+				// gather the current selected option value as the anchor
+				const anchor = option_elements[element_select.selectedIndex].value;
+
+				if (anchor) {
+
+					// compose the new location by appending the anchor to the pathname
+					const new_location = location.pathname + "#" + anchor;
+
+					// send the browser off to that new location
+					location.href = new_location;
+				}
+			}
+
+			// prevent the form from actually submitting and changing the URL
+			event.preventDefault();
+			return false;
+		};
+	</script>
+</body>
+
+</html>
