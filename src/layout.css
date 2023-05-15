@@ -179,19 +179,16 @@ hr {
 
 .justify-end {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
 }
 
 .justify-stretch {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .justify-start {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
 }
 
