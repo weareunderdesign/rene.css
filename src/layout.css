@@ -39,27 +39,6 @@ nav {
     column-gap: calc(var(--size-base) * 6);
 }
 
-aside {
-    width: calc(var(--size-base) * 60);
-    display: flex;
-    flex-direction: column;
-}
-
-section {
-    width: 100%;
-    min-height: 100vh;
-}
-section > section {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 1140px;
-    padding: calc(var(--size-base) * 10);
-    row-gap: calc(var(--size-base) * 10);
-}
-
 footer {
     display: flex;
     flex-direction: row;
@@ -197,7 +176,26 @@ hr {
     top: 0px;
     z-index: 1;
 }
+.panel {
+    width: calc(var(--size-base) * 60);
+    display: flex;
+    flex-direction: column;
+}
 
+.view {
+    width: 100%;
+    min-height: 100vh;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1140px;
+    padding: calc(var(--size-base) * 10);
+    row-gap: calc(var(--size-base) * 10);
+}
 .hidden {
     display: none;
 }
@@ -209,7 +207,7 @@ hr {
 }
 
 @media (max-width: 768px) {
-    section > section {
+    .page {
         padding: calc(var(--size-base) * 6);
         row-gap: calc(var(--size-base) * 6);
     }
