@@ -49,7 +49,7 @@ section {
     width: 100%;
     min-height: 100vh;
 }
-section > div {
+section > section {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -209,7 +209,7 @@ hr {
 }
 
 @media (max-width: 768px) {
-    section > div {
+    section > section {
         padding: calc(var(--size-base) * 6);
         row-gap: calc(var(--size-base) * 6);
     }
