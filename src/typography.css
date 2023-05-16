@@ -13,32 +13,32 @@ h6 {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 5.28rem; /* 6rem * 0.88 */
     line-height: 0.95;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.52rem; /* 4rem * 0.88 */
     line-height: 1.04;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.64rem; /* 3rem * 0.88 */
     line-height: 1.08;
 }
 
 h4 {
-    font-size: 2.25rem;
+    font-size: 1.98rem; /* 2.25rem * 0.88 */
     line-height: 1.12;
 }
 
 h5 {
-    font-size: 1.5rem;
+    font-size: 1.32rem; /* 1.5rem * 0.88 */
     line-height: 1.16;
 }
 
 h6 {
-    font-size: 1.125rem;
+    font-size: 0.99rem; /* 1.125rem * 0.88 */
     line-height: 1.12;
 }
 
