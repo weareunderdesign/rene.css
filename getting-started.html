@@ -11,7 +11,7 @@
             type="module"
             src="https://unpkg.com/@rainbowapp/svg-icon.js/dist/svg-icon.min.js"></script>
         <link rel="stylesheet" href="./src/index.css" />
-        <title>Design</title>
+        <title>get started with rené</title>
     </head>
     <body>
         <rnbw-banner></rnbw-banner>
@@ -43,15 +43,14 @@
                     <h1>
                         get started
                         <br class />
-                        with rene.css
+                        with rené
                     </h1>
                     <h4>
-                        rene.css is a straightforward yet powerful toolkit for
-                        your design and development tasks. This guide will take
-                        you through everything you need to get started,
-                        including easy steps to install, customize, and create
-                        themes. let's dive in and explore its capabilities
-                        together.
+                        rené is a straightforward yet powerful toolkit for your
+                        design and development tasks. this guide will take you
+                        through everything you need to get started, including
+                        easy steps to install, customize, and create themes.
+                        let's dive in and explore its capabilities together.
                     </h4>
                 </div>
                 <div class="page" id="installation">
@@ -110,13 +109,13 @@
                             </div>
                         </div>
                     </div>
-                    <h5>or use the CDN Link</h5>
+                    <h5>or use the CDN link</h5>
                     <div class="row gap-xl">
                         <div class="box">
                             <p>
                                 in this example, the &lt;link&gt; tag is placed
                                 within the &lt;head&gt; element to load the
-                                stylesheet from the specified URL. This will
+                                stylesheet from the specified URL. this will
                                 apply the styles from the stylesheet to the
                                 elements on the page, allowing you to control
                                 their appearance and layout.
@@ -179,9 +178,9 @@
                                 the following guidelines.
                             </p>
                             <p>
-                                one of the cool things about rene.css is it
-                                already has light and dark modes. this means you
-                                can easily create designs that suit any user
+                                one of the cool things about rené is it already
+                                has light and dark modes. this means you can
+                                easily create designs that suit any user
                                 preference. the best part? any changes you make
                                 will reflect in both modes. so, you can focus on
                                 crafting great designs, knowing they'll shine in
@@ -233,19 +232,19 @@
                             </div>
                         </div>
                     </div>
-                    <h4>Base Size</h4>
+                    <h4>base size</h4>
                     <div class="row gap-xl">
                         <div class="box">
                             <p>
-                                Rene's is built with the theory of relativity in
-                                mind - The base size is used as a reference
-                                point for other font sizes on the page. The
+                                rené is built with the theory of relativity in
+                                mind - the base size is used as a reference
+                                point for other font sizes on the page. the
                                 entire layout system is applied relatively
                                 across everything and everywhere from
                                 <b class>one fundamental base size</b>.
                             </p>
                             <p>
-                                By changing this custom property, you're
+                                by changing this custom property, you're
                                 relatively increasing/decreasing the sizing of
                                 your entire design system.
                             </p>
@@ -257,12 +256,12 @@
                             </code>
                         </div>
                     </div>
-                    <h4>Typography</h4>
+                    <h4>typography</h4>
                     <div class="row gap-xl">
                         <div class="box">
                             <p>
-                                Rene supports one <b>primary font</b> that is
-                                applied across. Yet you can easily add a
+                                rené supports one <b>primary font</b> that is
+                                applied across. yet you can easily add a
                                 secondary font and use it natively as you wish.
                             </p>
                         </div>
@@ -277,39 +276,35 @@
                             </code>
                         </div>
                     </div>
-                    <h4>Colors</h4>
+                    <h4>colors</h4>
                     <div class="row gap-xl">
                         <div class="box">
-                            <p>Start by giving a <b>name to your theme</b>.</p>
+                            <p>start by giving a <b>name to your theme</b>.</p>
                             <p>
-                                Rene built with four color groups in mind -
+                                rené is built with four color groups in mind -
                                 <b class>brand colors</b>,
                                 <b class>backgrounds/foregrounds colors</b>, and
                                 <b class>semantic colors.</b>
                             </p>
                         </div>
                         <div class="box">
-                            <code
-                                class="background-secondary padding-l radius-s">
-                                <div>[data-theme="theme-name"] {</div>
-                                <div>  --color-primary: #8080ff;</div>
-                                <div>  --color-secondary: #a640ff;</div>
-                                <div>
-                                      --color-primary-background: #000000;
-                                </div>
-                                <div>
-                                      --color-secondary-background: #0b0b0b;
-                                </div>
-                                <div>
-                                      --color-primary-foreground: #ffffff;
-                                </div>
-                                <div>
-                                      --color-secondary-foreground: #f3f3f3;
-                                </div>
-                                <div>  --color-positive: green;</div>
-                                <div>  --color-critical: orange;</div>
-                                <div>  --color-negative: red;</div>
-                                <div>}</div>
+                            <code class="scrollable">
+                                <pre
+                                    class="background-secondary padding-l radius-s">
+[data theme="light"] {
+    --color-primary: #0000cd;
+    --color-secondary: #800080;
+    --color-primary-background: #ffffff;
+    --color-secondary-background: #eeeeee;
+    --color-tertiary-background: #dddddd;
+    --color-primary-foreground: #111111;
+    --color-secondary-foreground: #222222;
+    --color-tertiary-foreground: #333333;
+    --color-positive: darkgreen;
+    --color-critical: gold;
+    --color-negative: orangered;
+}</pre
+                                >
                             </code>
                         </div>
                     </div>
