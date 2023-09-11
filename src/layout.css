@@ -219,7 +219,7 @@ hr {
     padding: calc(var(--size-base) * 10);
     row-gap: calc(var(--size-base) * 10);
 }
-.display-none {
+.hidden {
     display: none;
 }
 
