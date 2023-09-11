@@ -122,7 +122,30 @@ hr {
 .gap-xl {
     gap: calc(var(--size-base) * 10) calc(var(--size-base) * 10);
 }
-
+.gap-column-s {
+    column-gap: calc(var(--size-base) * 2);
+}
+.gap-column-m {
+    column-gap: calc(var(--size-base) * 3);
+}
+.gap-column-l {
+    column-gap: calc(var(--size-base) * 6);
+}
+.gap-column-xl {
+    column-gap: calc(var(--size-base) * 10);
+}
+.gap-row-s {
+    row-gap: calc(var(--size-base) * 2);
+}
+.gap-row-m {
+    row-gap: calc(var(--size-base) * 3);
+}
+.gap-row-l {
+    row-gap: calc(var(--size-base) * 6);
+}
+.gap-row-xl {
+    row-gap: calc(var(--size-base) * 10);
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -196,7 +219,7 @@ hr {
     padding: calc(var(--size-base) * 10);
     row-gap: calc(var(--size-base) * 10);
 }
-.hidden {
+.display-none {
     display: none;
 }
 
