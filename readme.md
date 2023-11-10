@@ -8,7 +8,7 @@ Visit [renecss.org](https://renecss.org/) to view the complete documentation.
 
 ## Community
 
-Join [Rainbow's Discord](https://discord.com/invite/HycXz8TJkd) to chat with other community members about Rene.css
+Join [Rainbow's Discord](https://discord.gg/5CEf42mF) to chat with other community members about Rene.css
 
 ## Contributing
 
