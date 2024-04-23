@@ -36,7 +36,20 @@ You’ll find the generated file at `/dist/rene.min.css`
 
 ## Publish a new package
 
+To publish a new package version, follow these simple steps:
+1. Update `package.json`: Increment the version number in your `package.json` file according to semantic versioning.
+2. Commit Changes.
+3. Push Changes in `main` branch.
+4. GitHub Actions will automatically trigger the workflow to create a release based on the updated version in `package.json` and publish the new package version.
 
+### GitHub Actions Workflow Overview
+
+The workflow file [release-on-version-change.yml](https://github.com/VictoriaShyika/rene.css/blob/release-and-npm-publish/.github/workflows/release-on-version-change.yml) runs ***Version Check*** and ***Release Creation*** actions.
+The workflow file [publish-npm-package.yml](https://github.com/VictoriaShyika/rene.css/blob/release-and-npm-publish/.github/workflows/publish-npm-package.yml) runs ***Publish NPM Package*** action.
+
+1. ***Version Check***: Checks if the version in the `npm package.json` matches the version in the GitHub repository.
+2. ***Release Creation***: Creates a GitHub release when the version in `npm package.json` is different from the version in the GitHub repository.
+3. ***Publish NPM Package***: Publishes a new package version when a release is created.
 
 ## Code of Conduct
 
