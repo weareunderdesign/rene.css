@@ -36,27 +36,7 @@ You’ll find the generated file at `/dist/rene.min.css`
 
 ## Publish a new package
 
-Considering you already have an NPM account, with NPM and Node.js installed on your local machine.
 
-1. Open a terminal to login into your NPM account and fill out your username, email and password as requested.
-
-   ```
-   npm login
-   ```
-
-   > You might also be asked for a one-time-password if there is 2FA applied on your account.
-
-2. Now, update the version in your `package.json` file. You can use the [SemVer](https://semver.org/) format for versioning.
-
-3. Ensure there is nothing left to commit and commit any pending work. Then run the below command.
-
-   ```
-   npm publish --access public
-   ```
-
-4. Once publishing is completed, `np` will prompt a browser window for adding the release notes to GitHub. Fill in the details.
-
-That’s all! Your package is published!
 
 ## Code of Conduct
 
