@@ -1,6 +1,6 @@
 {
-  "name": "renecss",
-  "version": "1.2.1",
+  "name": "@rnbws/renecss",
+  "version": "0.0.1",
   "description": "Rene is a design system for intention and meaning",
   "main": "rene.css",
   "scripts": {
@@ -10,7 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/relateapp/rene.git"
+    "url": "git+https://github.com/rnbwdev/rene.css.git"
+  },
+  "publishConfig": {
+    "publishConfig": {
+      "@rnbws:registry": "https://npm.pkg.github.com",
+      "access": "public"
+    }
   },
   "keywords": [
     "css",
@@ -21,9 +27,9 @@
   "author": "Relate Design LTD",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/relateapp/rene/issues"
+    "url": "https://github.com/rnbwdev/rene.css/issues"
   },
-  "homepage": "https://github.com/relateapp/rene#readme",
+  "homepage": "https://github.com/rnbwdev/rene.css#readme",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^3.4.1",

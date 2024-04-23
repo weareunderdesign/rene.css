@@ -36,27 +36,20 @@ You’ll find the generated file at `/dist/rene.min.css`
 
 ## Publish a new package
 
-Considering you already have an NPM account, with NPM and Node.js installed on your local machine.
+To publish a new package version, follow these simple steps:
+1. Update `package.json`: Increment the version number in your `package.json` file according to semantic versioning.
+2. Commit Changes.
+3. Push Changes in `main` branch.
+4. GitHub Actions will automatically trigger the workflow to create a release based on the updated version in `package.json` and publish the new package version.
 
-1. Open a terminal to login into your NPM account and fill out your username, email and password as requested.
+### GitHub Actions Workflow Overview
 
-   ```
-   npm login
-   ```
+The workflow file [`release-on-version-change.yml`](https://github.com/rnbwdev/rene.css/blob/main/.github/workflows/release-on-version-change.yml) runs ***Version Check*** and ***Release Creation*** actions.
+The workflow file [`publish-npm-package.yml`](https://github.com/rnbwdev/rene.css/blob/main/.github/workflows/publish-npm-package.yml) runs ***Publish NPM Package*** action.
 
-   > You might also be asked for a one-time-password if there is 2FA applied on your account.
-
-2. Now, update the version in your `package.json` file. You can use the [SemVer](https://semver.org/) format for versioning.
-
-3. Ensure there is nothing left to commit and commit any pending work. Then run the below command.
-
-   ```
-   npm publish --access public
-   ```
-
-4. Once publishing is completed, `np` will prompt a browser window for adding the release notes to GitHub. Fill in the details.
-
-That’s all! Your package is published!
+1. ***Version Check***: Checks if the version in the `npm package.json` matches the version in the GitHub repository.
+2. ***Release Creation***: Creates a GitHub release when the version in `npm package.json` is different from the version in the GitHub repository.
+3. ***Publish NPM Package***: Publishes a new package version when a release is created.
 
 ## Code of Conduct
 
