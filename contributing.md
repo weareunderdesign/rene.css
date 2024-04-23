@@ -44,8 +44,8 @@ To publish a new package version, follow these simple steps:
 
 ### GitHub Actions Workflow Overview
 
-The workflow file [`release-on-version-change.yml`](https://github.com/VictoriaShyika/rene.css/blob/release-and-npm-publish/.github/workflows/release-on-version-change.yml) runs ***Version Check*** and ***Release Creation*** actions.
-The workflow file [`publish-npm-package.yml`](https://github.com/VictoriaShyika/rene.css/blob/release-and-npm-publish/.github/workflows/publish-npm-package.yml) runs ***Publish NPM Package*** action.
+The workflow file [`release-on-version-change.yml`](https://github.com/rnbwdev/rene.css/blob/main/.github/workflows/release-on-version-change.yml) runs ***Version Check*** and ***Release Creation*** actions.
+The workflow file [`publish-npm-package.yml`](https://github.com/rnbwdev/rene.css/blob/main/.github/workflows/publish-npm-package.yml) runs ***Publish NPM Package*** action.
 
 1. ***Version Check***: Checks if the version in the `npm package.json` matches the version in the GitHub repository.
 2. ***Release Creation***: Creates a GitHub release when the version in `npm package.json` is different from the version in the GitHub repository.
