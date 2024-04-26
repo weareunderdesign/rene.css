@@ -31,7 +31,7 @@ npm install @rnbws/renecss
 Unpkg CDN:
 
 ```
-<link rel="stylesheet" href="<https://unpkg.com/@rnbws/renecss/dist/rene.min.css>"/>
+<link rel="stylesheet" href="https://unpkg.com/@rnbws/renecss/dist/rene.min.css"/>
 ```
 
 That's it! 🎉
