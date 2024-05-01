@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function highlightMenuLink() {
-        let st = window.pageYOffset || document.documentElement.scrollTop;
+        let st = window.scrollY || document.documentElement.scrollTop;
         if (st > lastScrollTop) {
             // Scroll down
             let newActiveLink = null;
