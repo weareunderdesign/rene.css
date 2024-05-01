@@ -12,6 +12,13 @@
         <title>rené</title>
     </head>
     <body>
+        <style>
+            .active {
+                /* text-decoration: underline;
+                text-decoration-thickness: 1.5px; */
+                padding-left: 1rem;
+            }
+        </style>
         <rnbw-banner></rnbw-banner>
         <section class="box justify-stretch column align-center">
             <div class="page">
@@ -68,14 +75,22 @@
                         </div><h6>github ↗</h6></a>
                 </nav>
             </div>
-        </section><div class="row" id="getting-started">
+        </section><div class="row">
             <div>
-                <aside class="justify-stretch sticky padding-l">
-                    <div class="column box-l radius-xs gap-l align-start">
-                        <a href="./"><svg-icon src="./rene.svg"></svg-icon></a>
-                        <div class="column gap-m text-l">
-                            <a href="#getting-started">getting started</a><a href="#installation">↪ installation</a><a href="#customization">↪ customization</a><a href="./styleguide">styleguide</a>
-                        </div>
+                <aside class="justify-stretch sticky padding-l" style="width: 20rem;">
+                    <div class="column">
+                        <h4 style="padding-bottom: 0.5rem;">rene.css</h4>
+                        <a href="#gettingstarted"><span class="text-l">getting started</span></a>
+                        <a href="#installation"><span class="text-l">installation</span></a>
+                        <a href="#customization"><span class="text-l">customization</span></a>
+                        <!-- <a href="./styleguide"><span class="text-l">styleguide</span></a> -->
+                        <a href="#styleguide"><span class="text-l">styleguide</span></a>
+                        <a href="#typography"><span class="text-l">typography</span></a>
+                        <a href="#colors"><span class="text-l">colors</span></a>
+                        <a href="#layout"><span class="text-l">layout</span></a>
+                        <a href="#shadows"><span class="text-l">shadows</span></a>
+                        <a href="#borders"><span class="text-l">borders</span></a>
+                        <a href="#media"><span class="text-l">media</span></a>
                         <div class="gap-m">
                             <div>
                                 <div class="icon-s icon-color2 btn-toggle"></div>
@@ -88,8 +103,8 @@
                 </aside>
             </div>
             <section class="box align-center column view">
-                <div class="page" id="getting-started">
-                    <h1>get started<div>with rené</div></h1>
+                <div class="page">
+                    <h1 id="gettingstarted">get started<div>with rené</div></h1>
                     <h4>
                         rené is a straightforward yet powerful toolkit for your
                         design and development tasks. this guide will take you
@@ -98,8 +113,8 @@
                         let's dive in and explore its capabilities together.
                     </h4>
                 </div>
-                <div class="page" id="installation">
-                    <h2>installation</h2>
+                <div class="page">
+                    <h2 id="installation">installation</h2>
                     <h5>install with NPM</h5>
                     <div class="row gap-xl">
                         <div class="box">
@@ -202,8 +217,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="page" id="customization">
-                    <h2>customization</h2>
+                <div class="page">
+                    <h2 id="customization">customization</h2>
                     <div class="row gap-xl">
                         <div class="box">
                             <p>
@@ -266,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                    <h4>base size</h4>
+                    <h4 >base size</h4>
                     <div class="row gap-xl">
                         <div class="box">
                             <p>
@@ -339,37 +354,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </div><div class="row" id="styleguide">
-            <div>
-                <aside class="justify-stretch sticky padding-l">
-                    <div class="column box-l radius-xs gap-l align-start">
-                        <a href="./"><svg-icon src="./rene.svg"></svg-icon></a>
-                        <div class="column gap-m text-l">
-                            <a href="./getting-started">getting started</a>
-                            <a href="./styleguide">styleguide</a>
-                            <a href="#typography">↪ typography</a>
-                            <a href="#colors">↪ colors</a>
-                            <a href="#layout">↪ layout</a>
-                            <a href="#shadows">↪ shadows</a>
-                            <a href="#borders">↪ borders</a>
-                            <a href="#media">↪ media</a>
-                        </div>
-                        <div class="gap-m">
-                            <div>
-                                <div
-                                    class="icon-s icon-color2 btn-toggle"></div>
-                            </div>
-                            <div>
-                                <div class="icon-s icon-github"></div>
-                            </div>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-            <section class="box align-center column view">
                 <div class="page">
-                    <h1>styleguide</h1>
+                    <h1 id="styleguide">styleguide</h1>
                     <h4>
                         rené uses elements and class names as simple yet
                         effective building blocks. it's about getting more done
@@ -379,8 +365,8 @@
                     </h4>
                 </div>
 
-                <div class="page" id="typography">
-                    <h2>typography</h2>
+                <div class="page">
+                    <h2 id="typography">typography</h2>
                     <div class="row gap-xl">
                         <div class="box">
                             <p>
@@ -668,8 +654,8 @@ h1 {
                         </div>
                     </div>
                 </div>
-                <div class="gap-xl column page" id="Colors">
-                    <h2>colors</h2>
+                <div class="gap-xl column page">
+                    <h2 id="colors">colors</h2>
                     <div class="gap-xl row">
                         <div class="box">
                             <p>
@@ -953,8 +939,8 @@ h1 {
                     </div>
                 </div>
 
-                <div class="gap-xl column page" id="layout">
-                    <h2>layout</h2>
+                <div class="gap-xl column page">
+                    <h2 id="layout">layout</h2>
                     <h4>containers</h4>
 
                     <hr />
@@ -1619,8 +1605,8 @@ h1 {
 
                     <div class="gap-xl row justify-start"></div>
                 </div>
-                <div class="gap-xl column page" id="shadows">
-                    <h2>shadows</h2>
+                <div class="gap-xl column page">
+                    <h2 id="shadows">shadows</h2>
 
                     <div class="gap-xl row align-center">
                         <div class="box justify-start align-start gap-m">
@@ -1657,8 +1643,8 @@ h1 {
                     </div>
                 </div>
 
-                <div class="gap-xl column page" id="borders">
-                    <h2>borders</h2>
+                <div class="gap-xl column page">
+                    <h2 id="borders">borders</h2>
 
                     <div class="gap-xl row align-center">
                         <div class="box justify-start align-start gap-m">
@@ -1695,8 +1681,8 @@ h1 {
                     </div>
                 </div>
 
-                <div id="media" class="page">
-                    <h2>media</h2>
+                <div class="page">
+                    <h2 id="media">media</h2>
                     <div class="gap-xl">
                         <svg-icon
                             src="./rene.svg"
@@ -1728,4 +1714,5 @@ h1 {
     </body>
     <script src="https://rnbw.company/rnbw-banner.js"></script>
     <script src="https://rnbw.company/rnbw-footer.js"></script>
+    <script src="table-of-contents.js"></script>
 </html>
