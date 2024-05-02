@@ -2,6 +2,48 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuLinks = document.querySelectorAll("aside a");
     let lastScrollTop = 0;
 
+    function getHeaderLevel(headerId) {
+        const header = document.getElementById(headerId);
+        if (header) {
+            const tagName = header.tagName.toLowerCase();
+            return parseInt(tagName.charAt(1));
+        }
+        return -1;
+    }
+
+    function applyMenuOffsets() {
+        const headerLevels = {};
+        let minLevel = Infinity;
+
+        menuLinks.forEach(link => {
+            const targetId = link.getAttribute("href").substring(1);
+            const headerLevel = getHeaderLevel(targetId);
+            if (headerLevel > 0) {
+                if (!headerLevels.hasOwnProperty(headerLevel)) {
+                    headerLevels[headerLevel] = 0;
+                }
+                headerLevels[headerLevel]++;
+                minLevel = Math.min(minLevel, headerLevel);
+            }
+        });
+
+        let offset = 0;
+        for (let i = minLevel; i <= 6; i++) {
+            if (headerLevels[i] !== undefined) {
+                menuLinks.forEach(link => {
+                    const targetId = link.getAttribute("href").substring(1);
+                    const headerLevel = getHeaderLevel(targetId);
+                    if (headerLevel === i) {
+                        link.style.marginLeft = offset + "px";
+                    }
+                });
+                offset += 20;
+            }
+        }
+    }
+
+    applyMenuOffsets();
+
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
         return (
