@@ -23,12 +23,6 @@
 </head>
 
 <body>
-    <style>
-        .active {
-            text-decoration: underline;
-            text-decoration-thickness: 1.5px;
-        }
-    </style>
     <rnbw-banner></rnbw-banner>
     <section class="box justify-stretch column align-center">
         <div class="page">
@@ -85,111 +79,97 @@
             </nav>
         </div>
     </section>
-    <div class="row">
+
+
+    <div class="row" style="flex-wrap: nowrap">
         <div>
-            <aside class="justify-stretch sticky padding-l" style="width: 20rem;">
-                <div class="column">
-                    <h4 style="padding-bottom: 0.5rem;">rene.css</h4>
-                    <a href="#gettingstarted"><span class="text-l">getting started</span></a>
-                    <a href="#installation"><span class="text-l">installation</span></a>
-                    <a href="#customization"><span class="text-l">customization</span></a>
-                    <!-- <a href="./styleguide"><span class="text-l">styleguide</span></a> -->
-                    <a href="#styleguide"><span class="text-l">styleguide</span></a>
-                    <a href="#typography"><span class="text-l">typography</span></a>
-                    <a href="#colors"><span class="text-l">colors</span></a>
-                    <a href="#layout"><span class="text-l">layout</span></a>
-                    <a href="#shadows"><span class="text-l">shadows</span></a>
-                    <a href="#borders"><span class="text-l">borders</span></a>
-                    <a href="#media"><span class="text-l">media</span></a>
-                    <div class="gap-m">
-                        <div>
-                            <div class="icon-s icon-color2 btn-toggle"></div>
-                        </div>
-                        <div>
-                            <div class="icon-s icon-github"></div>
-                        </div>
-                    </div>
-                </div>
+            <aside class="column justify-stretch sticky padding-l" style="width: 20rem; display: inline-block;">
             </aside>
         </div>
-        <section class="box align-center column view">
-            <div class="page">
-                <h1 id="gettingstarted">get started<div>with rené</div>
-                </h1>
-                <h4>
-                    rené is a straightforward yet powerful toolkit for your
-                    design and development tasks. this guide will take you
-                    through everything you need to get started, including
-                    easy steps to install, customize, and create themes.
-                    let's dive in and explore its capabilities together.
-                </h4>
-            </div>
-            <div class="page">
-                <h2 id="installation">installation</h2>
-                <h5>install with NPM</h5>
-                <div class="row gap-xl">
-                    <div class="box">
-                        <p>
-                            to install NPM (Node Package Manager), you will
-                            first need to install Node.js, which includes
-                            NPM.
-                        </p>
-                        <details>
-                            <summary>install Node.js</summary>
-                            <ol>
-                                <li>
-                                    <p>
-                                        go to the
-                                        <a href="https://nodejs.org/" target="_new">Node.js website</a>
-                                        and download the latest version of
-                                        Node.js for your operating system.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        install Node.js using the downloaded
-                                        installer.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        verify the installation by opening a
-                                        terminal or command prompt and
-                                        typing:
-                                    </p>
-                                    <pre>node -v</pre>
-                                    <p>
-                                        you should see the installed version
-                                        number of Node.js.
-                                    </p>
-                                </li>
-                            </ol>
-                        </details>
+        <div class="view column align-center">
+            <div class="box align-center column view">
+                <div class="page">
+                    <div>
+                        <h1 id="gettingstarted">get started </br>with rené
+                        </h1>
                     </div>
-                    <div class="box">
-                        <code class="padding-l radius-s background-secondary border">npm install renecss</code>
-                        <div class="column gap-m">
-                            <span class="text-s"></span>
-                        </div>
-                    </div>
+                    <h4>
+                        rené is a straightforward yet powerful toolkit for your
+                        design and development tasks. this guide will take you
+                        through everything you need to get started, including
+                        easy steps to install, customize, and create themes.
+                        let's dive in and explore its capabilities together.
+                    </h4>
                 </div>
-                <h5>or use the CDN link</h5>
-                <div class="row gap-xl">
-                    <div class="box">
-                        <p>
-                            in this example, the &lt;link&gt; tag is placed
-                            within the &lt;head&gt; element to load the
-                            stylesheet from the specified URL. this will
-                            apply the styles from the stylesheet to the
-                            elements on the page, allowing you to control
-                            their appearance and layout.
-                        </p>
-                        <div class="column gap-m">
-                            <span class="text-s"></span>
+
+
+
+                <div class="page">
+                    <h2 id="installation">installation</h2>
+                    <h5>install with NPM</h5>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                to install NPM (Node Package Manager), you will
+                                first need to install Node.js, which includes
+                                NPM.
+                            </p>
+                            <details>
+                                <summary>install Node.js</summary>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            go to the
+                                            <a href="https://nodejs.org/" target="_new">Node.js website</a>
+                                            and download the latest version of
+                                            Node.js for your operating system.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            install Node.js using the downloaded
+                                            installer.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            verify the installation by opening a
+                                            terminal or command prompt and
+                                            typing:
+                                        </p>
+                                        <pre>node -v</pre>
+                                        <p>
+                                            you should see the installed version
+                                            number of Node.js.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </details>
+                        </div>
+                        <div class="box">
+                            <code class="padding-l radius-s background-secondary border">npm install renecss</code>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <code class="background-secondary padding-l radius-s">
+                    <h5>or use the CDN link</h5>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                in this example, the &lt;link&gt; tag is placed
+                                within the &lt;head&gt; element to load the
+                                stylesheet from the specified URL. this will
+                                apply the styles from the stylesheet to the
+                                elements on the page, allowing you to control
+                                their appearance and layout.
+                            </p>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <code class="background-secondary padding-l radius-s">
                                 <span>
                                     <div>&lt;!DOCTYPE html&gt;</div>
                                     <div>&lt;html&gt;</div>
@@ -210,49 +190,53 @@
                                     <div>&lt;/html&gt;</div>
                                 </span>
                             </code>
-                        <div class="column gap-m">
-                            <span class="text-s"></span>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box-s padding-right-s">
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                        <div class="box-s">
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="box-s padding-right-s">
-                        <div class="column gap-m">
-                            <span class="text-s"></span>
+
+
+
+
+                <div class="page">
+                    <h2 id="customization">customization</h2>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                to create your own theme, copy the following
+                                code to a new
+                                <b>theme.css</b> file and override it with
+                                the following guidelines.
+                            </p>
+                            <p>
+                                one of the cool things about rené is it already
+                                has light and dark modes. this means you can
+                                easily create designs that suit any user
+                                preference. the best part? any changes you make
+                                will reflect in both modes. so, you can focus on
+                                crafting great designs, knowing they'll shine in
+                                both light and dark settings.
+                            </p>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="box-s">
-                        <div class="column gap-m">
-                            <span class="text-s"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="page">
-                <h2 id="customization">customization</h2>
-                <div class="row gap-xl">
-                    <div class="box">
-                        <p>
-                            to create your own theme, copy the following
-                            code to a new
-                            <b>theme.css</b> file and override it with
-                            the following guidelines.
-                        </p>
-                        <p>
-                            one of the cool things about rené is it already
-                            has light and dark modes. this means you can
-                            easily create designs that suit any user
-                            preference. the best part? any changes you make
-                            will reflect in both modes. so, you can focus on
-                            crafting great designs, knowing they'll shine in
-                            both light and dark settings.
-                        </p>
-                        <div class="column gap-m">
-                            <span class="text-s"></span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <code class="background-secondary padding-l radius-s">
+                        <div class="box">
+                            <code class="background-secondary padding-l radius-s">
                                 <div>:root {</div>
                                 <div>  --size-base: 4px;</div>
                                 <div>
@@ -287,66 +271,66 @@
                                 <div>  --color-negative: red;</div>
                                 <div>}</div>
                             </code>
-                        <div class="column gap-m">
-                            <span class="text-s"></span>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <h4>base size</h4>
-                <div class="row gap-xl">
-                    <div class="box">
-                        <p>
-                            rené is built with the theory of relativity in
-                            mind - the base size is used as a reference
-                            point for other font sizes on the page. the
-                            entire layout system is applied relatively
-                            across everything and everywhere from
-                            <b>one fundamental base size</b>.
-                        </p>
-                        <p>
-                            by changing this custom property, you're
-                            relatively increasing/decreasing the sizing of
-                            your entire design system.
-                        </p>
-                    </div>
-                    <div class="box">
-                        <code class="background-secondary padding-l radius-s">
+                    <h4>base size</h4>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                rené is built with the theory of relativity in
+                                mind - the base size is used as a reference
+                                point for other font sizes on the page. the
+                                entire layout system is applied relatively
+                                across everything and everywhere from
+                                <b>one fundamental base size</b>.
+                            </p>
+                            <p>
+                                by changing this custom property, you're
+                                relatively increasing/decreasing the sizing of
+                                your entire design system.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <code class="background-secondary padding-l radius-s">
                                 <div>  --size-base: 4px;</div>
                             </code>
+                        </div>
                     </div>
-                </div>
-                <h4>typography</h4>
-                <div class="row gap-xl">
-                    <div class="box">
-                        <p>
-                            rené supports one <b>primary font</b> that is
-                            applied across. yet you can easily add a
-                            secondary font and use it natively as you wish.
-                        </p>
-                    </div>
-                    <div class="box">
-                        <code class="background-secondary padding-l radius-s">
+                    <h4>typography</h4>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                rené supports one <b>primary font</b> that is
+                                applied across. yet you can easily add a
+                                secondary font and use it natively as you wish.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <code class="background-secondary padding-l radius-s">
                                 <div>
                                       --font-primary:"HelveticaNeue", "Helvetica
                                     Neue", Helvetica, Arial, "Lucida Grande",
                                     sans-serif;
                                 </div>
                             </code>
+                        </div>
                     </div>
-                </div>
-                <h4>colors</h4>
-                <div class="row gap-xl">
-                    <div class="box">
-                        <p>start by giving a <b>name to your theme</b>.</p>
-                        <p>
-                            rené is built with four color groups in mind -
-                            <b>brand colors</b>,
-                            <b>backgrounds/foregrounds colors</b>, and
-                            <b>semantic colors.</b>
-                        </p>
-                    </div>
-                    <div class="box">
-                        <code class="scrollable">
+                    <h4>colors</h4>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>start by giving a <b>name to your theme</b>.</p>
+                            <p>
+                                rené is built with four color groups in mind -
+                                <b>brand colors</b>,
+                                <b>backgrounds/foregrounds colors</b>, and
+                                <b>semantic colors.</b>
+                            </p>
+                        </div>
+                        <div class="box">
+                            <code class="scrollable">
                                 <pre class="background-secondary padding-l radius-s">
 [data theme="light"] {
     --color-primary: #0000cd;
@@ -362,40 +346,51 @@
     --color-negative: orangered;
 }</pre>
                             </code>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="page">
-                <h1 id="styleguide">styleguide</h1>
-                <h4>
-                    rené uses elements and class names as simple yet
-                    effective building blocks. it's about getting more done
-                    with less. it provides the essentials, helping designers
-                    and developers to create diverse designs from minimal
-                    components.
-                </h4>
-            </div>
 
-            <div class="page">
-                <h2 id="typography">typography</h2>
-                <div class="row gap-xl">
-                    <div class="box">
-                        <p>
-                            rené's typography system is built around rem
-                            units. this means that all font sizes are
-                            relative to the root element. it allows for
-                            consistency in design, making it look good on
-                            all devices. also, using rem units can enhance
-                            accessibility, as it respects user preferences
-                            for default font sizes.
-                        </p>
+
+
+
+
+                <div class="page">
+                    <div>
+                        <h1 id="styleguide">styleguide</h1>
                     </div>
-                    <div class="box">
-                        <p>
-                            the following example shows how typography is
-                            used in a relative way
-                        </p>
-                        <code class="padding-l radius-s background-secondary border">
+                    <h4>
+                        rené uses elements and class names as simple yet
+                        effective building blocks. it's about getting more done
+                        with less. it provides the essentials, helping designers
+                        and developers to create diverse designs from minimal
+                        components.
+                    </h4>
+                </div>
+
+
+
+
+                <div class="page">
+                    <div>
+                        <h2 id="typography">typography</h2>
+                        <div class="row gap-xl">
+                            <div class="box">
+                                <p>
+                                    rené's typography system is built around rem
+                                    units. this means that all font sizes are
+                                    relative to the root element. it allows for
+                                    consistency in design, making it look good on
+                                    all devices. also, using rem units can enhance
+                                    accessibility, as it respects user preferences
+                                    for default font sizes.
+                                </p>
+                            </div>
+                            <div class="box">
+                                <p>
+                                    the following example shows how typography is
+                                    used in a relative way
+                                </p>
+                                <code class="padding-l radius-s background-secondary border">
                                 <pre>
 h1 {
     font-size: 5.28rem; /* 6rem * 0.88 */
@@ -405,1035 +400,1063 @@ h1 {
                                 >
                             </code>
 
-                        <div class="column gap-m">
-                            <span class="text-s"></span>
+                                <div class="column gap-m">
+                                    <span class="text-s"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>headings</h4>
+                    </div>
+
+
+                    <hr />
+                    <div class="gap-xl row">
+                        <div class="box align-center justify-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<h1>Write Something</h1>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
+                                    class="icon-s icon-color2"></svg-icon>
+                                <span>Heading 1</span>
+                            </div>
+                        </div>
+                        <div class="box-m">
+                            <h1 class="box">Write Something</h1>
                         </div>
                     </div>
-                </div>
-                <h4>headings</h4>
-                <hr />
-                <div class="gap-xl row">
-                    <div class="box align-center justify-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<h1>Write Something</h1>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
-                                class="icon-s icon-color2"></svg-icon>
-                            <span>Heading 1</span>
+
+                    <div class="gap-xl row">
+                        <div class="box align-center justify-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<h2>Write Something</h2>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
+                                    class="icon-s icon-color2"></svg-icon>
+                                <span>Heading 2</span>
+                            </div>
+                        </div>
+                        <div class="text-center box-m">
+                            <h2>Write Something</h2>
                         </div>
                     </div>
-                    <div class="box-m">
-                        <h1 class="box">Write Something</h1>
+
+                    <div class="gap-xl row">
+                        <div class="box align-center justify-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<h3>Write Something</h3>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
+                                    class="icon-s icon-color2"></svg-icon>
+                                <span>Heading 3</span>
+                            </div>
+                        </div>
+                        <div class="text-center box-m">
+                            <h3>Write Something</h3>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-center justify-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<h4>Write Something</h4>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
+                                    class="icon-s icon-color2"></svg-icon>
+                                <span>Heading 4</span>
+                            </div>
+                        </div>
+                        <div class="text-center box-m">
+                            <h4>Write Something</h4>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-center justify-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<h4>Write Something</h4>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
+                                    class="icon-s icon-color2"></svg-icon>
+                                <span>Heading 5</span>
+                            </div>
+                        </div>
+                        <div class="text-center box-m">
+                            <h4>Write Something</h4>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-center justify-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<h6>Write Something</h6>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
+                                    class="icon-s icon-color2"></svg-icon>
+                                <span>Heading 6</span>
+                            </div>
+                        </div>
+                        <div class="text-center box-m">
+                            <h6>Write Something</h6>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<h6>Write Something</h6>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg" class="icon-s"></svg-icon>
+                                <span>Heading 6</span>
+                            </div>
+                        </div>
+                        <div class="box-m column">
+                            <p>Write <i>Something</i></p>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h4>formatting</h4>
+                    </div>
+                    <hr />
+
+                    <div class="row gap-xl">
+                        <div class="gap-s">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<b>Write Something</b>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/bold.svg" class="icon-s"></svg-icon>
+                                <span>Bold</span>
+                            </div>
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<strong>Write Something</strong>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/bold.svg" class="icon-s"></svg-icon>
+                                <span>Strong</span>
+                            </div>
+                        </div>
+                        <div class="box gap-m align-center justify-start">
+                            <b>Write Something</b><strong>Write Something</strong>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<blockquote>Write Something</blockquote>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/blockquote.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>Blockquote</span>
+                            </div>
+                        </div>
+                        <div class="box-m text-center align-center justify-start">
+                            <blockquote class="radius-s">
+                                <div>Write Something</div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<a href='#'>Write Something</a>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/link.svg" class="icon-s"></svg-icon>
+                                <span>Link</span>
+                            </div>
+                        </div>
+                        <div class="box-m text-center align-center justify-start">
+                            <a href="/colors">
+                                <span>Write Something</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
+                                data-clipboard-text="<code>Write Something</code>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/code-html.svg" class="icon-s"></svg-icon>
+                                <span>code</span>
+                            </div>
+                        </div>
+                        <div class="box-m text-center align-center justify-start">
+                            <code>Write Something</code>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".text-xs">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/font.svg" class="icon-s"></svg-icon>
+                                <span>text-xs</span>
+                            </div>
+                        </div>
+                        <div class="box-m text-center align-center justify-start">
+                            <span class="text-xs">Write Something</span>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".text-s">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/font.svg" class="icon-s"></svg-icon>
+                                <span>text-s</span>
+                            </div>
+                        </div>
+                        <div class="box-m text-center align-center justify-start">
+                            <span class="text-s">Write Something</span>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".text-m">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/font.svg" class="icon-s"></svg-icon>
+                                <span>text-m</span>
+                            </div>
+                        </div>
+                        <div class="box-m text-center align-center justify-start">
+                            <span class="text-m">Write Something</span>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".text-l">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/font.svg" class="icon-s"></svg-icon>
+                                <span>text-l</span>
+                            </div>
+                        </div>
+                        <div class="box-m text-center align-center justify-start">
+                            <span class="text-l">Write Something</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gap-xl row">
-                    <div class="box align-center justify-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<h2>Write Something</h2>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
-                                class="icon-s icon-color2"></svg-icon>
-                            <span>Heading 2</span>
+
+
+
+                <div class="gap-xl column page">
+                    <h2 id="colors">colors</h2>
+                    <div class="gap-xl row">
+                        <div class="box">
+                            <p>
+                                rené uses semantic colour naming. this means
+                                colours are named for their purpose, not their
+                                look. so, "error" or "error-red" could be names
+                                for colours used in messages.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <p>
+                                this makes the stylesheet easier to understand
+                                and maintain, and reduces confusion in design.
+                            </p>
                         </div>
                     </div>
-                    <div class="text-center box-m">
-                        <h2>Write Something</h2>
+                    <h4>brand</h4>
+                    <hr />
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".color-primary">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>color-primary</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="color-primary padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".color-secondary">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>color-secondary</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="color-secondary padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <h4>background</h4>
+                    <hr />
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".background-primary">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>background-primary</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="border padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".background-secondary">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>background-secondary</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="background-secondary padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".background-tertiary">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>background-tertiary</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="background-tertiary padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <h4>foreground</h4>
+                    <hr />
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".foreground-primary">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>foreground-primary</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="foreground-primary padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".foreground-secondary">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>foreground-secondary</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="foreground-secondary padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".foreground-tertiary">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>foreground-tertiary</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="foreground-tertiary padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <h4>semantics</h4>
+                    <hr />
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".background-positive">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>background-positive</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="background-positive padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".background-critical">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>background-critical</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="background-critical padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".background-negative">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>background-negative</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="background-negative padding-xl radius-s"></div>
+                        </div>
+                    </div>
+                    <h4>opacity</h4>
+                    <hr />
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".opacity-xl">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>opacity-xl</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="color-primary padding-xl radius-s opacity-xl"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".opacity-l">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>opacity-l</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="color-primary padding-xl radius-s opacity-l"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".opacity-m">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>opacity-m</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="color-primary padding-xl radius-s opacity-m"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".opacity-s">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>opacity-s</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="color-primary padding-xl radius-s opacity-s"></div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".opacity-xs">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
+                                <span>opacity-xs</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="color-primary padding-xl radius-s opacity-xs"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gap-xl row">
-                    <div class="box align-center justify-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<h3>Write Something</h3>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
-                                class="icon-s icon-color2"></svg-icon>
-                            <span>Heading 3</span>
-                        </div>
-                    </div>
-                    <div class="text-center box-m">
-                        <h3>Write Something</h3>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-center justify-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<h4>Write Something</h4>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
-                                class="icon-s icon-color2"></svg-icon>
-                            <span>Heading 4</span>
-                        </div>
-                    </div>
-                    <div class="text-center box-m">
-                        <h4>Write Something</h4>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-center justify-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<h4>Write Something</h4>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
-                                class="icon-s icon-color2"></svg-icon>
-                            <span>Heading 5</span>
-                        </div>
-                    </div>
-                    <div class="text-center box-m">
-                        <h4>Write Something</h4>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-center justify-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<h6>Write Something</h6>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg"
-                                class="icon-s icon-color2"></svg-icon>
-                            <span>Heading 6</span>
-                        </div>
-                    </div>
-                    <div class="text-center box-m">
-                        <h6>Write Something</h6>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<h6>Write Something</h6>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/heading.svg" class="icon-s"></svg-icon>
-                            <span>Heading 6</span>
-                        </div>
-                    </div>
-                    <div class="box-m column">
-                        <p>Write <i>Something</i></p>
-                    </div>
-                </div>
-                <h4>formatting</h4>
-                <hr />
 
-                <div class="row gap-xl">
-                    <div class="gap-s">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<b>Write Something</b>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/bold.svg" class="icon-s"></svg-icon>
-                            <span>Bold</span>
-                        </div>
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<strong>Write Something</strong>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/bold.svg" class="icon-s"></svg-icon>
-                            <span>Strong</span>
-                        </div>
-                    </div>
-                    <div class="box gap-m align-center justify-start">
-                        <b>Write Something</b><strong>Write Something</strong>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<blockquote>Write Something</blockquote>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/blockquote.svg" class="icon-s"></svg-icon>
-                            <span>Blockquote</span>
-                        </div>
-                    </div>
-                    <div class="box-m text-center align-center justify-start">
-                        <blockquote class="radius-s">
-                            <div>Write Something</div>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<a href='#'>Write Something</a>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/link.svg" class="icon-s"></svg-icon>
-                            <span>Link</span>
-                        </div>
-                    </div>
-                    <div class="box-m text-center align-center justify-start">
-                        <a href="/colors">
-                            <span>Write Something</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m background-secondary radius-m align-center notification"
-                            data-clipboard-text="<code>Write Something</code>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/code-html.svg" class="icon-s"></svg-icon>
-                            <span>code</span>
-                        </div>
-                    </div>
-                    <div class="box-m text-center align-center justify-start">
-                        <code>Write Something</code>
-                    </div>
-                </div>
 
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".text-xs">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/font.svg" class="icon-s"></svg-icon>
-                            <span>text-xs</span>
-                        </div>
-                    </div>
-                    <div class="box-m text-center align-center justify-start">
-                        <span class="text-xs">Write Something</span>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".text-s">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/font.svg" class="icon-s"></svg-icon>
-                            <span>text-s</span>
-                        </div>
-                    </div>
-                    <div class="box-m text-center align-center justify-start">
-                        <span class="text-s">Write Something</span>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".text-m">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/font.svg" class="icon-s"></svg-icon>
-                            <span>text-m</span>
-                        </div>
-                    </div>
-                    <div class="box-m text-center align-center justify-start">
-                        <span class="text-m">Write Something</span>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".text-l">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/font.svg" class="icon-s"></svg-icon>
-                            <span>text-l</span>
-                        </div>
-                    </div>
-                    <div class="box-m text-center align-center justify-start">
-                        <span class="text-l">Write Something</span>
-                    </div>
-                </div>
-            </div>
-            <div class="gap-xl column page">
-                <h2 id="colors">colors</h2>
-                <div class="gap-xl row">
-                    <div class="box">
-                        <p>
-                            rené uses semantic colour naming. this means
-                            colours are named for their purpose, not their
-                            look. so, "error" or "error-red" could be names
-                            for colours used in messages.
-                        </p>
-                    </div>
-                    <div class="box">
-                        <p>
-                            this makes the stylesheet easier to understand
-                            and maintain, and reduces confusion in design.
-                        </p>
-                    </div>
-                </div>
-                <h4>brand</h4>
-                <hr />
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".color-primary">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>color-primary</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="color-primary padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".color-secondary">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>color-secondary</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="color-secondary padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <h4>background</h4>
-                <hr />
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".background-primary">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>background-primary</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="border padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".background-secondary">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>background-secondary</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="background-secondary padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".background-tertiary">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>background-tertiary</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="background-tertiary padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <h4>foreground</h4>
-                <hr />
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".foreground-primary">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>foreground-primary</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="foreground-primary padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".foreground-secondary">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>foreground-secondary</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="foreground-secondary padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".foreground-tertiary">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>foreground-tertiary</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="foreground-tertiary padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <h4>semantics</h4>
-                <hr />
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".background-positive">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>background-positive</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="background-positive padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".background-critical">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>background-critical</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="background-critical padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".background-negative">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>background-negative</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="background-negative padding-xl radius-s"></div>
-                    </div>
-                </div>
-                <h4>opacity</h4>
-                <hr />
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".opacity-xl">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>opacity-xl</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="color-primary padding-xl radius-s opacity-xl"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".opacity-l">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>opacity-l</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="color-primary padding-xl radius-s opacity-l"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".opacity-m">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>opacity-m</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="color-primary padding-xl radius-s opacity-m"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".opacity-s">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>opacity-s</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="color-primary padding-xl radius-s opacity-s"></div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".opacity-xs">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/opacity.svg" class="icon-s"></svg-icon>
-                            <span>opacity-xs</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="color-primary padding-xl radius-s opacity-xs"></div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="gap-xl column page">
-                <h2 id="layout">layout</h2>
-                <h4>containers</h4>
 
-                <hr />
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".view">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>view</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use 'view' when you want to fill the viewport,
-                            giving you control over the visible area.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".panel">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>panel</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use '.panel' for wrapping related content,
-                            fostering content coherence.
-                        </p>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".page">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>page</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use '.page' for structuring an entire webpage,
-                            providing a straightforward layout.
-                        </p>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".sticky">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>sticky</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use '.sticky' to keep elements in view while
-                            scrolling, enhancing user navigation.
-                        </p>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".hidden">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>hidden</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use '.hidden' to remove elements from the
-                            display, managing content visibility without
-                            removing them from the document flow.
-                        </p>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".scrollable">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>.scrollable</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use '.scrollable' for making overflowing content
-                            scrollable, ensuring full content accessibility.
-                        </p>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".hidden-on-mobile">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>hidden-on-mobile</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use '.hidden-on-mobile' to hide certain elements
-                            on mobile view, tailoring user experience per
-                            device type.
-                        </p>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="background-secondary gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text="<header></header>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>header</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use 'header' for top-level navigation and
-                            branding, offering an intuitive user interface.
-                        </p>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="background-secondary gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text="<nav></nav>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>nav</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use 'nav' for main navigation links, directing
-                            users across the site.
-                        </p>
-                    </div>
-                </div>
+                <div class="gap-xl column page">
+                    <h2 id="layout">layout</h2>
+                    <h4>containers</h4>
 
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="background-secondary gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text="<footer></footer>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>footer</span>
+                    <hr />
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".view">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>view</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use 'view' when you want to fill the viewport,
+                                giving you control over the visible area.
+                            </p>
                         </div>
                     </div>
-                    <div class="box">
-                        <p>
-                            use 'footer' for secondary information like
-                            copyright notices, enhancing site credibility.
-                        </p>
-                    </div>
-                </div>
-                <h4>multipurpose box</h4>
-                <hr />
 
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".panel">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>panel</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use '.panel' for wrapping related content,
+                                fostering content coherence.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".page">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>page</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use '.page' for structuring an entire webpage,
+                                providing a straightforward layout.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".sticky">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>sticky</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use '.sticky' to keep elements in view while
+                                scrolling, enhancing user navigation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".hidden">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>hidden</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use '.hidden' to remove elements from the
+                                display, managing content visibility without
+                                removing them from the document flow.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".scrollable">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>.scrollable</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use '.scrollable' for making overflowing content
+                                scrollable, ensuring full content accessibility.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".hidden-on-mobile">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>hidden-on-mobile</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use '.hidden-on-mobile' to hide certain elements
+                                on mobile view, tailoring user experience per
+                                device type.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="background-secondary gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text="<header></header>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>header</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use 'header' for top-level navigation and
+                                branding, offering an intuitive user interface.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="background-secondary gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text="<nav></nav>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>nav</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use 'nav' for main navigation links, directing
+                                users across the site.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="background-secondary gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text="<footer></footer>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>footer</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use 'footer' for secondary information like
+                                copyright notices, enhancing site credibility.
+                            </p>
+                        </div>
+                    </div>
+                    <h4>multipurpose box</h4>
+                    <hr />
+
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".box">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>box</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use box when you want to stack items in a
+                                specific way, offering flexibility in arranging
+                                your content.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box align-start justify-start">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text="<hr>">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                                <span>hr</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p>
+                                use 'hr' to separate sections or elements
+                                visually, improving content readability.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gap-m">
+                        <div class="box border padding-xl radius-s"></div>
+                    </div>
+                    <div class="row gap-xl">
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                    </div>
+                    <div class="row gap-xl">
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                    </div>
+                    <div class="row gap-xl">
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                    </div>
+                    <div class="row gap-xl">
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                        <div class="box border padding-xl radius-s"></div>
+                    </div>
+                    <h4 id="sizes">fixed-size Boxes</h4>
+                    <hr />
+                    <div class="box justify-start align-start gap-m">
                         <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".box">
+                            data-clipboard-text=".box-xs">
                             <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>box</span>
+                            <span>box-xs</span>
                         </div>
                     </div>
-                    <div class="box">
-                        <p>
-                            use box when you want to stack items in a
-                            specific way, offering flexibility in arranging
-                            your content.
-                        </p>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box align-start justify-start">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text="<hr>">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                            <span>hr</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <p>
-                            use 'hr' to separate sections or elements
-                            visually, improving content readability.
-                        </p>
-                    </div>
-                </div>
-                <div class="row gap-m">
-                    <div class="box border padding-xl radius-s"></div>
-                </div>
-                <div class="row gap-xl">
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                </div>
-                <div class="row gap-xl">
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                </div>
-                <div class="row gap-xl">
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                </div>
-                <div class="row gap-xl">
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                    <div class="box border padding-xl radius-s"></div>
-                </div>
-                <h4 id="sizes">fixed-size Boxes</h4>
-                <hr />
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".box-xs">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                        <span>box-xs</span>
-                    </div>
-                </div>
-                <div class="box-xs radius-s border padding-xl"></div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".box-s">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                        <span>box-s</span>
-                    </div>
-                </div>
-                <div class="radius-s border padding-xl box-s"></div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".box-m">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                        <span>box-m</span>
-                    </div>
-                </div>
-                <div class="radius-s border padding-xl box-m"></div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".box-l">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
-                        <span>box-l</span>
-                    </div>
-                </div>
-                <div class="radius-s border padding-xl box-l"></div>
-                <h4 id="gaps">gaps</h4>
-                <hr />
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".gap-xs">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg" class="icon-s"></svg-icon>
-                            <span>gap-xs</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="gap-xs justify-start">
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".gap-s">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg" class="icon-s"></svg-icon>
-                            <span>gap-s</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="gap-s justify-start">
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".gap-m">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg" class="icon-s"></svg-icon>
-                            <span>gap-m</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="gap-m justify-start">
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".gap-l">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg" class="icon-s"></svg-icon>
-                            <span>gap-l</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="gap-l justify-start">
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gap-xl row">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".gap-xl">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg" class="icon-s"></svg-icon>
-                            <span>gap-xl</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="gap-xl justify-start">
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                            <div class="padding-xl border radius-s box"></div>
-                        </div>
-                    </div>
-                </div>
-                <h4 id="directions">directions</h4>
-                <hr />
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".row">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/flex-row.svg" class="icon-s"></svg-icon>
-                        <span>row</span>
-                    </div>
-                </div>
-                <div class="row gap-xl">
                     <div class="box-xs radius-s border padding-xl"></div>
-                    <div class="box-xs radius-s border padding-xl"></div>
-                    <div class="box-xs radius-s border padding-xl"></div>
-                </div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".column">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/flex-column.svg" class="icon-s"></svg-icon>
-                        <span>column</span>
+                    <div class="box justify-start align-start gap-m">
+                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                            data-clipboard-text=".box-s">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                            <span>box-s</span>
+                        </div>
                     </div>
-                </div>
-                <div class="column gap-xl">
-                    <div class="box-xs radius-s border padding-xl"></div>
                     <div class="radius-s border padding-xl box-s"></div>
+                    <div class="box justify-start align-start gap-m">
+                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                            data-clipboard-text=".box-m">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                            <span>box-m</span>
+                        </div>
+                    </div>
                     <div class="radius-s border padding-xl box-m"></div>
-                </div>
-                <h4 id="justifications">justifications</h4>
-                <hr />
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".justify-end">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/justify.svg" class="icon-s"></svg-icon>
-                        <span>justify-end</span>
-                    </div>
-                </div>
-                <div class="row justify-end gap-m">
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                </div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".justify-start">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/justify.svg" class="icon-s"></svg-icon>
-                        <span>justify-start</span>
-                    </div>
-                </div>
-                <div class="row gap-m justify-start">
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                    <div class="padding-m box-xs padding-xl radius-s border"></div>
-                </div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".justify-stretch">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/justify.svg" class="icon-s"></svg-icon>
-                        <span>justify-stretch</span>
-                    </div>
-                </div>
-                <div class="row justify-stretch gap-m">
-                    <div class="padding-m box-xs padding-xl border radius-s"></div>
-                    <div class="padding-m box-xs padding-xl border radius-s"></div>
-                    <div class="padding-m box-xs padding-xl border radius-s"></div>
-                    <div class="padding-m box-xs padding-xl border radius-s"></div>
-                    <div class="padding-m box-xs padding-xl border radius-s"></div>
-                </div>
-                <h4 id="alignments">alignments</h4>
-                <hr />
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".align-start">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/alignleft.svg" class="icon-s"></svg-icon>
-                        <span>align-start</span>
-                    </div>
-                </div>
-                <div class="column align-start gap-xl">
-                    <div class="box-xs radius-s border padding-xl"></div>
-                    <div class="radius-s border padding-xl box-s"></div>
-                    <div class="radius-s border padding-xl box-m"></div>
-                </div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".align-end">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/alignright.svg" class="icon-s"></svg-icon>
-                        <span>align-end</span>
-                    </div>
-                </div>
-                <div class="column align-end gap-xl">
-                    <div class="box-xs radius-s border padding-xl"></div>
-                    <div class="radius-s border padding-xl box-s"></div>
-                    <div class="radius-s border padding-xl box-m"></div>
-                </div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".align-center">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/aligncenter.svg" class="icon-s"></svg-icon>
-                        <span>align-center</span>
-                    </div>
-                </div>
-                <div class="align-center">
-                    <div class="radius-s border padding-xl box-s"></div>
-                </div>
-                <div class="box justify-start align-start gap-m">
-                    <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                        data-clipboard-text=".align-stretch">
-                        <svg-icon src="https://raincons.rnbw.dev/icons/spacing.svg" class="icon-s"></svg-icon>
-                        <span>align-stretch</span>
-                    </div>
-                </div>
-                <div class="align-stretch column gap-xl">
-                    <div class="radius-s border padding-xl"></div>
-                    <div class="radius-s border padding-xl"></div>
-                    <div class="radius-s border padding-xl"></div>
-                </div>
-                <h4 id="paddings">paddings</h4>
-                <hr />
-
-                <div class="gap-xl row align-center">
                     <div class="box justify-start align-start gap-m">
                         <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".padding-xs">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
-                            <span>padding-xs</span>
+                            data-clipboard-text=".box-l">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/div.svg" class="icon-s"></svg-icon>
+                            <span>box-l</span>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="padding-xs border radius-s align-center"></div>
+                    <div class="radius-s border padding-xl box-l"></div>
+                    <h4 id="gaps">gaps</h4>
+                    <hr />
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".gap-xs">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>gap-xs</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="gap-xs justify-start">
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="gap-xl row align-center">
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".gap-s">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>gap-s</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="gap-s justify-start">
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".gap-m">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>gap-m</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="gap-m justify-start">
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".gap-l">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>gap-l</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="gap-l justify-start">
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap-xl row">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".gap-xl">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/gap-column.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>gap-xl</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="gap-xl justify-start">
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                                <div class="padding-xl border radius-s box"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="directions">directions</h4>
+                    <hr />
                     <div class="box justify-start align-start gap-m">
                         <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".padding-s">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
-                            <span>padding-s</span>
+                            data-clipboard-text=".row">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/flex-row.svg" class="icon-s"></svg-icon>
+                            <span>row</span>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="padding-s border radius-s align-center"></div>
+                    <div class="row gap-xl">
+                        <div class="box-xs radius-s border padding-xl"></div>
+                        <div class="box-xs radius-s border padding-xl"></div>
+                        <div class="box-xs radius-s border padding-xl"></div>
                     </div>
-                </div>
-
-                <div class="gap-xl row align-center">
                     <div class="box justify-start align-start gap-m">
                         <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".padding-m">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
-                            <span>padding-m</span>
+                            data-clipboard-text=".column">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/flex-column.svg" class="icon-s"></svg-icon>
+                            <span>column</span>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="padding-m border radius-s align-center"></div>
+                    <div class="column gap-xl">
+                        <div class="box-xs radius-s border padding-xl"></div>
+                        <div class="radius-s border padding-xl box-s"></div>
+                        <div class="radius-s border padding-xl box-m"></div>
                     </div>
-                </div>
-
-                <div class="gap-xl row align-center">
+                    <h4 id="justifications">justifications</h4>
+                    <hr />
                     <div class="box justify-start align-start gap-m">
                         <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".padding-l">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
-                            <span>padding-l</span>
+                            data-clipboard-text=".justify-end">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/justify.svg" class="icon-s"></svg-icon>
+                            <span>justify-end</span>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="padding-l border radius-s align-center"></div>
+                    <div class="row justify-end gap-m">
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
                     </div>
-                </div>
-
-                <div class="gap-xl row align-center">
                     <div class="box justify-start align-start gap-m">
                         <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".padding-xl">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
-
-                            <span>padding-xl</span>
+                            data-clipboard-text=".justify-start">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/justify.svg" class="icon-s"></svg-icon>
+                            <span>justify-start</span>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="padding-xl border radius-s align-center"></div>
+                    <div class="row gap-m justify-start">
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                        <div class="padding-m box-xs padding-xl radius-s border"></div>
+                    </div>
+                    <div class="box justify-start align-start gap-m">
+                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                            data-clipboard-text=".justify-stretch">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/justify.svg" class="icon-s"></svg-icon>
+                            <span>justify-stretch</span>
+                        </div>
+                    </div>
+                    <div class="row justify-stretch gap-m">
+                        <div class="padding-m box-xs padding-xl border radius-s"></div>
+                        <div class="padding-m box-xs padding-xl border radius-s"></div>
+                        <div class="padding-m box-xs padding-xl border radius-s"></div>
+                        <div class="padding-m box-xs padding-xl border radius-s"></div>
+                        <div class="padding-m box-xs padding-xl border radius-s"></div>
+                    </div>
+                    <h4 id="alignments">alignments</h4>
+                    <hr />
+                    <div class="box justify-start align-start gap-m">
+                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                            data-clipboard-text=".align-start">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/alignleft.svg" class="icon-s"></svg-icon>
+                            <span>align-start</span>
+                        </div>
+                    </div>
+                    <div class="column align-start gap-xl">
+                        <div class="box-xs radius-s border padding-xl"></div>
+                        <div class="radius-s border padding-xl box-s"></div>
+                        <div class="radius-s border padding-xl box-m"></div>
+                    </div>
+                    <div class="box justify-start align-start gap-m">
+                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                            data-clipboard-text=".align-end">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/alignright.svg" class="icon-s"></svg-icon>
+                            <span>align-end</span>
+                        </div>
+                    </div>
+                    <div class="column align-end gap-xl">
+                        <div class="box-xs radius-s border padding-xl"></div>
+                        <div class="radius-s border padding-xl box-s"></div>
+                        <div class="radius-s border padding-xl box-m"></div>
+                    </div>
+                    <div class="box justify-start align-start gap-m">
+                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                            data-clipboard-text=".align-center">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/aligncenter.svg" class="icon-s"></svg-icon>
+                            <span>align-center</span>
+                        </div>
+                    </div>
+                    <div class="align-center">
+                        <div class="radius-s border padding-xl box-s"></div>
+                    </div>
+                    <div class="box justify-start align-start gap-m">
+                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                            data-clipboard-text=".align-stretch">
+                            <svg-icon src="https://raincons.rnbw.dev/icons/spacing.svg" class="icon-s"></svg-icon>
+                            <span>align-stretch</span>
+                        </div>
+                    </div>
+                    <div class="align-stretch column gap-xl">
+                        <div class="radius-s border padding-xl"></div>
+                        <div class="radius-s border padding-xl"></div>
+                        <div class="radius-s border padding-xl"></div>
+                    </div>
+                    <h4 id="paddings">paddings</h4>
+                    <hr />
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".padding-xs">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
+                                <span>padding-xs</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-xs border radius-s align-center"></div>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".padding-s">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
+                                <span>padding-s</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-s border radius-s align-center"></div>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".padding-m">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
+                                <span>padding-m</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-m border radius-s align-center"></div>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".padding-l">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
+                                <span>padding-l</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-l border radius-s align-center"></div>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".padding-xl">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/padding.svg" class="icon-s"></svg-icon>
+
+                                <span>padding-xl</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-xl border radius-s align-center"></div>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row justify-start"></div>
+                </div>
+                <div class="gap-xl column page">
+                    <h2 id="shadows">shadows</h2>
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".shadow">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/drop-shadow.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>shadow</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-xl border radius-s align-center shadow"></div>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".shadow-hover">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/drop-shadow.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>shadow-hover</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-xl border radius-s align-center shadow-hover"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gap-xl row justify-start"></div>
+                <div class="gap-xl column page">
+                    <h2 id="borders">borders</h2>
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".border-bottom">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/border-bottom.svg"
+                                    class="icon-s"></svg-icon>
+                                <span>border-bottom</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-xl radius-s align-center border-bottom"></div>
+                        </div>
+                    </div>
+
+                    <div class="gap-xl row align-center">
+                        <div class="box justify-start align-start gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center notification"
+                                data-clipboard-text=".border">
+                                <svg-icon src="https://raincons.rnbw.dev/icons/border.svg" class="icon-s"></svg-icon>
+                                <span>border</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="padding-xl border radius-s align-center"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page">
+                    <h2 id="media">media</h2>
+                    <div class="gap-xl">
+                        <svg-icon src="./rene.svg" class="icon-xs notification"
+                            data-clipboard-text=".icon-xs"></svg-icon>
+                        <svg-icon src="./rene.svg" class="icon-s notification" data-clipboard-text=".icon-s"></svg-icon>
+
+                        <svg-icon src="./rene.svg" class="icon-m notification" data-clipboard-text=".icon-m"></svg-icon>
+                        <svg-icon src="./rene.svg" class="icon-l notification" data-clipboard-text=".icon-l"></svg-icon>
+                        <svg-icon src="./rene.svg" class="icon-xl notification"
+                            data-clipboard-text=".icon-xl"></svg-icon>
+                    </div>
+                </div>
             </div>
-            <div class="gap-xl column page">
-                <h2 id="shadows">shadows</h2>
-
-                <div class="gap-xl row align-center">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".shadow">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/drop-shadow.svg" class="icon-s"></svg-icon>
-                            <span>shadow</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="padding-xl border radius-s align-center shadow"></div>
-                    </div>
-                </div>
-
-                <div class="gap-xl row align-center">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".shadow-hover">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/drop-shadow.svg" class="icon-s"></svg-icon>
-                            <span>shadow-hover</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="padding-xl border radius-s align-center shadow-hover"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gap-xl column page">
-                <h2 id="borders">borders</h2>
-
-                <div class="gap-xl row align-center">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".border-bottom">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/border-bottom.svg" class="icon-s"></svg-icon>
-                            <span>border-bottom</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="padding-xl radius-s align-center border-bottom"></div>
-                    </div>
-                </div>
-
-                <div class="gap-xl row align-center">
-                    <div class="box justify-start align-start gap-m">
-                        <div class="gap-s justify-start padding-m radius-m border align-center notification"
-                            data-clipboard-text=".border">
-                            <svg-icon src="https://raincons.rnbw.dev/icons/border.svg" class="icon-s"></svg-icon>
-                            <span>border</span>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="padding-xl border radius-s align-center"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page">
-                <h2 id="media">media</h2>
-                <div class="gap-xl">
-                    <svg-icon src="./rene.svg" class="icon-xs notification" data-clipboard-text=".icon-xs"></svg-icon>
-                    <svg-icon src="./rene.svg" class="icon-s notification" data-clipboard-text=".icon-s"></svg-icon>
-
-                    <svg-icon src="./rene.svg" class="icon-m notification" data-clipboard-text=".icon-m"></svg-icon>
-                    <svg-icon src="./rene.svg" class="icon-l notification" data-clipboard-text=".icon-l"></svg-icon>
-                    <svg-icon src="./rene.svg" class="icon-xl notification" data-clipboard-text=".icon-xl"></svg-icon>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 
     <rnbw-footer></rnbw-footer>
