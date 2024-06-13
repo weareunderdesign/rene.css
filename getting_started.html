@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rené</title>
+    <meta name="description" content="design for intention and meaning">
+    <meta name="keywords"
+        content="design, intention, meaning, rené, system, styling, clean, simple, lightweight, interfaces">
+    <meta property="og:title" content="rené">
+    <meta name="og:description" content="design for intention and meaning">
+    <meta property="og:image" content="./images/rene.css.png">
+    <meta property="og:url" content="https://rene.css">
+    <meta property="og:type" content="website">
+
+
+    <link rel="icon" href="./images/favicon-light.png">
+    <link rel="stylesheet" href="https://unpkg.com/@rnbws/renecss/dist/rene.min.css" />
+    <script src="https://unpkg.com/@rnbws/svg-icon.js/dist/svg-icon.min.js"></script>
+    <script defer data-domain="rnbw.company" src="https://plausible.io/js/script.js"></script>
+</head>
+
+<body>
+    <rnbw-header></rnbw-header>
+
+    <div class="row" style="flex-wrap: nowrap">
+        <div>
+            <aside class="column justify-stretch sticky padding-l" style="width: 20rem; display: inline-block;">
+            </aside>
+        </div>
+        <div class="view column align-center">
+            <div class="box align-center column view">
+                <div class="page">
+                    <div>
+                        <h1 id="gettingstarted">get started </br>with rené
+                        </h1>
+                    </div>
+                    <p>
+                        rené is a straightforward yet powerful toolkit for your
+                        design and development tasks. this guide will take you
+                        through everything you need to get started, including
+                        easy steps to install, customize, and create themes.
+                        let's dive in and explore its capabilities together.
+                    </p>
+                </div>
+
+
+
+                <div class="page">
+                    <h2 id="installation">installation</h2>
+                    <h5>install with NPM</h5>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                to install NPM (Node Package Manager), you will
+                                first need to install Node.js, which includes
+                                NPM.
+                            </p>
+                            <details>
+                                <summary>install Node.js</summary>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            go to the
+                                            <a href="https://nodejs.org/" target="_new">Node.js website</a>
+                                            and download the latest version of
+                                            Node.js for your operating system.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            install Node.js using the downloaded
+                                            installer.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            verify the installation by opening a
+                                            terminal or command prompt and
+                                            typing:
+                                        </p>
+                                        <pre>node -v</pre>
+                                        <p>
+                                            you should see the installed version
+                                            number of Node.js.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </details>
+                        </div>
+                        <div class="box">
+                            <code class="padding-l radius-s background-secondary border">npm install renecss</code>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>or use the CDN link</h5>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                in this example, the &lt;link&gt; tag is placed
+                                within the &lt;head&gt; element to load the
+                                stylesheet from the specified URL. this will
+                                apply the styles from the stylesheet to the
+                                elements on the page, allowing you to control
+                                their appearance and layout.
+                            </p>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <code class="background-secondary padding-l radius-s">
+                                <span>
+                                    <div>&lt;!DOCTYPE html&gt;</div>
+                                    <div>&lt;html&gt;</div>
+                                    <div>  &lt;head&gt;</div>
+                                    <div>
+                                            &lt;title&gt;My
+                                        Website&lt;/title&gt;
+                                    </div>
+                                    <div class="row">
+                                        <b style="word-break: break-word">    &lt;link rel="stylesheet"
+                                            href="https://unpkg.com/renecss/dist/rene.min.css"
+                                            /&gt;</b>
+                                    </div>
+                                    <div>  &lt;/head&gt;</div>
+                                    <div>  &lt;body&gt;</div>
+                                    <div>    ...</div>
+                                    <div>  &lt;/body&gt;</div>
+                                    <div>&lt;/html&gt;</div>
+                                </span>
+                            </code>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box-s padding-right-s">
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                        <div class="box-s">
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="page">
+                    <h2 id="customization">customization</h2>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                to create your own theme, copy the following
+                                code to a new
+                                <b>theme.css</b> file and override it with
+                                the following guidelines.
+                            </p>
+                            <p>
+                                one of the cool things about rené is it already
+                                has light and dark modes. this means you can
+                                easily create designs that suit any user
+                                preference. the best part? any changes you make
+                                will reflect in both modes. so, you can focus on
+                                crafting great designs, knowing they'll shine in
+                                both light and dark settings.
+                            </p>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <code class="background-secondary padding-l radius-s">
+                                <div>:root {</div>
+                                <div>  --size-base: 4px;</div>
+                                <div>
+                                      --font-primary:"HelveticaNeue", "Helvetica
+                                    Neue", Helvetica, Arial, "Lucida Grande",
+                                    sans-serif;
+                                </div>
+                                <div>
+                                    <br>
+                                </div>
+                                <div>}</div>
+                                <div>
+                                    <br>
+                                </div>
+                                <div>[data-theme="theme-name"] {</div>
+                                <div>  --color-primary: #8080ff;</div>
+                                <div>  --color-secondary: #a640ff;</div>
+                                <div>
+                                      --color-primary-background: #000000;
+                                </div>
+                                <div>
+                                      --color-secondary-background: #0b0b0b;
+                                </div>
+                                <div>
+                                      --color-primary-foreground: #ffffff;
+                                </div>
+                                <div>
+                                      --color-secondary-foreground: #f3f3f3;
+                                </div>
+                                <div>  --color-positive: green;</div>
+                                <div>  --color-critical: orange;</div>
+                                <div>  --color-negative: red;</div>
+                                <div>}</div>
+                            </code>
+                            <div class="column gap-m">
+                                <span class="text-s"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>base size</h4>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                rené is built with the theory of relativity in
+                                mind - the base size is used as a reference
+                                point for other font sizes on the page. the
+                                entire layout system is applied relatively
+                                across everything and everywhere from
+                                <b>one fundamental base size</b>.
+                            </p>
+                            <p>
+                                by changing this custom property, you're
+                                relatively increasing/decreasing the sizing of
+                                your entire design system.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <code class="background-secondary padding-l radius-s">
+                                <div>  --size-base: 4px;</div>
+                            </code>
+                        </div>
+                    </div>
+                    <h4>typography</h4>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>
+                                rené supports one <b>primary font</b> that is
+                                applied across. yet you can easily add a
+                                secondary font and use it natively as you wish.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <code class="background-secondary padding-l radius-s">
+                                <div>
+                                      --font-primary:"HelveticaNeue", "Helvetica
+                                    Neue", Helvetica, Arial, "Lucida Grande",
+                                    sans-serif;
+                                </div>
+                            </code>
+                        </div>
+                    </div>
+                    <h4>colors</h4>
+                    <div class="row gap-xl">
+                        <div class="box">
+                            <p>start by giving a <b>name to your theme</b>.</p>
+                            <p>
+                                rené is built with four color groups in mind -
+                                <b>brand colors</b>,
+                                <b>backgrounds/foregrounds colors</b>, and
+                                <b>semantic colors.</b>
+                            </p>
+                        </div>
+                        <div class="box">
+                            <code class="scrollable">
+                                <pre class="background-secondary padding-l radius-s">
+[data theme="light"] {
+    --color-primary: #0000cd;
+    --color-secondary: #800080;
+    --color-primary-background: #ffffff;
+    --color-secondary-background: #eeeeee;
+    --color-tertiary-background: #dddddd;
+    --color-primary-foreground: #111111;
+    --color-secondary-foreground: #222222;
+    --color-tertiary-foreground: #333333;
+    --color-positive: darkgreen;
+    --color-critical: gold;
+    --color-negative: orangered;
+}</pre>
+                            </code>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <rnbw-footer></rnbw-footer>
+</body>
+<script src="https://rnbw.company/rnbw-header.js"></script>
+<script src="https://rnbw.company/rnbw-footer.js"></script>
+<script src="https://rnbw.company/table-of-contents.js"></script>
+
+</html>
