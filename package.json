@@ -13,10 +13,8 @@
     "url": "git+https://github.com/rnbwdev/rene.css.git"
   },
   "publishConfig": {
-    "publishConfig": {
-      "@rnbws:registry": "https://npm.pkg.github.com",
-      "access": "public"
-    }
+    "@rnbws:registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "keywords": [
     "css",
