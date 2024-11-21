@@ -1,6 +1,6 @@
 {
   "name": "@rnbws/renecss",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "description": "Rene is a design system for intention and meaning",
   "main": "rene.css",
   "scripts": {
@@ -13,8 +13,10 @@
     "url": "git+https://github.com/rnbwdev/rene.css.git"
   },
   "publishConfig": {
-    "@rnbws:registry": "https://npm.pkg.github.com",
-    "access": "public"
+    "publishConfig": {
+      "@rnbws:registry": "https://npm.pkg.github.com",
+      "access": "public"
+    }
   },
   "keywords": [
     "css",
@@ -40,4 +42,3 @@
     "webpack-shell-plugin-next": "^2.2.2"
   }
 }
-
