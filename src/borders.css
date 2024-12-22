@@ -1,3 +1,4 @@
+/* Border Radius Utilities */
 .radius-xs {
     border-radius: var(--size-base);
 }
@@ -14,15 +15,17 @@
     border-radius: calc(var(--size-base) * 10);
 }
 
-.border-bottom {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+/* Border Utilities */
+.border {
+    border-width: 1px;
+    border-style: solid;
     border-color: var(--color-secondary-background);
 }
 
-.border-left {
-    border-left-width: 1px;
-    border-left-style: solid;
+/* Individual Border Side Utilities */
+.border-top {
+    border-top-width: 1px;
+    border-top-style: solid;
     border-color: var(--color-secondary-background);
 }
 
@@ -32,14 +35,14 @@
     border-color: var(--color-secondary-background);
 }
 
-.border-top {
-    border-top-width: 1px;
-    border-top-style: solid;
+.border-bottom {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     border-color: var(--color-secondary-background);
 }
 
-.border {
-    border-width: 1px;
-    border-style: solid;
+.border-left {
+    border-left-width: 1px;
+    border-left-style: solid;
     border-color: var(--color-secondary-background);
 }

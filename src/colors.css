@@ -1,3 +1,4 @@
+/* Theme Colors */
 .background-primary {
   background-color: var(--color-primary-background);
   color: var(--color-primary-foreground);
@@ -9,6 +10,12 @@
   color: var(--color-secondary-foreground);
 }
 
+.background-tertiary {
+  background-color: var(--color-tertiary-background);
+  color: var(--color-tertiary-foreground);
+}
+
+/* Foreground Variants */
 .foreground-primary {
   background-color: var(--color-primary-foreground);
   color: var(--color-primary-background);
@@ -20,53 +27,29 @@
   color: var(--color-primary-background);
 }
 
-.background-tertiary {
-  background-color: var(--color-tertiary-background);
-  color: var(--color-tertiary-foreground)
-}
-
 .foreground-tertiary {
   background-color: var(--color-tertiary-foreground);
-  color: var(--color-tertiary-background)
+  color: var(--color-tertiary-background);
 }
 
+/* Solid Colors */
 .color-primary {
-  border-color: var(--color-primary);
   background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .color-secondary {
   background-color: var(--color-secondary);
 }
 
-.background-negative {
-  background-color: var(--color-negative);
-}
+/* Status Colors */
+.background-negative { background-color: var(--color-negative); }
+.background-critical { background-color: var(--color-critical); }
+.background-positive { background-color: var(--color-positive); }
 
-.background-critical {
-  background-color: var(--color-critical);
-}
-
-.background-positive {
-  background-color: var(--color-positive);
-}
-
-.opacity-xl {
-  opacity: 0.1;
-}
-
-.opacity-l {
-  opacity: 0.25;
-}
-
-.opacity-m {
-  opacity: 0.5;
-}
-
-.opacity-s {
-  opacity: 0.75;
-}
-
-.opacity-xs {
-  opacity: 0.9;
-}
+/* Opacity Scale */
+.opacity-xl { opacity: 0.1; }
+.opacity-l  { opacity: 0.25; }
+.opacity-m  { opacity: 0.5; }
+.opacity-s  { opacity: 0.75; }
+.opacity-xs { opacity: 0.9; }
