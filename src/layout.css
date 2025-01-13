@@ -189,4 +189,6 @@ hr {
     .gap-column-m, .gap-row-m { --multiplier: 2; }
     .gap-column-l, .gap-row-l { --multiplier: 4; }
     .gap-column-xl, .gap-row-xl { --multiplier: 6; }
+
+    .box-xs, .box-s, .box-m, .box-l, .box-xl { width: 100%; }
 }
