@@ -1,6 +1,6 @@
 /* Animation utilities */
 .animate {
-    animation-duration: 7s;
+    animation-duration: 16s;
     animation-timing-function: linear;
     animation-fill-mode: both;
 }
