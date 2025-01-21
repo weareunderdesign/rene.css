@@ -6,33 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>rené - styleguide</title>
-
-    <!-- Primary Meta Tags -->
     <meta name="description" content="design for intention and meaning">
     <meta name="keywords"
         content="design, intention, meaning, rené, system, styling, clean, simple, lightweight, interfaces">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rene.css">
     <meta property="og:title" content="rené">
-    <meta property="og:description" content="design for intention and meaning">
+    <meta name="og:description" content="design for intention and meaning">
     <meta property="og:image" content="./images/rene.css.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://rene.css">
-    <meta name="twitter:title" content="rené">
-    <meta name="twitter:description" content="design for intention and meaning">
-    <meta name="twitter:image" content="./images/rene.css.png">
-
-    <!-- Favicons -->
+    <meta property="og:url" content="https://rene.css">
+    <meta property="og:type" content="website">
     <link rel="icon" href="./images/favicon-light.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/index.css" />
+    <script src="https://unpkg.com/@rnbws/svg-icon.js/dist/svg-icon.min.js"></script>
+    <script defer data-domain="renecss.org"
+        src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"></script>
+    <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
 
 <body>
@@ -1198,213 +1185,161 @@ line-height: 0.95;
                         <svg-icon src="./rene.svg" class="icon-xl" data-clipboard-text=".icon-xl"></svg-icon>
                     </div>
                 </div>
-            <div class="page">
-                <h2 id="motion">animation</h2><div class="gap-xl row">
-                                             <div class="box">
-                                               <p>                                                 rené's animation system provides simple, semantic animation classes. the base
-                                                 .animate class sets default timing, while modifiers let you customize
-                                                 duration, easing, and animation types like fade, slide, or rotate.
-                                               </p>
-                                             </div>
-                                             <div class="box">
-                                               <p>
-                                                 animations can be controlled with utility classes for iteration (once,
-                                                 infinite), direction (reverse, alternate), and state (running, paused).
-                                                 transitions and transforms are also available for hover effects.
-                                               </p>
-                                             </div>
-                                           </div>
-                <h4>animation utility</h4>
-                <div class="gap-xl row">
-                        <div class="align-start box gap-m"><div
-                                  class="gap-s justify-start padding-m radius-m border align-center"
-                                  data-clipboard-text=".animate"
-                                >
-                                  <span>.animate</span>
-                                </div>
+                <div class="page">
+                    <h2 id="motion">animation</h2>
+                    <div class="gap-xl row">
+                        <div class="box">
+                            <p> rené's animation system provides simple, semantic animation classes. the base
+                                .animate class sets default timing, while modifiers let you customize
+                                duration, easing, and animation types like fade, slide, or rotate.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <p>
+                                animations can be controlled with utility classes for iteration (once,
+                                infinite), direction (reverse, alternate), and state (running, paused).
+                                transitions and transforms are also available for hover effects.
+                            </p>
+                        </div>
+                    </div>
+                    <h4>animation utility</h4>
+                    <div class="gap-xl row">
+                        <div class="align-start box gap-m">
+                            <div class="gap-s justify-start padding-m radius-m border align-center"
+                                data-clipboard-text=".animate">
+                                <span>.animate</span>
+                            </div>
                         </div>
 
-                      </div>
-                <h4>duration modifiers</h4>
-                <div class="gap-m row">
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".duration-fast"
-                  >
-                    <span>.duration-fast</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".duration-normal"
-                  >
-                    <span>.duration-normal</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".duration-slow"
-                  >
-                    <span>.duration-slow</span>
-                  </div>
-                  <div class="box"></div>
+                    </div>
+                    <h4>duration modifiers</h4>
+                    <div class="gap-m row">
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".duration-fast">
+                            <span>.duration-fast</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".duration-normal">
+                            <span>.duration-normal</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".duration-slow">
+                            <span>.duration-slow</span>
+                        </div>
+                        <div class="box"></div>
+                    </div>
+                    <h4>timing function modifiers</h4>
+                    <div class="gap-m row">
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".ease">
+                            <span>.ease</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".ease-in">
+                            <span>.ease-in</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".ease-out">
+                            <span>.ease-out</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".ease-in-out">
+                            <span>.ease-in-out</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".linear">
+                            <span>.linear</span>
+                        </div>
+                    </div>
+                    <h4>animation types</h4>
+                    <div class="gap-m row">
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".fade-in">
+                            <span>.fade-in</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".pulse">
+                            <span>.pulse</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".bounce">
+                            <span>.bounce</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".scale-down">
+                            <span>.scale-down</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".scale-up">
+                            <span>.scale-up</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".rotate">
+                            <span>.rotate</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".slide-right">
+                            <span>.slide-right</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".slide-left">
+                            <span>.slide-left</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".slide-down">
+                            <span>.slide-down</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".slide-up">
+                            <span>.slide-up</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".fade-out">
+                            <span>.fade-out</span>
+                        </div>
+                    </div>
+                    <h4>animation iteration</h4>
+                    <div class="gap-m row">
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".infinite">
+                            <span>.infinite</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".twice">
+                            <span>.twice</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".once">
+                            <span>.once</span>
+                        </div>
+                    </div>
+                    <h4>animation direction</h4>
+                    <div class="gap-m row">
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".reverse">
+                            <span>.reverse</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".alternate">
+                            <span>.alternate</span>
+                        </div>
+                    </div>
+                    <h4>animation state</h4>
+                    <div class="gap-m row">
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".paused">
+                            <span>.paused</span>
+                        </div>
+                        <div class="gap-s justify-start padding-m radius-m border align-center"
+                            data-clipboard-text=".running">
+                            <span>.running</span>
+                        </div>
+                    </div>
+                    <div class="gap-xl row align-center">
+                        <div class="align-start box gap-m"></div>
+                        <div class="box"></div>
+                    </div>
                 </div>
-                <h4>timing function modifiers</h4>
-                <div class="gap-m row">
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".ease"
-                  >
-                    <span>.ease</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".ease-in"
-                  >
-                    <span>.ease-in</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".ease-out"
-                  >
-                    <span>.ease-out</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".ease-in-out"
-                  >
-                    <span>.ease-in-out</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".linear"
-                  >
-                    <span>.linear</span>
-                  </div>
-                </div>
-                <h4>animation types</h4>
-                <div class="gap-m row">
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".fade-in"
-                  >
-                    <span>.fade-in</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".pulse"
-                  >
-                    <span>.pulse</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".bounce"
-                  >
-                    <span>.bounce</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".scale-down"
-                  >
-                    <span>.scale-down</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".scale-up"
-                  >
-                    <span>.scale-up</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".rotate"
-                  >
-                    <span>.rotate</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".slide-right"
-                  >
-                    <span>.slide-right</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".slide-left"
-                  >
-                    <span>.slide-left</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".slide-down"
-                  >
-                    <span>.slide-down</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".slide-up"
-                  >
-                    <span>.slide-up</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".fade-out"
-                  >
-                    <span>.fade-out</span>
-                  </div>
-                </div>
-                <h4>animation iteration</h4>
-                <div class="gap-m row">
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".infinite"
-                  >
-                    <span>.infinite</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".twice"
-                  >
-                    <span>.twice</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".once"
-                  >
-                    <span>.once</span>
-                  </div>
-                </div>
-                <h4>animation direction</h4>
-                <div class="gap-m row">
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".reverse"
-                  >
-                    <span>.reverse</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".alternate"
-                  >
-                    <span>.alternate</span>
-                  </div>
-                </div>
-                <h4>animation state</h4>
-                <div class="gap-m row">
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".paused"
-                  >
-                    <span>.paused</span>
-                  </div>
-                  <div
-                    class="gap-s justify-start padding-m radius-m border align-center"
-                    data-clipboard-text=".running"
-                  >
-                    <span>.running</span>
-                  </div>
-                </div>
-                <div class="gap-xl row align-center">
-                  <div class="align-start box gap-m"></div>
-                  <div class="box"></div>
-                </div>
-            </div>
             </div>
         </div>
     </div>
