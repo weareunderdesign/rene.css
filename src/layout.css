@@ -101,8 +101,8 @@ hr {
 .column { flex-direction: column; }
 
 /* Alignment utilities */
-[class^="align-"],
-[class^="justify-"] {
+[class*="align-"],
+[class*="justify-"] {
     display: flex;
 }
 
