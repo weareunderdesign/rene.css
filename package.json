@@ -1,6 +1,6 @@
 {
   "name": "@rnbws/renecss",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Rene is a design system for intention and meaning",
   "main": "rene.css",
   "scripts": {
