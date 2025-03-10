@@ -10,6 +10,17 @@ h4,
 h5,
 h6 {
     font-family: var(--font-primary);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
 }
 
 h1 {
