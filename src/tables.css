@@ -1,0 +1,37 @@
+/* Table essentials */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: calc(var(--size-base) * 4);
+    margin-top: calc(var(--size-base) * 4);
+}
+
+thead {
+    border-bottom: 1px solid var(--color-secondary-background);
+}
+
+th {
+    text-align: left;
+    padding: calc(var(--size-base) * 2.5);
+    color: var(--color-secondary-foreground);
+    font-weight: normal;
+}
+
+td {
+    padding: calc(var(--size-base) * 2.5);
+    vertical-align: top;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Make all tables horizontally scrollable by default on mobile */
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+        width: fit-content;
+        min-width: 100%;
+    }
+} 

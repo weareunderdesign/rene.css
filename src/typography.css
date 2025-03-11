@@ -24,33 +24,33 @@ h6:first-child {
 }
 
 h1 {
-    font-size: 4.281rem; /* 6rem * 0.88 */
+    font-size: calc(var(--base-font-size) * 3);
     line-height: 0.95;
 }
 
 h2 {
-    font-size: 3.52rem; /* 4rem * 0.88 */
+    font-size: calc(var(--base-font-size) * 2.5);
     line-height: 1.04;
 }
 
 h3 {
-    font-size: 2.64rem; /* 3rem * 0.88 */
+    font-size: calc(var(--base-font-size) * 2);
     line-height: 1.08;
 }
 
 h4 {
-    font-size: 1.98rem; /* 2.25rem * 0.88 */
+    font-size: calc(var(--base-font-size) * 1.5);
     line-height: 1.12;
 }
 
 h5 {
-    font-size: 1.32rem; /* 1.5rem * 0.88 */
+    font-size: calc(var(--base-font-size) * 1);
     line-height: 1.16;
     letter-spacing: 0.01rem;
 }
 
 h6 {
-    font-size: 0.99rem; /* 1.125rem * 0.88 */
+    font-size: calc(var(--base-font-size) * 0.75);
     line-height: 1.12;
     letter-spacing: 0.01rem;
 }
@@ -121,26 +121,26 @@ li {
     }
 
     h1 {
-        font-size: 3.75rem;
+        font-size: calc(var(--base-font-size) * 2.5);
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: calc(var(--base-font-size) * 2);
     }
 
     h3 {
-        font-size: 2.25rem;
+        font-size: calc(var(--base-font-size) * 1.5);
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: calc(var(--base-font-size) * 1.25);
     }
 
     h5 {
-        font-size: 1.2rem;
+        font-size: calc(var(--base-font-size) * 1);
     }
 
     h6 {
-        font-size: 0.875rem;
+        font-size: calc(var(--base-font-size) * 0.75);
     }
 }
