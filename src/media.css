@@ -4,9 +4,6 @@
 .icon-l,
 .icon-xl {
     display: inline-block;
-    background-color: currentColor;
-    -webkit-mask: var(--svg-src) center / contain no-repeat;
-    mask: var(--svg-src) center / contain no-repeat;
 }
 
 .icon-xs { width: calc(var(--base-size) * 3);  height: calc(var(--base-size) * 3); }
