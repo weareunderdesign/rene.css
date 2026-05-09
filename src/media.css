@@ -4,6 +4,8 @@
 .icon-l,
 .icon-xl {
     display: inline-block;
+    flex-shrink: 0;
+    max-width: none;
 }
 
 .icon-xs { width: calc(var(--base-size) * 3);  height: calc(var(--base-size) * 3); }
