@@ -1,12 +1,17 @@
 {
   "name": "rene.css",
   "private": true,
-  "description": "Rene is a design system for intention and meaning",
+  "description": "rené is a design system for clean, lightweight interfaces, built to be ai-ready from the ground up.",
   "scripts": {
     "build": "webpack"
   },
-  "author": "Relate Design LTD",
+  "author": "Under Design",
   "license": "MIT",
+  "homepage": "https://renecss.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weareunderdesign/rene.css.git"
+  },
   "devDependencies": {
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^3.4.1",
