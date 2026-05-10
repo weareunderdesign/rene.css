@@ -8,6 +8,7 @@ as a library and framework, rené provides ready-to-use elements and a customiza
 
 ```html
 <link rel="stylesheet" href="https://renecss.org/rene.css"/>
+<script defer src="https://renecss.org/icons.js"></script>
 ```
 
 ## documentation
@@ -16,11 +17,11 @@ visit [renecss.org](https://renecss.org/) for the full docs.
 
 ## community
 
-need help or want to join? [discussions](https://github.com/orgs/weareunder/discussions).
+need help or want to join? [discussions](https://github.com/orgs/weareunderdesign/discussions).
 
 ## contributing
 
-see [contributing.md](https://github.com/rnbwdev/rene.css/blob/main/contributing.md).
+see [contributing.md](https://github.com/weareunderdesign/rene.css/blob/main/contributing.md).
 
 ## thanks
 

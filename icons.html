@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>rené - icons</title>
+  <meta name="description" content="12x12 icons designed for clean, minimal, and info-rich interfaces.">
+  <meta property="og:title" content="rené - icons">
+  <meta name="og:description" content="12x12 icons designed for clean, minimal, and info-rich interfaces.">
+  <meta property="og:image" content="https://renecss.org/images/rene.css.png">
+  <meta name="twitter:image" content="https://renecss.org/images/rene.css.png">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:url" content="https://renecss.org/icons">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./images/favicon-light.png">
+  <link rel="stylesheet" href="./src/index.css" />
+  <script defer data-domain="renecss.org"
+    src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js"></script>
+  <script>window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <script defer src="./icons.js"></script>
+</head>
+
+<body>
+  <rnbw-header></rnbw-header>
+
+  <section class="column align-center justify-center">
+    <div class="column flex-1 padding-xl gap-xl" style="max-width:1140px;width:100%">
+      <div class="column gap-m">
+        <h1>icons</h1>
+        <h4>12×12 icons designed for clean, minimal, and info-rich interfaces. click any icon to copy its markup.</h4>
+      </div>
+      <input id="searchInput" type="text" placeholder="search"
+        style="border:none;border-bottom:1px solid;padding:0;background:transparent;color:inherit;font:inherit;outline:none;" />
+      <div id="content" class="flex width-full gap-xl" style="flex-wrap:wrap"></div>
+    </div>
+  </section>
+
+  <div id="copy-toast"
+    style="position:fixed;top:10px;left:50%;transform:translate(-50%,0);padding:5px 15px;font-size:14px;border-radius:80px;background:#000;color:#fff;opacity:0;transition:.3s;pointer-events:none;z-index:9999"></div>
+
+  <rnbw-footer></rnbw-footer>
+
+  <script>
+    (async () => {
+      const r = await fetch('./icons.svg');
+      const text = await r.text();
+      const doc = new DOMParser().parseFromString(text, 'image/svg+xml');
+      const names = [...doc.querySelectorAll('symbol[id]')].map(s => s.id).sort();
+
+      const content = document.getElementById('content');
+      const search = document.getElementById('searchInput');
+      const toast = document.getElementById('copy-toast');
+      let toastTimer = null;
+
+      const markup = name =>
+        `<svg class="icon-xs" viewBox="0 0 12 12" fill="currentColor"><use href="./icons.svg#${name}"/></svg>`;
+
+      content.innerHTML = names.map(name =>
+        `<svg class="icon-xs" viewBox="0 0 12 12" fill="currentColor" data-name="${name}" style="cursor:pointer"><use href="./icons.svg#${name}"/></svg>`
+      ).join('');
+
+      search.addEventListener('input', () => {
+        const q = search.value.toLowerCase();
+        content.querySelectorAll('[data-name]').forEach(el => {
+          el.style.display = el.dataset.name.toLowerCase().includes(q) ? '' : 'none';
+        });
+      });
+
+      content.addEventListener('click', async e => {
+        const tile = e.target.closest('[data-name]');
+        if (!tile) return;
+        const name = tile.dataset.name;
+        try {
+          await navigator.clipboard.writeText(markup(name));
+        } catch {
+          const ta = document.createElement('textarea');
+          ta.value = markup(name);
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          ta.remove();
+        }
+        clearTimeout(toastTimer);
+        toast.textContent = `copied — ${name}`;
+        toast.style.opacity = '1';
+        toastTimer = setTimeout(() => { toast.style.opacity = '0'; }, 3000);
+      });
+    })();
+  </script>
+</body>
+<script src="https://rnbw.design/js/rnbw-header.js"></script>
+<script src="https://rnbw.design/js/rnbw-footer.js"></script>
+
+</html>
