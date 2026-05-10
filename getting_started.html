@@ -202,16 +202,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="flex width-50 padding-right-s">
-                            <div class="column gap-m">
-                                <span class="text-s"></span>
-                            </div>
+                    <h5>add icons</h5>
+                    <div class="row gap-xl">
+                        <div class="flex-1">
+                            <p>
+                                include the icons script to load the canonical sprite, then reference any glyph by name. browse the full set in the <a href="icons">icons gallery</a>.
+                            </p>
                         </div>
-                        <div class="flex width-50">
-                            <div class="column gap-m">
-                                <span class="text-s"></span>
-                            </div>
+                        <div class="flex-1">
+                            <code class="block background-secondary padding-l radius-s">
+                                <span>
+                                    <div>&lt;script defer src="https://renecss.org/icons.js"&gt;&lt;/script&gt;</div>
+                                    <div><br></div>
+                                    <div>&lt;svg class="icon-xs" viewBox="0 0 12 12" fill="currentColor"&gt;</div>
+                                    <div>&nbsp; &lt;use href="#star"/&gt;</div>
+                                    <div>&lt;/svg&gt;</div>
+                                </span>
+                            </code>
                         </div>
                     </div>
                 </div>
