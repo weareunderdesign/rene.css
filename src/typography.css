@@ -2,7 +2,7 @@
 
 html {
     font-family: var(--font-primary);
-    font-size: calc(var(--font-unit) * 1.25);
+    font-size: var(--font-unit);
     font-weight: 200;
 }
 
@@ -16,6 +16,11 @@ h4:first-child, h5:first-child, h6:first-child {
     margin-top: 0;
 }
 
+h1:last-child, h2:last-child, h3:last-child,
+h4:last-child, h5:last-child, h6:last-child {
+    margin-bottom: 0;
+}
+
 h1 { font-size: calc(var(--font-unit) * 3.5); }
 h2 { font-size: calc(var(--font-unit) * 2.75); }
 h3 { font-size: calc(var(--font-unit) * 2.25); }
@@ -27,23 +32,61 @@ p {
     margin: 0.5em 0;
 }
 
+p:first-child { margin-top: 0; }
+p:last-child  { margin-bottom: 0; }
+
 b, strong {
     font-weight: 300;
 }
 
 blockquote {
     padding: 1em;
+    border: 1px solid var(--color-secondary-background);
+}
+
+li[role="checkbox"] {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+li[role="checkbox"]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 0.9em;
+    height: 0.9em;
     border: 1px solid var(--color-primary-foreground);
+    cursor: pointer;
+}
+
+li[role="checkbox"][aria-checked="true"]::before {
+    background: var(--color-primary-foreground);
+}
+
+li[role="checkbox"][aria-checked="true"] {
+    opacity: 0.5;
+    text-decoration: line-through;
 }
 
 code {
-    font-family: "Source Code Pro", monospace;
-    font-size: 1rem;
+    font-family: ui-monospace, monospace;
+    font-size: 0.875em;
     line-height: 1.25;
+    background-color: var(--color-tertiary-background);
+    border-radius: calc(var(--base-size) * 1.5);
+    padding: 0.1em 0.3em;
 }
 
 pre {
     overflow: auto;
+}
+
+pre code {
+    background: none;
+    border-radius: 0;
+    padding: 0;
 }
 
 a {

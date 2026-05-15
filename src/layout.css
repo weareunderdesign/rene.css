@@ -23,23 +23,6 @@ body {
     background-color: var(--color-primary-background);
     color: var(--color-primary-foreground);
     width: 100%;
-    max-width: 100%;
-}
-
-/* Layout components */
-header, footer {
-    display: flex;
-    align-items: center;
-    padding: calc(var(--base-size) * 6);
-}
-
-header {
-    justify-content: space-between;
-}
-
-nav {
-    display: flex;
-    column-gap: calc(var(--base-size) * 6);
 }
 
 hr {

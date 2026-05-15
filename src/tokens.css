@@ -3,9 +3,9 @@
     --font-primary: "under", "HelveticaNeue-light", "Helvetica Neue Light",
         "Helvetica Neue", Helvetica, "inter", Arial, "Lucida Grande", sans-serif;
 
-    /* Base unit for the type scale. `html` renders at 1.25× this (set in
-       typography.css); heading rules multiply this value for their sizes. */
-    --font-unit: 1rem;
+    /* Base unit for the type scale. Heading rules multiply this value for
+       their sizes. Override to rescale all typography at once. */
+    --font-unit: 1.25rem;
 }
 
 html,

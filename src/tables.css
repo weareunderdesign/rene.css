@@ -1,10 +1,6 @@
-/* Table essentials */
 table {
-    width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    margin-bottom: calc(var(--base-size) * 4);
-    margin-top: calc(var(--base-size) * 4);
 }
 
 thead {
@@ -13,25 +9,12 @@ thead {
 
 th {
     text-align: left;
-    padding: calc(var(--base-size) * 2.5);
+    padding: calc(var(--base-size) * 2.5) calc(var(--base-size) * 4) calc(var(--base-size) * 2.5) 0;
     color: var(--color-secondary-foreground);
     font-weight: normal;
 }
 
 td {
-    padding: calc(var(--base-size) * 2.5);
+    padding: calc(var(--base-size) * 2.5) calc(var(--base-size) * 4) calc(var(--base-size) * 2.5) 0;
     vertical-align: top;
 }
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    /* Make all tables horizontally scrollable by default on mobile */
-    table {
-        display: block;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        max-width: 100%;
-        width: fit-content;
-        min-width: 100%;
-    }
-} 
