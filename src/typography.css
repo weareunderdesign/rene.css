@@ -72,7 +72,6 @@ li[role="checkbox"][aria-checked="true"] {
 
 code {
     font-family: ui-monospace, monospace;
-    font-size: 0.875em;
     line-height: 1.25;
     background-color: var(--color-tertiary-background);
     border-radius: calc(var(--base-size) * 1.5);
