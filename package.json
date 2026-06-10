@@ -3,7 +3,8 @@
   "private": true,
   "description": "rené is a design system for clean, lightweight interfaces, built to be ai-ready from the ground up.",
   "scripts": {
-    "build": "webpack"
+    "icons": "node build-icons.js",
+    "build": "node build-icons.js && webpack"
   },
   "author": "Under Design",
   "license": "MIT",
