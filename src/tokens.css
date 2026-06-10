@@ -24,11 +24,11 @@ html,
 }
 
 [data-theme="dark"] {
-    --color-accent-primary: #0000cd;
-    --color-accent-secondary: #800080;
-    --color-primary-background: #111111;
-    --color-secondary-background: #222222;
-    --color-tertiary-background: #333333;
+    --color-accent-primary: #5b7cfa;
+    --color-accent-secondary: #b07cff;
+    --color-primary-background: #1a1a1a;
+    --color-secondary-background: #262626;
+    --color-tertiary-background: #363636;
     --color-primary-foreground: #ffffff;
     --color-secondary-foreground: #eeeeee;
     --color-tertiary-foreground: #dddddd;
