@@ -109,6 +109,7 @@ a:hover span {
 .text-s  { font-size: calc(var(--base-size) * 3);   line-height: calc(var(--base-size) * 3); }
 .text-m  { font-size: calc(var(--base-size) * 3.5); line-height: calc(var(--base-size) * 3.5); }
 .text-l  { font-size: calc(var(--base-size) * 4.5); line-height: calc(var(--base-size) * 4.5); }
+.text-xl { font-size: calc(var(--base-size) * 6);   line-height: calc(var(--base-size) * 6); }
 
 /* ---- Font weight ---- */
 
