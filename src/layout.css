@@ -219,8 +219,10 @@ hr {
 /* Mobile styles */
 @media (max-width: 768px) {
     .hidden-on-mobile { display: none; }
-    .sticky { position: relative; }
-    .row { flex-direction: column; }
+    .stack { flex-direction: column; }
+    .stack > .width-25,
+    .stack > .width-50,
+    .stack > .width-75 { width: auto; }
 
     /* Mobile padding adjustments */
     .padding-s  { padding: calc(var(--base-size) * 1.5); }
@@ -239,7 +241,4 @@ hr {
     .gap-column-m,  .gap-row-m  { gap: calc(var(--base-size) * 2); }
     .gap-column-l,  .gap-row-l  { gap: calc(var(--base-size) * 4); }
     .gap-column-xl, .gap-row-xl { gap: calc(var(--base-size) * 6); }
-
-    /* Responsive widths collapse on mobile */
-    .width-25, .width-50, .width-75 { width: 100%; }
 }
