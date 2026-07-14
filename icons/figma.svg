@@ -1,7 +1,7 @@
 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.00155 12C5.10533 12 6.00115 11.104 6.00115 10V8H4.00155C2.89777 8 2.00195 8.896 2.00195 10C2.00195 11.104 2.89777 12 4.00155 12Z" fill="currentColor"/>
-<path d="M2.00195 6C2.00195 4.896 2.89777 4 4.00155 4H6.00115V8H4.00155C2.89777 8 2.00195 7.104 2.00195 6Z" fill="currentColor"/>
-<path d="M2 2C2 0.896 2.89582 0 3.9996 0H5.9992V4H3.9996C2.89582 4 2 3.104 2 2Z" fill="currentColor"/>
-<path d="M6 3.05176e-05H7.9996C9.10338 3.05176e-05 9.9992 0.89603 9.9992 2.00003C9.9992 3.10403 9.10338 4.00003 7.9996 4.00003H6V3.05176e-05Z" fill="currentColor"/>
-<path d="M9.9992 5.99902C9.9992 7.10302 9.10338 7.99902 7.9996 7.99902C6.89582 7.99902 6 7.10302 6 5.99902C6 4.89502 6.89582 3.99902 7.9996 3.99902C9.10338 3.99902 9.9992 4.89502 9.9992 5.99902Z" fill="currentColor"/>
+<path d="M6 0.75H4.25C3.28 0.75 2.5 1.53 2.5 2.5C2.5 3.47 3.28 4.25 4.25 4.25H6V0.75Z" fill="none" stroke="currentColor" stroke-linejoin="round"/>
+<path d="M6 0.75H7.75C8.72 0.75 9.5 1.53 9.5 2.5C9.5 3.47 8.72 4.25 7.75 4.25H6V0.75Z" fill="none" stroke="currentColor" stroke-linejoin="round"/>
+<path d="M6 4.25H4.25C3.28 4.25 2.5 5.03 2.5 6C2.5 6.97 3.28 7.75 4.25 7.75H6V4.25Z" fill="none" stroke="currentColor" stroke-linejoin="round"/>
+<path d="M6 7.75H4.25C3.28 7.75 2.5 8.53 2.5 9.5C2.5 10.47 3.28 11.25 4.25 11.25C5.22 11.25 6 10.47 6 9.5V7.75Z" fill="none" stroke="currentColor" stroke-linejoin="round"/>
+<circle cx="7.75" cy="6" r="1.75" fill="none" stroke="currentColor"/>
 </svg>
