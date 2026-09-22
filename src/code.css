@@ -1,7 +1,11 @@
 /* ---- Code ---- */
 
+pre,
 code {
     font-family: var(--font-mono);
+}
+
+code {
     line-height: 1.25;
     background-color: var(--color-secondary-background);
     border-radius: calc(var(--base-size) * 1.5);
@@ -9,10 +13,12 @@ code {
 }
 
 pre {
+    line-height: var(--code-line);
     overflow: auto;
 }
 
 pre code {
+    line-height: inherit;
     background: none;
     border-radius: 0;
     padding: 0;

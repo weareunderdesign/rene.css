@@ -5,6 +5,11 @@
 
     --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 
+    /* Working size for a whole file of code, and the leading block code reads
+       at. Both are plain values so scripts can read them back. */
+    --code-size: 12px;
+    --code-line: 1.5;
+
     /* Base unit for the type scale. Heading rules multiply this value for
        their sizes. Override to rescale all typography at once. */
     --font-unit: 1.25rem;
