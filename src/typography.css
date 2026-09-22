@@ -70,24 +70,6 @@ li[role="checkbox"][aria-checked="true"] {
     text-decoration: line-through;
 }
 
-code {
-    font-family: ui-monospace, monospace;
-    line-height: 1.25;
-    background-color: var(--color-secondary-background);
-    border-radius: calc(var(--base-size) * 1.5);
-    padding: 0.1em 0.3em;
-}
-
-pre {
-    overflow: auto;
-}
-
-pre code {
-    background: none;
-    border-radius: 0;
-    padding: 0;
-}
-
 a {
     text-decoration: none;
 }

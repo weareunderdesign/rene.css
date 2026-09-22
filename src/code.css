@@ -1,0 +1,35 @@
+/* ---- Code ---- */
+
+code {
+    font-family: var(--font-mono);
+    line-height: 1.25;
+    background-color: var(--color-secondary-background);
+    border-radius: calc(var(--base-size) * 1.5);
+    padding: 0.1em 0.3em;
+}
+
+pre {
+    overflow: auto;
+}
+
+pre code {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.mono {
+    font-family: var(--font-mono);
+}
+
+/* ---- Syntax ---- */
+
+.code-comment { color: color-mix(in srgb, var(--color-primary-foreground) 42%, transparent); }
+.code-string  { color: var(--color-positive); }
+.code-number  { color: var(--color-accent-secondary); }
+.code-keyword { color: var(--color-accent-primary); }
+
+/* ---- Change marks ---- */
+
+.diff-add { background: color-mix(in srgb, var(--color-positive) 12%, transparent); }
+.diff-del { box-shadow: inset 0 2px 0 var(--color-negative); }

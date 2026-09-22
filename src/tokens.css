@@ -3,6 +3,8 @@
     --font-primary: "under", "HelveticaNeue-light", "Helvetica Neue Light",
         "Helvetica Neue", Helvetica, "inter", Arial, "Lucida Grande", sans-serif;
 
+    --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
     /* Base unit for the type scale. Heading rules multiply this value for
        their sizes. Override to rescale all typography at once. */
     --font-unit: 1.25rem;
@@ -32,7 +34,7 @@ html,
     --color-primary-foreground: #ffffff;
     --color-secondary-foreground: #eeeeee;
     --color-tertiary-foreground: #dddddd;
-    --color-positive: #006400;
+    --color-positive: #35a25c;
     --color-warning: #d97706;
     --color-negative: #ff4500;
 }
